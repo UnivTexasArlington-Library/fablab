@@ -6744,7 +6744,7 @@ img {
 }
 .left {
   background-image: url('http://fablab.uta.edu/sites/default/files/bg.png');
-  background-size: 100%;
+  background-size: auto 100%;
   background-repeat: repeat;
   display: table-cell;
   vertical-align: middle;
