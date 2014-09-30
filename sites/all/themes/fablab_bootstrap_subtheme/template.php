@@ -6,5 +6,8 @@
  */
 //this adds custom js
 function fablab_bootstrap_subtheme_preprocess_html(&$variables) {
-  drupal_add_js('http://library.uta.edu/jwplayer/jwplayer.js', 'external');
+  $options = array(
+    'group' => JS_THEME,
+  );
+  drupal_add_js(drupal_get_path('theme', 'fablab_bootstrap_subtheme'). '/jwplayer/jwplayer.js', $options);
 }
