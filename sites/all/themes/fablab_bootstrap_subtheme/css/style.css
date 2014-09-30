@@ -6746,15 +6746,9 @@ img {
   background-image: url('http://fablab.uta.edu/sites/default/files/bg.png');
   background-size: auto 100%;
   background-repeat: repeat;
-  display: table-cell;
-  vertical-align: top;
-  float: none;
 }
 .right {
   background: #0064b1;
-  display: table-cell;
-  vertical-align: top;
-  float: none;
 }
 .main img {
   padding-bottom: 5%;
@@ -6765,9 +6759,6 @@ img {
 }
 .submain a {
   color: #FFFFFF;
-}
-.row:first-of-type {
-  display: table;
 }
 .logo {
   position: relative;
