@@ -16,14 +16,34 @@ img {
 }
 .left {
 	background-image: url('http://fablab.uta.edu/sites/default/files/bg.png');
-	background-size:cover;
+	background-size:100%;
+	background-repeat:repeat;
+	display:table-cell;
+	vertical-align:middle;
+	float:none;
 }
 .right {
 	background:#0064b1;
+	display:table-cell;
+	vertical-align:middle;
+	float:none;
+}
+.main {
+	img {
+		padding-bottom:5%;
+	}
 }
 .submain {
 	background: #9b999a;
 	a {
 		color:#FFFFFF;
 	}
+}
+.row:first-of-type {
+	display:table;
+}
+.logo {
+	position:relative;
+	display:block;
+	padding: 10% 20% 10% 20%;
 }
