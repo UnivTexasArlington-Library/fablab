@@ -6759,21 +6759,22 @@ img {
   color: #FFFFFF;
   padding-top: 1%;
   padding-bottom: 5%;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 .main h4 {
   color: #FFFFFF;
   padding-top: 5%;
   padding-left: 7%;
   padding-right: 7%;
-  font-size: 1.4em;
+  font-size: 2em;
 }
 .k12 img {
-  padding: 7%;
+  margin: 14%;
 }
 .k12 h4 {
   text-align: center;
-  padding: 7%;
+  padding-top: 40%;
+  font-size: 2em;
 }
 .submain {
   background: #9b999a;
