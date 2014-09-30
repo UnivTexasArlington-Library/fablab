@@ -6774,3 +6774,30 @@ img {
   display: block;
   padding: 10% 20% 10% 20%;
 }
+.amazed img {
+  padding-right: 10px;
+  margin-top: 30px;
+}
+.amazed p {
+  float: right;
+}
+.menu {
+  border-left: 4px solid #999999;
+}
+.menu a {
+  padding: 10px;
+}
+.menu a:first-of-type {
+  border-bottom: 2px solid #999999;
+}
+.menu a:nth-of-type(2) {
+  border-top: 2px solid #999999;
+}
+#mobile {
+  display: none;
+}
+@media (max-width: 767px) {
+  #mobile {
+    display: block;
+  }
+}
