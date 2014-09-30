@@ -6738,3 +6738,20 @@ table .checkbox input[type="checkbox"] {
 .alert-danger a {
   color: #843534;
 }
+img {
+  width: 100%;
+  height: auto;
+}
+.left {
+  background-image: url('http://fablab.uta.edu/sites/default/files/bg.png');
+  background-size: cover;
+}
+.right {
+  background: #0064b1;
+}
+.submain {
+  background: #9b999a;
+}
+.submain a {
+  color: #FFFFFF;
+}
