@@ -1,10 +1,10 @@
-$(document).ready(function() {
+jQuery(document).ready(function() {
 	var winheight = window.height();
-	$(".right").css("height", winheight);
-	$(".left").css("height", winheight);
-	$(window).resize(function() {
+	jQuery(".right").css("height", winheight);
+	jQuery(".left").css("height", winheight);
+	jQuery(window).resize(function() {
 		var winheight = window.height();
-		$(".right").css("height", winheight);
-		$(".left").css("height", winheight);
+		jQuery(".right").css("height", winheight);
+		jQuery(".left").css("height", winheight);
 	});
 });
