@@ -10,5 +10,5 @@ function fablab_bootstrap_subtheme_preprocess_html(&$variables) {
     'group' => JS_THEME,
   );
   drupal_add_js(drupal_get_path('theme', 'fablab_bootstrap_subtheme'). '/jwplayer/jwplayer.js', $options);
-  drupal_add_js(drupal_get_path('theme', 'fablab_bootstrap_subtheme'). 'scripts.js', $options);
+  drupal_add_js(drupal_get_path('theme', 'fablab_bootstrap_subtheme'). '/scripts.js', $options);
 }
