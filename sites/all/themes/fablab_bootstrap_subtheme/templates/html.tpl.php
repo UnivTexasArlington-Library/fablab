@@ -57,6 +57,7 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
   <?php print $scripts; ?>
+  <script type="text/javascript">jwplayer.key="wlSTstAd4Ek19HZwJgwbuh9SmMzc4lVwnjf9cQ=="; </script>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <div id="skip-link">
