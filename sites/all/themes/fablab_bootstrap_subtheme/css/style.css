@@ -6798,7 +6798,7 @@ img {
 .logo {
   position: relative;
   display: block;
-  padding: 10% 20% 10% 20%;
+  padding: 15% 10% 10% 10%;
 }
 .logo:nth-of-type(2) {
   display: none;
