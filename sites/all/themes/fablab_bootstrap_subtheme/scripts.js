@@ -10,7 +10,7 @@ jQuery(document).ready(function() {
 	jQuery(".logo:first").mouseenter(function() {
 		jQuery(".logo").toggle();
 	});
-	jQuery(".logo:first").mouseleave(function() {
+	jQuery(".logo:nth-of-type(2)").mouseleave(function() {
 		jQuery(".logo").toggle();
 	});
 });
