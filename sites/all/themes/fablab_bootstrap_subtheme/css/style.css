@@ -6772,7 +6772,7 @@ img {
   color: #FFFFFF;
 }
 .k12 img {
-  margin: 14%;
+  padding: 14%;
 }
 .k12 h4 {
   text-align: center;
@@ -6781,7 +6781,6 @@ img {
 }
 @media (max-width: 991px) {
   .k12 img {
-    margin: 0;
     padding: 7%;
   }
 }
