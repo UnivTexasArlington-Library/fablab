@@ -7,7 +7,7 @@ jQuery(document).ready(function() {
 		jQuery(".main").css("min-height", winheight - 275);
 		jQuery(".left").css("min-height", winheight);
 	});
-	jQuery(".logo:first").hover(function() {
+	jQuery(".logo:first").mouseenter(function() {
 		jQuery(".logo").toggle();
-	})
+	});
 });
