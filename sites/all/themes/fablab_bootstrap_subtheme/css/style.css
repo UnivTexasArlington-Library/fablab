@@ -6768,6 +6768,9 @@ img {
   padding-right: 7%;
   font-size: 2em;
 }
+.main a {
+  color: #FFFFFF;
+}
 .k12 img {
   margin: 14%;
 }
@@ -6823,6 +6826,9 @@ img {
 .menu a:nth-of-type(2) {
   border-top: 2px solid #adabac;
 }
+.menu a.active {
+  color: #0064b1;
+}
 #mobile {
   display: none;
 }
@@ -6830,10 +6836,4 @@ img {
   #mobile {
     display: block;
   }
-}
-a {
-  color: #FFFFFF;
-}
-a.active {
-  color: #0064b1;
 }
