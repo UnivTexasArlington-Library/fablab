@@ -6776,6 +6776,12 @@ img {
   padding-top: 40%;
   font-size: 2em;
 }
+@media (max-width: 991px) {
+  .k12 img {
+    margin: 0;
+    padding: 7%;
+  }
+}
 .submain {
   background: #9b999a;
   padding: 10px;
