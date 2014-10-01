@@ -6743,7 +6743,7 @@ img {
   height: auto;
 }
 .left {
-  background-image: url('http://fablab.uta.edu/sites/default/files/bg.png');
+  background-image: url('http://fablab.uta.edu/sites/default/files/bgnew.png');
   background-size: auto 100%;
   background-repeat: repeat;
 }
@@ -6799,6 +6799,9 @@ img {
   position: relative;
   display: block;
   padding: 10% 20% 10% 20%;
+}
+.logo:nth-of-type(2) {
+  display: none;
 }
 .amazed img {
   padding-right: 10px;
