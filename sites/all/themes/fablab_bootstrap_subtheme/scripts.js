@@ -8,6 +8,6 @@ jQuery(document).ready(function() {
 		jQuery(".left").css("min-height", winheight);
 	});
 	jQuery(".logo:first").hover(function() {
-		jQuer(".logo").toggle();
+		jQuery(".logo").toggle();
 	})
 });
