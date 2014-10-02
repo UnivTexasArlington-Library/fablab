@@ -6750,8 +6750,9 @@ img {
 .right {
   background: #0064b1;
 }
-.main img {
-  padding-bottom: 5%;
+.main {
+  overflow-y: scroll;
+  margin-bottom: 5%;
 }
 .main p {
   padding-left: 7%;
