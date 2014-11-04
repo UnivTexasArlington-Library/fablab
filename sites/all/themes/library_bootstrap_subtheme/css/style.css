@@ -6298,8 +6298,9 @@ ul.secondary {
 .page-header {
   margin-top: 0;
 }
-.block:first-child h2.block-title {
+.block:first-child h1.block-title {
   margin-top: 0;
+  color: #f58025;
 }
 p:last-child {
   margin-bottom: 0;
