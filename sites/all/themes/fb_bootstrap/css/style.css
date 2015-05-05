@@ -7006,8 +7006,16 @@ table .checkbox input[type="checkbox"] {
 }
 .navbar-nav {
   margin-top: 30px;
+  background-color: #232323;
 }
 footer {
   background-color: #000;
   color: #fff;
+}
+footer ul {
+  list-style-type: none;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
 }
