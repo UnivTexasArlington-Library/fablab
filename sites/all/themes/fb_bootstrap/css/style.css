@@ -7013,10 +7013,16 @@ table .checkbox input[type="checkbox"] {
   border-radius: 0px;
   border-color: #232323;
 }
-.navbar-default .navbar-nav > li {
-  background-color: transparent;
+.navbar-nav > li > a {
+  background-color: #232323;
   color: #fff;
   text-decoration: none;
+}
+.navbar-nav > li > a:hover {
+  color: #0064b1;
+}
+.jumbotron {
+  margin-bottom: 0;
 }
 #grey-scale {
   background: -webkit-linear-gradient(#ffffff, #5e5e5f);
@@ -7031,6 +7037,7 @@ table .checkbox input[type="checkbox"] {
 footer {
   background-color: #000;
   color: #fff;
+  margin-top: 0;
 }
 footer ul {
   list-style-type: none;
