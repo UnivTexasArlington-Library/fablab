@@ -7004,6 +7004,9 @@ table .checkbox input[type="checkbox"] {
 .alert-danger a {
   color: #843534;
 }
+.navbar {
+  margin-bottom: 0px;
+}
 .navbar-nav {
   margin-top: 30px;
   background-color: #232323;
@@ -7026,6 +7029,7 @@ body {
 }
 .jumbotron {
   margin-bottom: 0;
+  padding: 0px 0px;
 }
 .jumbotron img {
   height: auto;
