@@ -262,7 +262,7 @@ table tr.error {
 }
 .control-group.error .help-block,
 .control-group.error .help-inline {
-  color: #00447c;
+  color: #000000;
 }
 .list-inline > li.first {
   padding-left: 0;
