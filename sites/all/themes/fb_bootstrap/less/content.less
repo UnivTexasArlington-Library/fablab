@@ -1,13 +1,36 @@
 // Insert your styling here.
-@font-family-sans-serif:  Verdana, Geneva, sans-serif;
+body {
+	font-family: verdana;
+}
 
 .jumbotron {
 	margin-bottom: 0;
+	img {
+		height: auto;
+		width: 100%
+	}
 }
 
 #grey-scale {
+	padding: 20px 0px 20px 0px;
 	background: -webkit-linear-gradient(white, #5e5e5f); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(white, #5e5e5f); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(white, #5e5e5f); /* For Firefox 3.6 to 15 */
     background: linear-gradient(white, #5e5e5f); /* Standard syntax (must be last) */
+
+}
+.region-left, 
+.region-middle,
+.region-right {
+	min-height: 300px;
+}
+.region-left {
+	margin-left: 20px;
+}
+.region-middle {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.region-right {
+	margin-right: 20px;
 }

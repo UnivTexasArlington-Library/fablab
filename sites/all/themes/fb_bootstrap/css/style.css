@@ -7013,18 +7013,26 @@ table .checkbox input[type="checkbox"] {
   border-radius: 0px;
   border-color: #232323;
 }
-.navbar-nav > li > a {
+.navbar-default .navbar-nav > .active > a {
   background-color: #232323;
   color: #fff;
   text-decoration: none;
 }
-.navbar-nav > li > a:hover {
+.navbar-default .navbar-nav > .active > a:hover {
   color: #0064b1;
+}
+body {
+  font-family: verdana;
 }
 .jumbotron {
   margin-bottom: 0;
 }
+.jumbotron img {
+  height: auto;
+  width: 100%;
+}
 #grey-scale {
+  padding: 20px 0px 20px 0px;
   background: -webkit-linear-gradient(#ffffff, #5e5e5f);
   /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(#ffffff, #5e5e5f);
@@ -7034,10 +7042,25 @@ table .checkbox input[type="checkbox"] {
   background: linear-gradient(#ffffff, #5e5e5f);
   /* Standard syntax (must be last) */
 }
+.region-left,
+.region-middle,
+.region-right {
+  min-height: 300px;
+}
+.region-left {
+  margin-left: 20px;
+}
+.region-middle {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.region-right {
+  margin-right: 20px;
+}
 footer {
+  font-family: verdana;
   background-color: #000;
   color: #fff;
-  margin-top: 0;
 }
 footer ul {
   list-style-type: none;
@@ -7049,4 +7072,8 @@ footer a {
 }
 footer a:hover {
   text-decoration: underline;
+}
+.footer {
+  margin-top: 0;
+  border-top: 0;
 }
