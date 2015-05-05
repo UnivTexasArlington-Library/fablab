@@ -7004,3 +7004,10 @@ table .checkbox input[type="checkbox"] {
 .alert-danger a {
   color: #843534;
 }
+.navbar-nav {
+  margin-top: 30px;
+}
+footer {
+  background-color: #000;
+  color: #fff;
+}
