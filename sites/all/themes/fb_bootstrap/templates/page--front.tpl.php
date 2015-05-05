@@ -159,10 +159,10 @@
       <aside class="col-sm-3" role="complementary">
         <?php print render($page['sidebar_second']); ?>
       </aside>  <!-- /#sidebar-second -->
-    <?php endif; ?>
+    
           
     <!--LEFT/MIDDLE/RIGHT-->
-<?php if (!empty($page['left']) || !empty($page['middle']) || !empty($page['right'])): ?>
+
   <div class="container-fluid" id="grey-scale">
     <div class="row">
       <div class="col-md-4 col-sm-4">
@@ -178,7 +178,7 @@
       </div> <!-- /col-4 -->
     </div> <!-- /.row -->
   </div> <!-- /.container-fluid (END OF LEFT/MIDDLE/RIGHT) -->
-
+<?php endif; ?>
 </div>
 <footer class="footer container-fluid">
   <?php print render($page['footer']); ?>
