@@ -133,7 +133,7 @@
     <!-- JUMBOTRON/HIGHLIGHTED -->
     
   <div class="jumbotron">
-    <div class="container" > <!--BACKGROUND IMAGE HERE -->
+    <div class="container-fluid" > <!--BACKGROUND IMAGE HERE -->
       
         <?php if (!empty($page['highlighted'])): ?>
         
