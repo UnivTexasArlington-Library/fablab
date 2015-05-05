@@ -7008,6 +7008,26 @@ table .checkbox input[type="checkbox"] {
   margin-top: 30px;
   background-color: #232323;
 }
+.navbar-default {
+  background-color: #232323;
+  border-radius: 0px;
+  border-color: #232323;
+}
+.navbar-default .navbar-nav > li {
+  background-color: transparent;
+  color: #fff;
+  text-decoration: none;
+}
+#grey-scale {
+  background: -webkit-linear-gradient(#ffffff, #5e5e5f);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#ffffff, #5e5e5f);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#ffffff, #5e5e5f);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#ffffff, #5e5e5f);
+  /* Standard syntax (must be last) */
+}
 footer {
   background-color: #000;
   color: #fff;
@@ -7018,4 +7038,8 @@ footer ul {
 footer a {
   color: #fff;
   text-decoration: none;
+  letter-spacing: 2px;
+}
+footer a:hover {
+  text-decoration: underline;
 }

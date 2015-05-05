@@ -160,8 +160,25 @@
         <?php print render($page['sidebar_second']); ?>
       </aside>  <!-- /#sidebar-second -->
     <?php endif; ?>
+          
+    <!--LEFT/MIDDLE/RIGHT-->
+<?php if (!empty($page['left']) || !empty($page['middle']) || !empty($page['right'])): ?>
+  <div class="container-fluid" id="grey-scale">
+    <div class="row">
+      <div class="col-md-4 col-sm-4">
+        <?php print render($page['left']); ?>
+      </div> <!-- /col-4 -->
+               
+      <div class="col-md-4 col-sm-4">
+        <?php print render($page['middle']); ?>
+      </div> <!-- /col-4 -->
+            
+      <div class="col-md-4 col-sm-4">
+        <?php print render($page['right']); ?>
+      </div> <!-- /col-4 -->
+    </div> <!-- /.row -->
+  </div> <!-- /.container-fluid (END OF LEFT/MIDDLE/RIGHT) -->
 
-  </div>
 </div>
 <footer class="footer container-fluid">
   <?php print render($page['footer']); ?>
