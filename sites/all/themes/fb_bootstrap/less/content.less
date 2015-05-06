@@ -8,6 +8,7 @@ body {
 	color: #fff;
 	margin-bottom: 0;
 	padding: 0px 0px;
+	
 	img {
 		height: auto;
 		width: 100%
@@ -16,10 +17,13 @@ body {
 
 #block-block-3 {
 	color: #fff;
-	background: #232323 url('http://fablab-test.uta.edu/sites/default/files/Lightbulb.png') no-repeat center;
+	background: #232323 url('http://fablab-test.uta.edu/sites/default/files/Lightbulb.png') no-repeat center top;
+	background-size: 100px;
 	h3 {
 		margin-bottom: 25px;
 		text-transform: uppercase;
+		min-height: 125px;
+		text-align: center;
 	}
 }
 #grey-scale {
@@ -35,10 +39,13 @@ body {
 .region-left, 
 .region-middle,
 .region-right {
-	min-height: 300px;
+	min-height: 400px;
 }
 .region-left {
 	margin-left: 20px;
+	@media (@screen-xs-max) {
+		margin-right: 20px
+	}
 }
 .region-middle {
 	margin-left: 20px;
@@ -46,4 +53,7 @@ body {
 }
 .region-right {
 	margin-right: 20px;
+	@media (@screen-xs-max) {
+		margin-left: 20px
+	}
 }
