@@ -7023,9 +7023,6 @@ table .checkbox input[type="checkbox"] {
 .navbar-default .navbar-nav > .active > a:hover {
   color: #0064b1;
 }
-#navbar[role="banner"] {
-  margin-top: -40px;
-}
 body {
   font-family: verdana;
 }
