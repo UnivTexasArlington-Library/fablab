@@ -9,6 +9,7 @@
 .navbar-header {
 	margin-top: -41px;
 	margin-bottom: -10px;
+	margin-left: 15px;
 }
 .navbar-default {
 	background-color: #232323;
@@ -28,10 +29,22 @@
 		background-color: #232323;
 	}
 }
-.navbar-default .navbar-nav > .active > a {
+.navbar-default .navbar-nav > .active > a,  {
 	background-color: #232323;
 	color:#dedcdc;
-	&:focus {
-		color:@link-color;
-	};
+}
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+	color: #0064b1;
+	background-color: transparent;
+}
+.dropdown-menu {
+	background-color: #232323;
+}
+.dropdown-menu > li > a {
+	color:#dedcdc;
+	text-decoration:none;
+	&:hover, &:focus {
+		background-color:transparent;
+	}
 }

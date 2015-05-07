@@ -7014,6 +7014,7 @@ table .checkbox input[type="checkbox"] {
 .navbar-header {
   margin-top: -41px;
   margin-bottom: -10px;
+  margin-left: 15px;
 }
 .navbar-default {
   background-color: #232323;
@@ -7037,8 +7038,21 @@ table .checkbox input[type="checkbox"] {
   background-color: #232323;
   color: #dedcdc;
 }
+.navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #0064b1;
+  background-color: transparent;
+}
+.dropdown-menu {
+  background-color: #232323;
+}
+.dropdown-menu > li > a {
+  color: #dedcdc;
+  text-decoration: none;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  background-color: transparent;
 }
 body {
   font-family: verdana;
@@ -7061,6 +7075,23 @@ body {
 .region-highlighted img {
   width: 100%;
   height: 750px;
+}
+.carousel-control {
+  top: 650px;
+  text-shadow: none;
+  background-image: none;
+}
+.carousel-control .left {
+  background-image: none;
+}
+.carousel-control .right {
+  background-image: none;
+}
+.carousel-control .icon-next {
+  margin-right: -100px;
+}
+.carousel-control .icon-prev {
+  margin-left: -100px;
 }
 #block-block-3 {
   color: #fff;
@@ -7120,22 +7151,17 @@ body {
     margin-left: 20px;
   }
 }
-.carousel-control {
-  top: 650px;
-  text-shadow: none;
-  background-image: none;
+#view-id-news a {
+  color: #000;
 }
-.carousel-control .left {
-  background-image: none;
+#view-id-news a:hover {
+  color: #0064b1;
 }
-.carousel-control .right {
-  background-image: none;
+#view-id-news a:focus {
+  color: #0064b1;
 }
-.carousel-control .icon-next {
-  margin-right: -100px;
-}
-.carousel-control .icon-prev {
-  margin-left: -100px;
+#view-id-events p {
+  font-size: 18px;
 }
 footer {
   font-family: verdana;
@@ -7151,12 +7177,14 @@ footer ul {
 footer a {
   color: #dedcdc;
   text-decoration: none;
+  font-size: 12px;
 }
 footer a:hover {
   text-decoration: underline;
 }
 footer p {
   margin-left: 125px;
+  font-size: 12px;
 }
 .footer {
   margin-top: 0;
