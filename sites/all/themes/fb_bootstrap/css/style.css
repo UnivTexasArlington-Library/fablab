@@ -7038,6 +7038,13 @@ table .checkbox input[type="checkbox"] {
   background-color: #232323;
   color: #dedcdc;
 }
+.navbar-default .navbar-nav > li > a {
+  color: #dedcdc;
+}
+.navbar-default .navbar-nav > .active > a {
+  color: #dedcdc;
+  background-color: #0064b1;
+}
 .navbar-default .navbar-nav > .active > a:hover {
   color: #0064b1;
   background-color: transparent;
@@ -7146,6 +7153,7 @@ body h1 {
 }
 .well-lg {
   margin: 20px;
+  min-height: 500px;
 }
 .region-left,
 .region-middle,
@@ -7179,6 +7187,10 @@ body h1 {
   .region-right {
     margin-left: 20px;
   }
+}
+.page-header {
+  margin-top: 50px;
+  margin-left: 20px;
 }
 footer {
   font-family: verdana;
