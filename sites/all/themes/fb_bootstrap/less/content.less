@@ -9,10 +9,17 @@ body {
 	margin-bottom: 0;
 	padding: 0px 0px;
 }
+.view-jum >.views-field-body {
+	z-index: 30;
+	background-color: rgb(0,0,0, .75); 
+	color:#fff;
+	margin-top: -500px;
+}
 .region-highlighted {
 	margin-top: -100px;
 	img {
 		width: 100%
+		height:750px;
 	}
 }
 #block-block-3 {
@@ -44,6 +51,7 @@ body {
 		color: #0064b1;
 		text-transform: uppercase;
 		text-align: center;
+		font-size: 31px;
 	}
 }
 .region-left {
@@ -61,4 +69,19 @@ body {
 	@media (@screen-xs-max) {
 		margin-left: 20px
 	}
+}
+.carousel-control {
+	top:650px;
+	text-shadow: none;
+	background-image: none;
+}
+.carousel-control .left, 
+.carousel-control .right {
+	background-image: none;
+}
+.carousel-control .icon-next {
+	margin-right: -100px;
+}
+.carousel-control .icon-prev {
+	margin-left: -100px;
 }
