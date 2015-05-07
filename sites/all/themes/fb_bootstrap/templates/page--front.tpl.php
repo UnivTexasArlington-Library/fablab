@@ -73,67 +73,67 @@
  * @ingroup themeable
  */
 ?>
-<header id="navbar" role="banner" class="navbar container-fluid navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <?php if ($logo): ?>
-      <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-        <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-      </a>
-      <?php endif; ?>
-    
-    <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-
-    <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
-    <div class="navbar-collapse collapse">
-      <nav role="navigation">
-        <?php if (!empty($primary_nav)): ?>
-          <?php print render($primary_nav); ?>
-        <?php endif; ?>
-        <?php if (!empty($secondary_nav)): ?>
-          <?php print render($secondary_nav); ?>
-        <?php endif; ?>
-        <div class="container-fluid" > <!--BACKGROUND IMAGE HERE -->
-        <?php if (!empty($page['navigation'])): ?>
-          <?php print render($page['navigation']); ?>
-        <?php endif; ?>
-      </nav>
-    </div>
-    <?php endif; ?>
-  </div>
-</header>
 
 <body>
-  <?php print render($title_prefix); ?>
-  <?php if (!empty($title)): ?>
-  <!--  <h1 class="page-header"><?php print $title; ?></h1> -->
-  <?php endif; ?>
-  <?php print render($title_suffix); ?>
-  <?php print $messages; ?>
-  <?php if (!empty($tabs)): ?>
-  <?php print render($tabs); ?>
-  <?php endif; ?>
-  <?php if (!empty($page['help'])): ?>
-  <?php print render($page['help']); ?>
-  <?php endif; ?>
-  <?php if (!empty($action_links)): ?>
-  <ul class="action-links"><?php print render($action_links); ?></ul>
-  <?php endif; ?>
+  <div class="jumbotron">
+
+    <?php print render($title_prefix); ?>
+    <?php if (!empty($title)): ?>
+    <!--  <h1 class="page-header"><?php print $title; ?></h1> -->
+    <?php endif; ?>
+    <?php print render($title_suffix); ?>
+    <?php print $messages; ?>
+    <?php if (!empty($tabs)): ?>
+    <?php print render($tabs); ?>
+    <?php endif; ?>
+    <?php if (!empty($page['help'])): ?>
+    <?php print render($page['help']); ?>
+    <?php endif; ?>
+    <?php if (!empty($action_links)): ?>
+    <ul class="action-links"><?php print render($action_links); ?></ul>
+    <?php endif; ?>
     
     <!-- JUMBOTRON/HIGHLIGHTED -->
-    
-  <div class="jumbotron">
     <div class="container-fluid">   
-          <?php if (!empty($page['highlighted'])): ?>
-        
-          <?php print render($page['highlighted']); ?>
+      <?php if (!empty($page['highlighted'])): ?>
+    
+      <?php print render($page['highlighted']); ?>
+      <header id="navbar" role="banner" class="navbar container-fluid navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <?php if ($logo): ?>
+            <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
+              <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+            </a>
+            <?php endif; ?>
+          
+          <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
+          <div class="navbar-collapse collapse">
+            <nav role="navigation">
+              <?php if (!empty($primary_nav)): ?>
+                <?php print render($primary_nav); ?>
+              <?php endif; ?>
+              <?php if (!empty($secondary_nav)): ?>
+                <?php print render($secondary_nav); ?>
+              <?php endif; ?>
+              <div class="container-fluid" > <!--BACKGROUND IMAGE HERE -->
+              <?php if (!empty($page['navigation'])): ?>
+                <?php print render($page['navigation']); ?>
+              <?php endif; ?>
+            </nav>
+          </div>
+          <?php endif; ?>
+        </div>
+      </header>
     </div> <!-- /. container-fluid -->
   </div> <!-- /.jumbotron -->
   <?php endif; ?>

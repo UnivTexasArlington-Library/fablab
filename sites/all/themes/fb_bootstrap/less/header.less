@@ -12,11 +12,18 @@
 }
 .navbar-nav > li > a {
 	background-color: #232323;
-	color: #fff;
+	color: #dedcdc;
 	text-decoration: none;
 	text-transform: uppercase;
 	&:hover {
-		color: #0064b1;
+		color: @link-color;
 		background-color: #232323;
 	}
+}
+.navbar-default .navbar-nav > .active > a {
+	background-color: #232323;
+	color:#dedcdc;
+	&:focus {
+		color:@link-color;
+	};
 }

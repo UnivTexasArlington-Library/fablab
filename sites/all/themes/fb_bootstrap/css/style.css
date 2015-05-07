@@ -7017,13 +7017,20 @@ table .checkbox input[type="checkbox"] {
 }
 .navbar-nav > li > a {
   background-color: #232323;
-  color: #fff;
+  color: #dedcdc;
   text-decoration: none;
   text-transform: uppercase;
 }
 .navbar-nav > li > a:hover {
   color: #0064b1;
   background-color: #232323;
+}
+.navbar-default .navbar-nav > .active > a {
+  background-color: #232323;
+  color: #dedcdc;
+}
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #0064b1;
 }
 body {
   font-family: verdana;
