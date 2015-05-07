@@ -110,7 +110,7 @@
   </div>
 </header>
 <body>
-    <div class="container">   
+    <div class="container-fluid">   
           <?php print render($title_prefix); ?>
           <?php if (!empty($title)): ?>
           <!--  <h1 class="page-header"><?php print $title; ?></h1> -->
