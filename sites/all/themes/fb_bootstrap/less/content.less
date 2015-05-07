@@ -1,4 +1,8 @@
 // Insert your styling here.
+html {
+	background-color: #000;
+}
+
 body {
 	font-family: verdana;
 	a {
@@ -6,6 +10,10 @@ body {
 		&:hover{
 			color:#0064b1;
 		}
+	}
+	h1 {
+		color:@brand-primary;
+		text-transform: uppercase;
 	}
 }
 
@@ -67,6 +75,9 @@ body {
 .well {
 	border: 1px solid #dedcdc;
 	background-color: #fff;
+}
+.well-lg {
+	margin: 20px;
 }
 .region-left, 
 .region-middle,

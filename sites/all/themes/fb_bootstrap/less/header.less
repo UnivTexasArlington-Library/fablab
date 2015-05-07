@@ -29,14 +29,16 @@
 		background-color: #232323;
 	}
 }
-.navbar-default .navbar-nav > .active > a,  {
+.navbar-default .navbar-nav > a,  {
 	background-color: #232323;
 	color:#dedcdc;
 }
-.navbar-default .navbar-nav > .active > a:hover, 
-.navbar-default .navbar-nav > .active > a:focus {
+.navbar-default .navbar-nav > .active > a:hover, {
 	color: #0064b1;
 	background-color: transparent;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	color: #0064b1;
 }
 .dropdown-menu {
 	background-color: #232323;
@@ -47,4 +49,8 @@
 	&:hover, &:focus {
 		background-color:transparent;
 	}
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+	background-color:transparent;
+	color:#0064b1;
 }

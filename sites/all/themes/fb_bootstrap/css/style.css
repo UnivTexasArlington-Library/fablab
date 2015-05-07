@@ -7034,14 +7034,17 @@ table .checkbox input[type="checkbox"] {
   color: #0064b1;
   background-color: #232323;
 }
-.navbar-default .navbar-nav > .active > a {
+.navbar-default .navbar-nav > a {
   background-color: #232323;
   color: #dedcdc;
 }
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
+.navbar-default .navbar-nav > .active > a:hover {
   color: #0064b1;
   background-color: transparent;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #0064b1;
 }
 .dropdown-menu {
   background-color: #232323;
@@ -7054,6 +7057,15 @@ table .checkbox input[type="checkbox"] {
 .dropdown-menu > li > a:focus {
   background-color: transparent;
 }
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  background-color: transparent;
+  color: #0064b1;
+}
+html {
+  background-color: #000;
+}
 body {
   font-family: verdana;
 }
@@ -7062,6 +7074,10 @@ body a {
 }
 body a:hover {
   color: #0064b1;
+}
+body h1 {
+  color: #337ab7;
+  text-transform: uppercase;
 }
 .jumbotron {
   background-color: #000;
@@ -7124,6 +7140,9 @@ body a:hover {
 .well {
   border: 1px solid #dedcdc;
   background-color: #fff;
+}
+.well-lg {
+  margin: 20px;
 }
 .region-left,
 .region-middle,
