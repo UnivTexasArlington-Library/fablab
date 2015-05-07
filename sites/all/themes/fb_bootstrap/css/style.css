@@ -7056,7 +7056,7 @@ body {
   margin-top: -500px;
 }
 .region-highlighted {
-  margin-top: -100px;
+  margin-top: -50px;
 }
 .region-highlighted img {
   width: 100%;
@@ -7125,7 +7125,9 @@ body {
   text-shadow: none;
   background-image: none;
 }
-.carousel-control .left,
+.carousel-control .left {
+  background-image: none;
+}
 .carousel-control .right {
   background-image: none;
 }
