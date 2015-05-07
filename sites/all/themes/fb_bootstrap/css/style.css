@@ -7004,8 +7004,16 @@ table .checkbox input[type="checkbox"] {
 .alert-danger a {
   color: #843534;
 }
+#navbar {
+  z-index: 50;
+  top: 50px;
+}
 .navbar {
   margin-bottom: 0px;
+}
+.navbar-header {
+  margin-top: -41px;
+  margin-bottom: -10px;
 }
 .navbar-default {
   background-color: #232323;
@@ -7044,6 +7052,9 @@ body {
 .jumbotron img {
   height: auto;
   width: 100%;
+}
+.region-highlighted {
+  margin-top: -100px;
 }
 #block-block-3 {
   color: #fff;
