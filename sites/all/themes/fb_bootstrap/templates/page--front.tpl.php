@@ -95,10 +95,7 @@
     
     <!-- JUMBOTRON/HIGHLIGHTED -->
     <div class="container-fluid">   
-      <?php if (!empty($page['highlighted'])): ?>
-    
-      <?php print render($page['highlighted']); ?>
-      <header id="navbar" role="banner" class="navbar container-fluid navbar-default">
+            <header id="navbar" role="banner" class="navbar container-fluid navbar-default">
         <div class="container-fluid">
           <div class="navbar-header">
             <?php if ($logo): ?>
@@ -134,6 +131,10 @@
           <?php endif; ?>
         </div>
       </header>
+      <?php if (!empty($page['highlighted'])): ?>
+    
+      <?php print render($page['highlighted']); ?>
+
     </div> <!-- /. container-fluid -->
   </div> <!-- /.jumbotron -->
   <?php endif; ?>
