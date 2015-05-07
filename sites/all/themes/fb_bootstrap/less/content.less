@@ -1,6 +1,12 @@
 // Insert your styling here.
 body {
 	font-family: verdana;
+	a {
+		color:#000;
+		&:hover{
+			color:#0064b1;
+		}
+	}
 }
 
 .jumbotron {
@@ -16,7 +22,7 @@ body {
 	margin-top: -500px;
 }
 .region-highlighted {
-	margin-top: -50px;
+	margin-top: -130px;
 	img {
 		width: 100%;
 		height:750px;
@@ -60,6 +66,7 @@ body {
 
 .well {
 	border: 1px solid #dedcdc;
+	background-color: #fff;
 }
 .region-left, 
 .region-middle,
@@ -86,23 +93,5 @@ body {
 	margin-right: 20px;
 	@media (@screen-xs-max) {
 		margin-left: 20px
-	}
-}
-
-#view-id-news {
-	a {
-    	color:#000;
-    	&:hover {
-    		color: #0064b1;
-
-    	}
-    	&:focus {
-    		color:#0064b1;
-    	}
-    }
-}
-#view-id-events {
-	p {
-		font-size: 18px;
 	}
 }

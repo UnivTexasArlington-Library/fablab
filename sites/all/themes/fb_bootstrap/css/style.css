@@ -7057,6 +7057,12 @@ table .checkbox input[type="checkbox"] {
 body {
   font-family: verdana;
 }
+body a {
+  color: #000;
+}
+body a:hover {
+  color: #0064b1;
+}
 .jumbotron {
   background-color: #000;
   color: #fff;
@@ -7070,7 +7076,7 @@ body {
   margin-top: -500px;
 }
 .region-highlighted {
-  margin-top: -50px;
+  margin-top: -130px;
 }
 .region-highlighted img {
   width: 100%;
@@ -7117,6 +7123,7 @@ body {
 }
 .well {
   border: 1px solid #dedcdc;
+  background-color: #fff;
 }
 .region-left,
 .region-middle,
@@ -7150,18 +7157,6 @@ body {
   .region-right {
     margin-left: 20px;
   }
-}
-#view-id-news a {
-  color: #000;
-}
-#view-id-news a:hover {
-  color: #0064b1;
-}
-#view-id-news a:focus {
-  color: #0064b1;
-}
-#view-id-events p {
-  font-size: 18px;
 }
 footer {
   font-family: verdana;
