@@ -7204,6 +7204,11 @@ footer ul {
   border-right: 1px dashed #0064b1;
   margin-left: 125px;
 }
+@media (max-width: 767px) {
+  footer ul {
+    margin-left: 25px;
+  }
+}
 footer a {
   color: #dedcdc;
   text-decoration: none;
@@ -7215,6 +7220,12 @@ footer a:hover {
 footer p {
   margin-left: 125px;
   font-size: 12px;
+}
+@media (max-width: 767px) {
+  footer p {
+    margin-left: 25px;
+    text-align: center;
+  }
 }
 .footer {
   margin-top: 0;
