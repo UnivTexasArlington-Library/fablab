@@ -6,21 +6,32 @@ footer {
 	letter-spacing: 2px;
 	ul {
 		list-style-type: none;
-		border-right: 1px dashed #0064b1;
+		border-right: 1px dashed @link-color;
 		margin-left: 125px;
+		@media (max-width:@screen-xs-max) {
+			margin-left: 25px;
+		}
 	}
 	a {
 		color: #dedcdc;
 		text-decoration: none;
+		font-size: 12px;
 		&:hover {
 			text-decoration: underline;
 		}
 	}
 	p {
 		margin-left: 125px;
+		font-size: 12px;
+		@media (max-width:@screen-xs-max) {
+			margin-left: 25px;
+			text-align: center;
+		}
 	}
 }
 .footer {
 	margin-top: 0;
 	border-top: 0;
+	padding-top:20px;
+	padding-bottom: 21px;
 }
