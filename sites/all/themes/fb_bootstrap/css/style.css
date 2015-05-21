@@ -7016,6 +7016,7 @@ table .checkbox input[type="checkbox"] {
   margin-bottom: -10px;
 }
 .navbar-header img {
+  height: 87px;
   margin-left: 15px;
 }
 .navbar-default {
@@ -7025,6 +7026,8 @@ table .checkbox input[type="checkbox"] {
 }
 .navbar-nav {
   background-color: #232323;
+  font-size: 24px;
+  margin-top: 30px;
 }
 .navbar-nav > li > a {
   background-color: #232323;
@@ -7075,6 +7078,9 @@ table .checkbox input[type="checkbox"] {
 a .active-trail {
   color: #dedcdc;
 }
+.caret {
+  display: none;
+}
 html {
   background-color: #000;
 }
@@ -7090,6 +7096,13 @@ body a:hover {
 body h1 {
   color: #0064b1;
   text-transform: uppercase;
+  font-size: 30px;
+}
+body h2 {
+  font-size: 27px;
+}
+body h3 {
+  font-size: 23px;
 }
 .jumbotron {
   background-color: #000;
@@ -7102,7 +7115,7 @@ body h1 {
 }
 .region-highlighted img {
   width: 100%;
-  height: 750px;
+  height: 1000px;
 }
 @media (max-width: 991px) {
   .region-highlighted img {
@@ -7114,22 +7127,28 @@ body h1 {
   text-shadow: none;
   background-image: none;
 }
-.carousel-control .left {
-  background-image: none;
-}
-.carousel-control .right {
+.carousel-control.left,
+.carousel-control.right {
   background-image: none;
 }
 .carousel-control .icon-next {
+  margin-right: -9999px;
+}
+.carousel-control .icon-next:hover {
   margin-right: -75px;
 }
 .carousel-control .icon-prev {
+  margin-left: -9999px;
+}
+.carousel-control .icon-prev:hover {
   margin-left: -75px;
 }
 #block-block-3 {
   color: #fff;
   background: #232323 url('http://fablab-test.uta.edu/sites/default/files/Lightbulb.png') no-repeat center top;
-  background-size: 100px;
+  background-size: 75px;
+  margin-bottom: 25px;
+  margin-top: -100px;
 }
 #block-block-3 h3 {
   margin-bottom: 25px;
@@ -7155,11 +7174,12 @@ body h1 {
 .well-lg {
   margin: 20px;
   min-height: 500px;
+  padding: 50px;
 }
 .region-left,
 .region-middle,
 .region-right {
-  min-height: 200px;
+  min-height: 350px;
 }
 .region-left h2,
 .region-middle h2,
@@ -7190,8 +7210,10 @@ body h1 {
   }
 }
 .page-header {
-  margin-top: 50px;
-  margin-left: 20px;
+  margin-top: 75px;
+  margin-left: 70px;
+  padding-bottom: 0;
+  border-bottom: none;
 }
 footer {
   font-family: verdana;
@@ -7230,4 +7252,6 @@ footer p {
 .footer {
   margin-top: 0;
   border-top: 0;
+  padding-top: 20px;
+  padding-bottom: 21px;
 }
