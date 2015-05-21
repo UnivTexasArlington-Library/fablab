@@ -1,0 +1,74 @@
+// Insert your styling here.
+#navbar {
+	z-index: 50;
+	top:50px;
+}
+.navbar {
+	margin-bottom: 0px;
+}
+.navbar-header {
+	margin-top: -41px;
+	margin-bottom: -10px;
+	img {
+		height:87px;
+		margin-left: 15px;
+	}
+}
+.navbar-default {
+	background-color: #232323;
+	border-radius: 0px;
+	border-color: #232323;
+}
+.navbar-nav {
+	background-color: #232323;
+	font-size: 24px;
+	margin-top: 30px;
+}
+.navbar-nav > li > a {
+	background-color: #232323;
+	color: #dedcdc;
+	text-decoration: none;
+	text-transform: uppercase;
+	&:hover {
+		color: @link-color;
+		background-color: #232323;
+	}
+}
+.navbar-default .navbar-nav > a,  {
+	background-color: #232323;
+	color:#dedcdc;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #dedcdc;
+}
+.navbar-default .navbar-nav > .active > a {
+	color: #dedcdc;
+	background-color: @brand-primary;
+}
+.navbar-default .navbar-nav > .active > a:hover {
+	color: #0064b1;
+	background-color: transparent;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	color: #0064b1;
+}
+.dropdown-menu {
+	background-color: #232323;
+}
+.dropdown-menu > li > a {
+	color:#dedcdc;
+	text-decoration:none;
+	&:hover, &:focus {
+		background-color:transparent;
+	}
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+	background-color:transparent;
+	color:#0064b1;
+}
+a .active-trail {
+	color:#dedcdc;
+}
+.caret {
+	display: none;
+}
