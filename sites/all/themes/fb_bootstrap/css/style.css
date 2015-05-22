@@ -7012,7 +7012,7 @@ table .checkbox input[type="checkbox"] {
   margin-bottom: 0px;
 }
 .navbar-header {
-  margin-top: -41px;
+  margin-top: -8px;
   margin-bottom: -10px;
 }
 .navbar-header img {
@@ -7026,7 +7026,7 @@ table .checkbox input[type="checkbox"] {
 }
 .navbar-nav {
   background-color: #232323;
-  font-size: 24px;
+  font-size: 20px;
   margin-top: 30px;
 }
 .navbar-nav > li > a {
@@ -7134,13 +7134,15 @@ body h3 {
 .carousel-control .icon-next {
   margin-right: -9999px;
 }
-.carousel-control .icon-next:hover {
+.carousel-control .icon-next:hover,
+.carousel-control .icon-next:focus {
   margin-right: -75px;
 }
 .carousel-control .icon-prev {
   margin-left: -9999px;
 }
-.carousel-control .icon-prev:hover {
+.carousel-control .icon-prev:hover,
+.carousel-control .icon-prev:focus {
   margin-left: -75px;
 }
 #block-block-3 {
@@ -7150,9 +7152,10 @@ body h3 {
   margin-top: -100px;
 }
 #block-block-3 h3 {
+  margin-top: 45px;
   margin-bottom: 25px;
   text-transform: uppercase;
-  min-height: 125px;
+  min-height: 75px;
   text-align: center;
 }
 #grey-scale {
@@ -7207,6 +7210,12 @@ body h3 {
   .region-right {
     margin-left: 20px;
   }
+}
+.region-left > .block-title,
+.region-middle > .block-title,
+.region-right > .block-title {
+  margin-top: 17px;
+  margin-bottom: 24px;
 }
 .page-header {
   margin-top: 75px;
