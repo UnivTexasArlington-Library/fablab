@@ -7152,7 +7152,7 @@ body h3 {
 #block-block-3 {
   z-index: 50;
   color: #fff;
-  background: #232323 url('http://fablab-test.uta.edu/sites/default/files/Lightbulb.png') no-repeat center top;
+  background: #232323 url('http://fablab-test.uta.edu/sites/default/files/Lightbulb.png') no-repeat center center;
   background-size: 75px;
   margin-top: -100px;
 }
@@ -7216,9 +7216,7 @@ body h3 {
     margin-left: 20px;
   }
 }
-.region-left > .block-title,
-.region-middle > .block-title,
-.region-right > .block-title {
+h2.block-title {
   margin-top: 17px;
   margin-bottom: 24px;
 }
