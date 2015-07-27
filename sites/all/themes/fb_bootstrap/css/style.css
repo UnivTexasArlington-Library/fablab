@@ -7035,7 +7035,9 @@ table .checkbox input[type="checkbox"] {
 #block-menu-menu-right {
   float: right;
 }
-/*.navbar-nav */
+.nav {
+  margin-top: 2em;
+}
 .nav > li {
   display: inline-block;
 }
@@ -7049,7 +7051,7 @@ table .checkbox input[type="checkbox"] {
 }
 .nav > li > a:hover {
   color: #0064b1;
-  background-color: #232323;
+  /*background-color: #232323;*/
 }
 .navbar-default .navbar-nav > a {
   background-color: #232323;
