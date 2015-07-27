@@ -7029,13 +7029,20 @@ table .checkbox input[type="checkbox"] {
   font-size: 20px;
   margin-top: 30px;
 }
-.navbar-nav > li > a {
-  background-color: #232323;
+.block-menu-menu-right {
+  float: right;
+}
+/*.navbar-nav */
+.nav > li {
+  display: inline-block;
+}
+.nav > li > a {
+  /*background-color: #232323; */
   color: #dedcdc;
   text-decoration: none;
   text-transform: uppercase;
 }
-.navbar-nav > li > a:hover {
+.nav > li > a:hover {
   color: #0064b1;
   background-color: #232323;
 }
