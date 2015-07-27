@@ -7029,7 +7029,10 @@ table .checkbox input[type="checkbox"] {
   font-size: 20px;
   margin-top: 30px;
 }
-.block-menu-menu-right {
+#block-menu-menu-left {
+  float: left;
+}
+#block-menu-menu-right {
   float: right;
 }
 /*.navbar-nav */
@@ -7038,6 +7041,8 @@ table .checkbox input[type="checkbox"] {
 }
 .nav > li > a {
   /*background-color: #232323; */
+  font-size: 1.25em;
+  /* 20px/16px */
   color: #dedcdc;
   text-decoration: none;
   text-transform: uppercase;
