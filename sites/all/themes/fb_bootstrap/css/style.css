@@ -7119,6 +7119,7 @@ body h1 {
 body h2 {
   font-size: 1.6875em;
   /* 27px/16px */
+  text-transform: uppercase;
 }
 body h3 {
   font-size: 1.4375em;
@@ -7145,6 +7146,7 @@ body h3 {
     height: auto;
   }
 }
+/* CAROUSEL */
 .carousel-control {
   top: 650px;
   text-shadow: none;
@@ -7251,6 +7253,16 @@ h2.block-title {
 }
 .breadcrumb {
   float: right;
+}
+/* CALENDAR */
+.calendar-calendar .month-view .full td.single-day div.monthview,
+.calendar-calendar .week-view .full td.single-day div.weekview,
+.calendar-calendar .day-view .full td.single-day div.dayview {
+  background-color: #d4effc;
+}
+.calendar-calendar .week-view .full div.single-day div.weekview,
+.calendar-calendar .day-view .full div.single-day div.dayview {
+  border-color: #0064b1;
 }
 footer {
   font-family: verdana;
