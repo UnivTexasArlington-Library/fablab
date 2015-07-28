@@ -7113,13 +7113,19 @@ body a:hover {
 body h1 {
   color: #0064b1;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 1.875em;
+  /* 30px/16px */
 }
 body h2 {
-  font-size: 27px;
+  font-size: 1.6875em;
+  /* 27px/16px */
 }
 body h3 {
-  font-size: 23px;
+  font-size: 1.4375em;
+  /* 23px/16px */
+}
+.contextual-links-wrapper {
+  top: 50px;
 }
 .jumbotron {
   background-color: #000;
@@ -7196,7 +7202,7 @@ body h3 {
 .well-lg {
   margin: 20px;
   min-height: 500px;
-  padding: 50px;
+  padding: 20px;
 }
 .region-left,
 .region-middle,
@@ -7235,10 +7241,9 @@ h2.block-title {
   margin-top: 17px;
   margin-bottom: 24px;
 }
-.page-header,
-.region-sidebar-first {
-  margin-top: 50px;
-}
+/* .page-header, .region-sidebar-first {
+	margin-top: 50px;
+} */
 .page-header {
   margin-left: 20px;
   padding-bottom: 0;
