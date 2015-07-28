@@ -7146,7 +7146,7 @@ body h3 {
     height: auto;
   }
 }
-/* CAROUSEL */
+/* JUMBOTRON CAROUSEL */
 .carousel-control {
   top: 650px;
   text-shadow: none;
@@ -7238,6 +7238,13 @@ body h3 {
   .region-right {
     margin-left: 20px;
   }
+}
+/* REGION-RIGHT EVENTS CAROUSEL */
+#views-bootstrap-carousel-3 > .carousel-caption {
+  bottom: none;
+}
+#views-bootstrap-carousel-3 > .carousel-caption h3 a {
+  color: #fff;
 }
 h2.block-title {
   margin-top: 17px;
