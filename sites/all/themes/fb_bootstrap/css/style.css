@@ -7240,10 +7240,10 @@ body h3 {
   }
 }
 /* REGION-RIGHT EVENTS CAROUSEL */
-#views-bootstrap-carousel-3 > .carousel-caption {
-  bottom: none;
+.event-caption .carousel-caption {
+  bottom: 10%;
 }
-#views-bootstrap-carousel-3 > .carousel-caption h3 a {
+.event-caption .carousel-caption h3 a {
   color: #fff;
 }
 h2.block-title {
