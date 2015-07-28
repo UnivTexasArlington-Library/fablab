@@ -117,9 +117,9 @@
           <?php endif; ?>
           <?php print render($title_suffix); ?>
           <?php print $messages; ?>
-          <?php if (!empty($tabs)): ?>
+          <!--<?php if (!empty($tabs)): ?>
           <?php print render($tabs); ?>
-          <?php endif; ?>
+          <?php endif; ?>-->
           <?php if (!empty($page['help'])): ?>
           <?php print render($page['help']); ?>
           <?php endif; ?>
