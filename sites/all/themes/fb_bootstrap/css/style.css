@@ -7099,7 +7099,7 @@ a .active-trail {
   display: none;
 }
 html {
-  background-color: #000;
+  background-color: #fff;
 }
 body {
   font-family: verdana;
@@ -7174,32 +7174,31 @@ body h3 {
 .carousel-control .icon-prev:focus {
   margin-left: -75px;
 }
-#block-block-3 {
+#block-block-3,
+#slogan {
   color: #fff;
   background: #232323 url('http://fablab-test.uta.edu/sites/default/files/Lightbulb.png') no-repeat center center;
   background-size: 75px;
 }
-#block-block-3 h3 {
+#block-block-3 h3,
+#slogan h3 {
   margin-top: 45px;
   margin-bottom: 25px;
   text-transform: uppercase;
   min-height: 75px;
   text-align: center;
 }
-#grey-scale {
-  padding: 20px 0px 20px 0px;
-  background: -webkit-linear-gradient(#ffffff 35%, #5e5e5f);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#ffffff 35%, #5e5e5f);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#ffffff 35%, #5e5e5f);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#ffffff 35%, #5e5e5f);
-  /* Standard syntax (must be last) */
-}
+/* #grey-scale {
+	padding: 20px 0px 20px 0px;
+	background: -webkit-linear-gradient(white 35%, #5e5e5f); /* For Safari 5.1 to 6.0 
+    background: -o-linear-gradient(white 35%, #5e5e5f); /* For Opera 11.1 to 12.0 
+    background: -moz-linear-gradient(white 35%, #5e5e5f); /* For Firefox 3.6 to 15 
+    background: linear-gradient(white 35%, #5e5e5f); /* Standard syntax (must be last) 
+} */
 .well {
   border: 1px solid #dedcdc;
   background-color: #fff;
+  border-radius: 0;
 }
 .well-lg {
   margin: 20px;
