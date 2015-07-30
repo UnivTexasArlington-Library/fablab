@@ -132,7 +132,7 @@
   </section>
 
   <section class="main-container container-fluid">
-    <div class="col-sm-offset-2 col-sm-10">
+    <div class="col-sm-offset-2 col-sm-10 col-xs-offset-1">
       <header role="banner" id="page-header">
         <?php print render($title_prefix); ?>
         <?php if (!empty($title)): ?>
@@ -147,12 +147,12 @@
 
     <div class="row">
 
-      <div class="col-sm-offset-2 col-sm-5">
+      <div class="col-sm-offset-2 col-sm-5 col-xs-10 col-xs-offset-1">
         <?php print render($page['content']); ?>
       </div>
 
       <?php if (!empty($page['sidebar_second'])): ?>
-        <aside class="col-sm-offset-2 col-sm-2 " role="complementary">
+        <aside class="col-sm-offset-2 col-sm-2 col-xs-10 col-xs-offset-1" role="complementary">
           <?php print render($page['sidebar_second']); ?>
         </aside>  <!-- /#sidebar-second -->
       <?php endif; ?>

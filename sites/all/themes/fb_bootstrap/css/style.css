@@ -7036,18 +7036,30 @@ table .checkbox input[type="checkbox"] {
 #block-menu-menu-right {
   float: right;
 }
-#block-menu-menu-the-lab > h2 {
+#block-menu-menu-the-lab > h2,
+#block-menu-menu-connect > h2,
+#block-menu-menu-learn > h2,
+#block-menu-menu-create > h2 {
   font-size: 1.25em;
 }
-#block-menu-menu-the-lab > .nav > li {
+#block-menu-menu-the-lab > .nav > li,
+#block-menu-menu-connect > .nav > li,
+#block-menu-menu-learn > .nav > li,
+#block-menu-menu-create > .nav > li {
   display: block;
   border-bottom: 1px solid #dedcdc;
   font-size: 0.75em;
 }
-#block-menu-menu-the-lab > .nav > li a {
+#block-menu-menu-the-lab > .nav > li a,
+#block-menu-menu-connect > .nav > li a,
+#block-menu-menu-learn > .nav > li a,
+#block-menu-menu-create > .nav > li a {
   color: #000000;
 }
-#block-menu-menu-the-lab > .nav > li a .active-trail {
+#block-menu-menu-the-lab > .nav > li > a.active-trail,
+#block-menu-menu-connect > .nav > li > a.active-trail,
+#block-menu-menu-learn > .nav > li > a.active-trail,
+#block-menu-menu-create > .nav > li > a.active-trail {
   color: #0064b1;
   background-color: transparent;
 }
@@ -7099,6 +7111,9 @@ nav ul li:hover > ul {
 }
 .dropdown-menu {
   background-color: #232323;
+}
+.dropdown-menu > li {
+  display: inherit;
 }
 .dropdown-menu > li > a {
   color: #dedcdc;
