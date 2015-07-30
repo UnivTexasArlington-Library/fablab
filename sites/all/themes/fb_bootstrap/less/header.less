@@ -30,14 +30,21 @@
 #block-menu-menu-right {
 	float: right;
 }
+#block-menu-menu-the-lab > h2 {
+	font-size: 1.25em;
+}
+#block-menu-menu-the-lab > li {
+	display: block;
+	border-bottom: 1px solid #dedcdc;
+	font-size: 1em;
+}
 .nav {
 	margin-top: 2em;
 }
 .nav > li {
 	display:inline-block;
 }
-.nav > li > a, 
-#block-menu-menu-the-lab > h2 {
+.nav > li > a {
 	/*background-color: #232323; */
 	font-size: 1.25em;  /* 20px/16px */
 	color: #dedcdc;
@@ -48,10 +55,7 @@
 		/*background-color: #232323;*/
 	}
 }
-#block-menu-menu-the-lab > li {
-	display: block;
-	border-bottom: 1px solid #dedcdc;
-}
+
 .nav > li > a.active-trail {
 	background-color: @link-color;
 }
@@ -96,4 +100,7 @@ a .active-trail {
 }
 .caret {
 	display: none;
+}
+#messages {
+	margin-top: 50px
 }
