@@ -123,9 +123,6 @@
     <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
     <a id="main-content"></a>
     <?php print $messages; ?>
-    <?php if (!empty($tabs)): ?>
-      <?php print render($tabs); ?>
-    <?php endif; ?>
     <?php if (!empty($page['help'])): ?>
       <?php print render($page['help']); ?>
     <?php endif; ?>
@@ -143,6 +140,9 @@
         <?php endif; ?>
         <?php print render($title_suffix); ?>
       </header>
+      <?php if (!empty($tabs)): ?>
+      <?php print render($tabs); ?>
+    <?php endif; ?>
     </div>
 
     <div class="row">
