@@ -7026,7 +7026,8 @@ table .checkbox input[type="checkbox"] {
 }
 .navbar-nav {
   background-color: #232323;
-  font-size: 20px;
+  font-size: 1.25em;
+  /* 20px / 16 px */
   margin-top: 30px;
 }
 #block-menu-menu-left {
@@ -7041,7 +7042,8 @@ table .checkbox input[type="checkbox"] {
 .nav > li {
   display: inline-block;
 }
-.nav > li > a {
+.nav > li > a,
+#block-menu-menu-the-lab > h2 {
   /*background-color: #232323; */
   font-size: 1.25em;
   /* 20px/16px */
@@ -7049,9 +7051,17 @@ table .checkbox input[type="checkbox"] {
   text-decoration: none;
   text-transform: uppercase;
 }
-.nav > li > a:hover {
+.nav > li > a:hover,
+#block-menu-menu-the-lab > h2:hover {
   color: #0064b1;
   /*background-color: #232323;*/
+}
+#block-menu-menu-the-lab > li {
+  display: block;
+  border-bottom: 1px solid #dedcdc;
+}
+.nav > li > a.active-trail {
+  background-color: #0064b1;
 }
 .navbar-default .navbar-nav > a {
   background-color: #232323;
@@ -7060,7 +7070,7 @@ table .checkbox input[type="checkbox"] {
 .navbar-default .navbar-nav > li > a {
   color: #dedcdc;
 }
-.navbar-default .navbar-nav > .active > a {
+.navbar-default .navbar-nav > .active-trail > a {
   color: #dedcdc;
   background-color: #0064b1;
 }

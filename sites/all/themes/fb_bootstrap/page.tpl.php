@@ -140,7 +140,8 @@
   </section>
 
   <section class="main-container container-fluid">
-    <div class="row">
+    <div class="col-sm-offset-2 col-sm-10">
+
       <header role="banner" id="page-header">
         <?php print render($page['header']); ?>
       </header>
