@@ -7047,6 +7047,10 @@ table .checkbox input[type="checkbox"] {
 #block-menu-menu-the-lab > .nav > li a {
   color: #000000;
 }
+#block-menu-menu-the-lab > .nav > li a .active-trail {
+  color: #0064b1;
+  background-color: transparent;
+}
 .nav {
   margin-top: 2em;
 }
@@ -7067,6 +7071,9 @@ table .checkbox input[type="checkbox"] {
 }
 .nav > li > a.active-trail {
   background-color: #0064b1;
+}
+.nav > li > a.active-trail:hover {
+  color: #dedcdc;
 }
 .navbar-default .navbar-nav > a {
   background-color: #232323;

@@ -39,6 +39,10 @@
 	font-size: 0.75em;
 	a {
 		color: @text-color;
+		.active-trail {
+			color: @link-color;
+			background-color: transparent;
+		}
 	}
 }
 .nav {
@@ -61,6 +65,9 @@
 
 .nav > li > a.active-trail {
 	background-color: @link-color;
+	&:hover {
+		color:#dedcdc;
+	}
 }
 
 .navbar-default .navbar-nav > a,  {
@@ -78,7 +85,8 @@
 	color: #0064b1;
 	background-color: transparent;
 }
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+.navbar-default .navbar-nav > li > a:hover, 
+.navbar-default .navbar-nav > li > a:focus {
 	color: #0064b1;
 }
 nav ul li:hover > ul {
