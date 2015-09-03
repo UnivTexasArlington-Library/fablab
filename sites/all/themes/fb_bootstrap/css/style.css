@@ -7358,9 +7358,16 @@ footer p {
   padding-bottom: 21px;
 }
 /*Changes to outreach submenu*/
-div.region.region-sidebar-second.dropdown-menu {
+.region.region-sidebar-second .dropdown-menu {
   padding-left: 1.5em;
   background-color: #fff !important;
   position: relative;
   z-index: auto !important;
+}
+.region.region-sidebar-second .caret {
+  display: inline-block;
+}
+.region.region-sidebar-second .nav .dropdown.open .caret {
+  border-top: none;
+  border-bottom: 4px solid;
 }
