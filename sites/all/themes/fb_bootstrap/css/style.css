@@ -7361,7 +7361,7 @@ footer p {
 .region.region-sidebar-second .dropdown-menu {
   background-color: #fff !important;
   position: inherit;
-  z-index: auto !important;
+  /*z-index: auto !important;*/
   border: none;
   border-radius: none;
   box-shadow: none;
