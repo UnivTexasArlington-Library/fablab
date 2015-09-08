@@ -7359,7 +7359,6 @@ footer p {
 }
 /*Changes to outreach submenu*/
 .region.region-sidebar-second .dropdown-menu {
-  padding-left: 1.5em;
   background-color: #fff !important;
   position: relative;
   z-index: auto !important;
@@ -7367,6 +7366,9 @@ footer p {
   border-radius: none;
   box-shadow: none;
   font-size: 1.25em;
+}
+.region.region-sidebar-second .dropdown-menu a {
+  padding-left: 1.5em;
 }
 .region.region-sidebar-second .caret {
   display: inline-block;
