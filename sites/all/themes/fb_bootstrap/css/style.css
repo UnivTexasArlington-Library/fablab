@@ -7360,7 +7360,7 @@ footer p {
 /*Changes to outreach submenu*/
 .region.region-sidebar-second .dropdown-menu {
   background-color: #fff !important;
-  position: relative;
+  position: absolute;
   z-index: auto !important;
   border: none;
   border-radius: none;
