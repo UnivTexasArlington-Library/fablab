@@ -7378,7 +7378,7 @@ footer p {
   border-bottom: 4px solid;
 }
 .region.region-sidebar-second .nav .dropdown.open .caret #block-menu-menu-connect > .nav > li {
-  border-bottom: 0px;
+  border-bottom: 0px !important;
 }
 .region.region-sidebar-second .dropdown-menu .last.leaf {
   border-bottom: 1px solid #DEDCDC;
