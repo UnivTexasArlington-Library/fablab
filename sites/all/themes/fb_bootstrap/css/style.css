@@ -7383,6 +7383,9 @@ footer p {
 .region.region-sidebar-second .nav .dropdown.open {
   border-bottom: 0px !important;
 }
+.region.region-sidebar-second .nav .dropdown.open a .active-trail .dropdown-toggle .active {
+  padding-bottom: 0px !important;
+}
 .remove-border {
   border-bottom: 0px;
 }
