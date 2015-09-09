@@ -7377,11 +7377,11 @@ footer p {
   border-top: none;
   border-bottom: 4px solid;
 }
-.region.region-sidebar-second .nav .dropdown.open .caret .nav .dropdown.open {
-  border-bottom: 0px !important;
-}
 .region.region-sidebar-second .dropdown-menu .last.leaf {
   border-bottom: 1px solid #DEDCDC;
+}
+.region.region-sidebar-second .nav .dropdown.open {
+  border-bottom: 0px !important;
 }
 .remove-border {
   border-bottom: 0px;
