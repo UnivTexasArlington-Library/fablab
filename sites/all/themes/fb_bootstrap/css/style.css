@@ -7383,7 +7383,7 @@ footer p {
 .region.region-sidebar-second .nav .dropdown.open {
   border-bottom: 0px !important;
 }
-.region.region-sidebar-second .nav .dropdown.open li a .dropdown-toggle {
+.region.region-sidebar-second .nav .dropdown.open a {
   padding-bottom: 0px !important;
 }
 .remove-border {
