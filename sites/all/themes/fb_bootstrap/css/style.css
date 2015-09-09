@@ -7377,6 +7377,9 @@ footer p {
   border-top: none;
   border-bottom: 4px solid;
 }
+.region.region-sidebar-second .nav .dropdown.open .caret .menu.nav .first.open {
+  border-bottom: 0px;
+}
 .region.region-sidebar-second .dropdown-menu .last.leaf {
   border-bottom: 1px solid #DEDCDC;
 }
