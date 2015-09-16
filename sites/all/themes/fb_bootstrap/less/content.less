@@ -96,11 +96,13 @@ body {
 	border: 1px solid #dedcdc;
 	background-color: #fff;
 	border-radius: 0;
+	margin-left: 15px;
 }
 .well-lg {
 	margin: 20px;
 	min-height: 500px;
 	padding: 20px;
+
 }
 .region-left, 
 .region-middle,
@@ -141,7 +143,38 @@ body {
 		}
 	}
 }
+/*Changes to Secondary region menu*/
 
+.region.region-sidebar-second{
+	.dropdown-menu{
+	background-color: #fff !important;
+	position: inherit;
+	/*z-index: auto !important;*/
+	border: none;
+	border-radius: none;
+	box-shadow: none;
+	font-size: 1.25em;
+	}
+	.dropdown-menu a{
+	padding-left: 1.5em;
+	}
+	.caret{
+	display: inline-block;
+	}
+	.nav .dropdown.open .caret{
+    border-top: none;
+    border-bottom: 4px solid;
+	}
+	.dropdown-menu .last.leaf{
+	border-bottom: 1px solid #DEDCDC;
+	}
+	.nav .dropdown.open{
+	border-bottom: 0px !important;
+		a{
+		padding-bottom: 0px !important;
+		}
+    }
+}
 h2.block-title {
 	margin-top: 17px;
 	margin-bottom: 24px;
@@ -151,6 +184,7 @@ h2.block-title {
 	padding-bottom: 0;
 	border-bottom: none;
 	padding-top: 10px;
+	margin-left: 15px;
 }
 
 /* CALENDAR */
@@ -175,4 +209,11 @@ h2.block-title {
 .view .date-nav-wrapper .date-prev {
 	right:inherit;
 	left:0px;
+}
+
+/* THUMBNAILS */
+.thumbnail > img, .thumbnail a > img {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
 }
