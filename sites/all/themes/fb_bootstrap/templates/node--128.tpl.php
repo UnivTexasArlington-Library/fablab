@@ -136,9 +136,6 @@
   </section>
 
   <section class="main-container container-fluid">
-    <?php if (!empty($tabs)): ?>
-    <?php print render($tabs); ?>
-    <?php endif; ?>
     <div class="col-sm-offset-2 col-sm-10 col-xs-offset-1">
       <header role="banner" id="page-header">
         <?php print render($title_prefix); ?>
@@ -147,17 +144,21 @@
         <?php endif; ?>
         <?php print render($title_suffix); ?>
       </header>
-    
+      <?php if (!empty($tabs)): ?>
+      <?php print render($tabs); ?>
+    <?php endif; ?>
     </div>
 
     <div class="row">
 
-      <div class="col-sm-offset-2 col-sm-2 col-xs-2 col-xs-offset-1">
+      <div class="col-lg-offset-2 col-lg-2 col-sm-offset-2 col-sm-2 col-xs-offset-0 col-xs-12">
         <?php print render($page['content']); ?>
-      </div>    
-      <div class="col-lg-6 col-sm-offset-1 col-sm-6 col-xs-6 col-xs-offset-1">
-        <?php print render($page['sidebar_second']); ?>
       </div>
+
+            <?php if (!empty($page['sidebar_second'])): ?>
+        <aside class="col-lg-offset-2 col-lg-6 col-sm-offset-2 col-sm-6 col-xs-offset-0 col-xs-12" role="complementary">
+          <?php print render($page['sidebar_second']); ?>
+        </aside>  <!-- /#sidebar-second -->
       <?php endif; ?>
 
     </section>

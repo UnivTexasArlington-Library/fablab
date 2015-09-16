@@ -7049,6 +7049,7 @@ table .checkbox input[type="checkbox"] {
   display: block;
   border-bottom: 1px solid #dedcdc;
   font-size: 0.75em;
+  width: 100%;
 }
 #block-menu-menu-the-lab > .nav > li a,
 #block-menu-menu-connect > .nav > li a,
