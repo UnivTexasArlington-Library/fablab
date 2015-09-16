@@ -106,7 +106,20 @@
               <?php print render($page['navigation']); ?>
             <?php endif; ?>
           </div>
-
+          <section id="messages">
+           <?php if (!empty($page['highlighted'])): ?>
+              <div class="highlighted"><?php print render($page['highlighted']); ?></div>
+            <?php endif; ?>
+            <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
+            <a id="main-content"></a>
+            <?php print $messages; ?>
+            <?php if (!empty($page['help'])): ?>
+              <?php print render($page['help']); ?>
+            <?php endif; ?>
+            <?php if (!empty($action_links)): ?>
+              <ul class="action-links"><?php print render($action_links); ?></ul>
+            <?php endif; ?>
+          </section>
       </nav>
     </div>
     <?php endif; ?>
@@ -153,12 +166,10 @@
 
       <div class="col-sm-offset-2 col-sm-2 col-xs-2 col-xs-offset-1">
         <?php print render($page['content']); ?>
+      </div>    
+      <div class="col-lg-6 col-sm-offset-1 col-sm-6 col-xs-6 col-xs-offset-1" role="complementary">
+        <?php print render($page['sidebar_second']); ?>
       </div>
-
-      <?php if (!empty($page['sidebar_second'])): ?>
-        <aside class="col-lg-6 col-sm-offset-1 col-sm-6 col-xs-6 col-xs-offset-1" role="complementary">
-          <?php print render($page['sidebar_second']); ?>
-        </aside>  <!-- /#sidebar-second -->
       <?php endif; ?>
 
     </section>
