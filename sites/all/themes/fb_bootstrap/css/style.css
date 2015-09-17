@@ -7198,13 +7198,12 @@ body h3 {
   height: 1000px;
 }
 @media (max-width: 991px) {
-  .region-highlighted img {
-    height: auto;
-  }
-}
-@media (max-width: 991px) {
   .region-highlighted {
     margin-top: 0;
+  }
+  .region-highlighted img {
+    max-width: 100%;
+    height: auto;
   }
 }
 /* JUMBOTRON CAROUSEL */
@@ -7216,6 +7215,11 @@ body h3 {
 .carousel-caption {
   bottom: 430px;
   background: none repeat scroll 0% 0% rgba(35, 35, 35, 0.5);
+}
+@media (max-width: 991px) {
+  .carousel-caption {
+    bottom: 130px;
+  }
 }
 .carousel-control.left,
 .carousel-control.right {
