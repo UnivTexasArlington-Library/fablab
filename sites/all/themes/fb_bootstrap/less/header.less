@@ -2,6 +2,9 @@
 #navbar {
 	z-index: 50;
 	top:50px;
+	@media (max-width:@screen-sm-max) {
+		top: 0;
+	}
 }
 .navbar {
 	margin-bottom: 0px;
@@ -12,6 +15,11 @@
 	img {
 		height:87px;
 		margin-left: 15px;
+	}
+	@media (max-width:@screen-sm-max) {
+		img {
+		height:66px;
+		}
 	}
 }
 .navbar-default {
@@ -40,7 +48,7 @@
 #block-menu-menu-connect > .nav > li,
 #block-menu-menu-learn > .nav > li,
 #block-menu-menu-create > .nav > li, {
-	display: block;
+	display: inline-block;
 	border-bottom: 1px solid #dedcdc;
 	font-size: 0.75em;
 	width: 100%;

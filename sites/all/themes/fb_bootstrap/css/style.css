@@ -7008,6 +7008,11 @@ table .checkbox input[type="checkbox"] {
   z-index: 50;
   top: 50px;
 }
+@media (max-width: 991px) {
+  #navbar {
+    top: 0;
+  }
+}
 .navbar {
   margin-bottom: 0px;
 }
@@ -7018,6 +7023,11 @@ table .checkbox input[type="checkbox"] {
 .navbar-header img {
   height: 87px;
   margin-left: 15px;
+}
+@media (max-width: 991px) {
+  .navbar-header img {
+    height: 66px;
+  }
 }
 .navbar-default {
   background-color: #232323;
@@ -7046,7 +7056,7 @@ table .checkbox input[type="checkbox"] {
 #block-menu-menu-connect > .nav > li,
 #block-menu-menu-learn > .nav > li,
 #block-menu-menu-create > .nav > li {
-  display: block;
+  display: inline-block;
   border-bottom: 1px solid #dedcdc;
   font-size: 0.75em;
   width: 100%;
@@ -7188,7 +7198,9 @@ body h3 {
   height: 1000px;
 }
 @media (max-width: 991px) {
-  .region-highlighted img {
+  margin-top: 0;
+  
+  img {
     height: auto;
   }
 }
@@ -7360,6 +7372,9 @@ h2.block-title {
   width: 100%;
   max-width: 100%;
   height: auto;
+}
+.region-sidebar-second > .thumbnail > img {
+  width: initial;
 }
 footer {
   font-family: verdana;
