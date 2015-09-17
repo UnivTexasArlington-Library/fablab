@@ -7369,12 +7369,8 @@ h2.block-title {
 /* THUMBNAILS */
 .thumbnail > img,
 .thumbnail a > img {
-  width: 100%;
   max-width: 100%;
   height: auto;
-}
-.region-sidebar-second > .thumbnail > img {
-  width: initial;
 }
 footer {
   font-family: verdana;
