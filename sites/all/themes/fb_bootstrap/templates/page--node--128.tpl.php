@@ -156,7 +156,7 @@
       </div>
 
             <?php if (!empty($page['sidebar_second'])): ?>
-        <aside class="col-lg-offset-2 col-lg-6 col-sm-offset-2 col-sm-6 col-xs-offset-0 col-xs-12" role="complementary">
+        <aside class="col-lg-offset-1 col-lg-6 col-sm-offset-2 col-sm-6 col-xs-offset-0 col-xs-12" role="complementary">
           <?php print render($page['sidebar_second']); ?>
         </aside>  <!-- /#sidebar-second -->
       <?php endif; ?>
