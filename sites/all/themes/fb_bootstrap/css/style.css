@@ -7021,13 +7021,10 @@ table .checkbox input[type="checkbox"] {
   margin-bottom: -10px;
 }
 .navbar-header img {
-  height: 87px;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
   margin-left: 15px;
-}
-@media (max-width: 991px) {
-  .navbar-header img {
-    height: 66px;
-  }
 }
 .navbar-default {
   background-color: #232323;
@@ -7134,6 +7131,7 @@ nav ul li:hover > ul {
 .dropdown-menu > li > a:focus {
   background-color: transparent;
 }
+#block-menu-menu-connect > .dropdown-menu > .active > a,
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {

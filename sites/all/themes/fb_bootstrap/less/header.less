@@ -13,14 +13,12 @@
 	margin-top: -8px;
 	margin-bottom: -10px;
 	img {
-		height:87px;
+		width: 100%;
+		max-width: 100%;
+		height:auto;
 		margin-left: 15px;
 	}
-	@media (max-width:@screen-sm-max) {
-		img {
-		height:66px;
-		}
-	}
+
 }
 .navbar-default {
 	background-color: #232323;
@@ -123,7 +121,10 @@ nav ul li:hover > ul {
 		background-color:transparent;
 	}
 }
-.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+#block-menu-menu-connect > .dropdown-menu > .active > a, 
+.dropdown-menu > .active > a, 
+.dropdown-menu > .active > a:hover, 
+.dropdown-menu > .active > a:focus {
 	color: #fff;
 }
 .navbar-default .navbar-nav > .open > a,
