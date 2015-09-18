@@ -78,9 +78,10 @@
   <div class="jumbotron">  
     <!-- JUMBOTRON/HIGHLIGHTED -->
     <div class="container-fluid">   
-            <header id="navbar" role="banner" class="navbar container-fluid navbar-default">
+      <header id="navbar" role="banner" class="navbar container-fluid navbar-default">
         <div class="container-fluid">
-          <div class="navbar-header">
+
+         <div class="navbar-header col-sm-2">
             <?php if ($logo): ?>
             <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
               <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
@@ -104,15 +105,18 @@
               <?php endif; ?>
               <?php if (!empty($secondary_nav)): ?>
                 <?php print render($secondary_nav); ?>
-              <?php endif; ?>
-              <div class="container-fluid" > <!--BACKGROUND IMAGE HERE -->
-              <?php if (!empty($page['navigation'])): ?>
-                <?php print render($page['navigation']); ?>
-              <?php endif; ?>
+              <?php endif; ?> 
+                <div class="col-sm-10">
+                  <?php if (!empty($page['navigation'])): ?>
+                    <?php print render($page['navigation']); ?>
+                  <?php endif; ?>
+                </div>
+
             </nav>
           </div>
           <?php endif; ?>
         </div>
+
       </header>
           
 
