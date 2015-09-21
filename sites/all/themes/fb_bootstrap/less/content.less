@@ -21,8 +21,14 @@ body {
 		text-transform: uppercase;
 	}
 	h3 {
-		font-size: 1.4375em; /* 23px/16px */
+		font-size: @font-size-h3; /* ~20px */
+		font-weight: bold;
 	}
+	h4 {
+		font-size: @font-size-base; /* 15px */
+		font-weight: bold;
+	}
+
 }
 .contextual-links-wrapper {
 	top:50px;
@@ -46,6 +52,9 @@ body {
 			height: auto;
 		}
 	}
+}
+.region-content {
+	margin: 87px 0;
 }
 /* JUMBOTRON CAROUSEL */
 .carousel-control {
@@ -153,6 +162,7 @@ body {
 /*Changes to Secondary region menu*/
 
 .region.region-sidebar-second{
+	margin-top: 30px;
 	.dropdown-menu{
 	background-color: #fff !important;
 	position: inherit;
@@ -188,10 +198,11 @@ h2.block-title {
 } 
 
 .page-header {
-	padding-bottom: 0;
+	/*padding-bottom: 0;
 	border-bottom: none;
 	padding-top: 10px;
-	margin-left: 15px;
+	margin-left: 15px; */
+	display: none;
 }
 
 /* CALENDAR */
@@ -222,4 +233,8 @@ h2.block-title {
 .thumbnail > img, .thumbnail a > img {
 	max-width: 100%;
 	height: auto;
+}
+
+.node-readmore {
+	float: right;
 }

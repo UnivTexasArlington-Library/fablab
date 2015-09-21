@@ -27,7 +27,7 @@
 }
 .navbar-nav {
 	background-color: #232323;
-	font-size: 1.25em; /* 20px / 16 px */
+	font-size: @font-size-h3;
 	margin-top: 30px;
 }
 #block-menu-menu-left {
@@ -40,7 +40,7 @@
 #block-menu-menu-connect > h2,
 #block-menu-menu-learn > h2,
 #block-menu-menu-create > h2 {
-	font-size: 1.25em;
+	font-size: @font-size-h3;
 }
 #block-menu-menu-the-lab > .nav > li,
 #block-menu-menu-connect > .nav > li,
@@ -54,6 +54,12 @@
 		color: @text-color;
 	}
 }
+#block-menu-menu-the-lab > .nav > li > li,
+#block-menu-menu-connect > .nav > li> li,
+#block-menu-menu-learn > .nav > li> li,
+#block-menu-menu-create > .nav > li> li {
+	font-size: @font-size-base;
+}
 #block-menu-menu-the-lab > .nav > li > a.active-trail,
 #block-menu-menu-connect > .nav > li > a.active-trail,
 #block-menu-menu-learn > .nav > li > a.active-trail,
@@ -62,14 +68,14 @@
 	background-color: transparent;
 }
 .nav {
-	margin-top: 2em;
+	margin-top: 20px;
 }
 .nav > li {
 	display:inline-block;
 }
 .nav > li > a {
 	/*background-color: #232323; */
-	font-size: 1.25em;  /* 20px/16px */
+	font-size: @font-size-h3;
 	color: #dedcdc;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -80,7 +86,7 @@
 }
 
 .nav > li > a.active-trail {
-	background-color: @link-color;
+	color: @link-color;
 	&:hover {
 		color:#dedcdc;
 	}
