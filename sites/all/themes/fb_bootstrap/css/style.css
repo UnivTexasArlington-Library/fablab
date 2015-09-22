@@ -7042,42 +7042,8 @@ table .checkbox input[type="checkbox"] {
 #block-menu-menu-right {
   float: right;
 }
-#block-menu-menu-the-lab > h2,
-#block-menu-menu-connect > h2,
-#block-menu-menu-learn > h2,
-#block-menu-menu-create > h2 {
-  font-size: 20px;
-}
-#block-menu-menu-the-lab > .nav > li,
-#block-menu-menu-connect > .nav > li,
-#block-menu-menu-learn > .nav > li,
-#block-menu-menu-create > .nav > li {
-  display: inline-block;
-  border-bottom: 1px solid #dedcdc;
-  font-size: 0.75em;
-  width: 100%;
-}
-#block-menu-menu-the-lab > .nav > li a,
-#block-menu-menu-connect > .nav > li a,
-#block-menu-menu-learn > .nav > li a,
-#block-menu-menu-create > .nav > li a {
-  color: #000000;
-}
-#block-menu-menu-the-lab > .nav > li > li,
-#block-menu-menu-connect > .nav > li > li,
-#block-menu-menu-learn > .nav > li > li,
-#block-menu-menu-create > .nav > li > li {
-  font-size: 15px;
-}
-#block-menu-menu-the-lab > .nav > li > a.active-trail,
-#block-menu-menu-connect > .nav > li > a.active-trail,
-#block-menu-menu-learn > .nav > li > a.active-trail,
-#block-menu-menu-create > .nav > li > a.active-trail {
-  color: #0064b1;
-  background-color: transparent;
-}
 .nav {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .nav > li {
   display: inline-block;
@@ -7135,6 +7101,41 @@ nav ul li:hover > ul {
 .dropdown-menu > li > a:focus {
   background-color: transparent;
 }
+/*  SIDEBAR MENUS  */
+#block-menu-menu-the-lab > h2,
+#block-menu-menu-connect > h2,
+#block-menu-menu-learn > h2,
+#block-menu-menu-create > h2 {
+  font-size: 20px;
+}
+#block-menu-menu-the-lab > .nav > li,
+#block-menu-menu-connect > .nav > li,
+#block-menu-menu-learn > .nav > li,
+#block-menu-menu-create > .nav > li {
+  display: inline-block;
+  border-bottom: 1px solid #dedcdc;
+  width: 100%;
+}
+#block-menu-menu-the-lab > .nav > li a,
+#block-menu-menu-connect > .nav > li a,
+#block-menu-menu-learn > .nav > li a,
+#block-menu-menu-create > .nav > li a {
+  color: #fff;
+  font-size: 18px;
+}
+#block-menu-menu-the-lab > .nav > li a.active-trail,
+#block-menu-menu-connect > .nav > li a.active-trail,
+#block-menu-menu-learn > .nav > li a.active-trail,
+#block-menu-menu-create > .nav > li a.active-trail {
+  color: #0064b1;
+  background-color: transparent;
+}
+#block-menu-menu-the-lab > .nav > li > li,
+#block-menu-menu-connect > .nav > li > li,
+#block-menu-menu-learn > .nav > li > li,
+#block-menu-menu-create > .nav > li > li {
+  font-size: 15px;
+}
 #block-menu-menu-connect > .dropdown-menu > .active > a,
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
@@ -7147,9 +7148,9 @@ nav ul li:hover > ul {
   background-color: transparent;
   color: #0064b1;
 }
-a .active-trail {
-  color: #dedcdc;
-}
+/*a.active-trail {
+	color:#dedcdc;
+} */
 .caret {
   display: none;
 }
@@ -7229,7 +7230,7 @@ body h4 {
 }
 @media (max-width: 991px) {
   .carousel-caption {
-    bottom: 130px;
+    bottom: 100px;
   }
 }
 .carousel-control.left,
@@ -7285,7 +7286,15 @@ body h4 {
 .region-left,
 .region-middle,
 .region-right {
+  margin-top: 20px;
   min-height: 350px;
+}
+@media (max-width: 767px) {
+  .region-left,
+  .region-middle,
+  .region-right {
+    min-height: initial;
+  }
 }
 .region-left h2,
 .region-middle h2,
@@ -7324,7 +7333,7 @@ body h4 {
 }
 /*Changes to Secondary region menu*/
 .region.region-sidebar-second {
-  margin-top: 30px;
+  margin: 30px 0;
 }
 .region.region-sidebar-second .dropdown-menu {
   background-color: #fff !important;
@@ -7396,6 +7405,10 @@ h2.block-title {
 }
 .node-readmore {
   float: right;
+}
+.field-label-inline .field-label,
+.field-label-inline .field-items {
+  padding-top: 5px;
 }
 footer {
   font-family: verdana;

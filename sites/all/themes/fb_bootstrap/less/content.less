@@ -66,7 +66,7 @@ body {
 	bottom: 430px;
 	background: none repeat scroll 0% 0% rgba(35, 35, 35, 0.5);
 	@media (max-width:@screen-sm-max) {
-		bottom: 130px;
+		bottom: 100px;
 	}
 }
 .carousel-control.left,
@@ -123,7 +123,11 @@ body {
 .region-left, 
 .region-middle,
 .region-right {
+	margin-top: 20px;
 	min-height: 350px;
+	@media (max-width:@screen-xs-max) {
+		min-height: initial;
+	}
 	h2 {
 		color: #0064b1;
 		text-transform: uppercase;
@@ -135,7 +139,7 @@ body {
 .region-left {
 	margin-left: 20px;
 	@media (max-width:@screen-xs-max) {
-		margin-right: 20px
+		margin-right: 20px;
 	}
 }
 .region-middle {
@@ -162,7 +166,7 @@ body {
 /*Changes to Secondary region menu*/
 
 .region.region-sidebar-second{
-	margin-top: 30px;
+	margin: 30px 0;
 	.dropdown-menu{
 	background-color: #fff !important;
 	position: inherit;
@@ -237,4 +241,7 @@ h2.block-title {
 
 .node-readmore {
 	float: right;
+}
+.field-label-inline .field-label, .field-label-inline .field-items {
+	padding-top: 5px;
 }
