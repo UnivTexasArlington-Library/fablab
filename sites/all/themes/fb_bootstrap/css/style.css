@@ -7120,7 +7120,7 @@ nav ul li:hover > ul {
 #block-menu-menu-connect > .nav > li a,
 #block-menu-menu-learn > .nav > li a,
 #block-menu-menu-create > .nav > li a {
-  color: #fff;
+  color: #000000;
   font-size: 18px;
 }
 #block-menu-menu-the-lab > .nav > li a.active-trail,
