@@ -76,7 +76,7 @@
 <header id="navbar" role="banner" class="navbar container-fluid navbar-default">
   <div class="container-fluid">
 
-   <div class="navbar-header col-sm-2">
+   <div class="navbar-header col-sm-2 col-xs-4">
       <?php if ($logo): ?>
       <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
         <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
