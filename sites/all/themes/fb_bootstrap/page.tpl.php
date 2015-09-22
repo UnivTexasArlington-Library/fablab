@@ -75,23 +75,21 @@
 ?>
 <header id="navbar" role="banner" class="navbar container-fluid navbar-default">
   <div class="container-fluid">
-
-   <div class="navbar-header col-sm-2 col-xs-4">
-      <?php if ($logo): ?>
-      <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-        <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-      </a>
-      <?php endif; ?>
-    
-    <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+    <div class="navbar-header col-sm-2 col-xs-4">
+        <?php if ($logo): ?>
+        <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
+          <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+        </a>
+        <?php endif; ?>
     </div>
-
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+      
     <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
     <div class="navbar-collapse collapse">
       <nav role="navigation">
@@ -101,18 +99,17 @@
         <?php if (!empty($secondary_nav)): ?>
           <?php print render($secondary_nav); ?>
         <?php endif; ?> 
-          <div class="col-sm-10">
-            <?php if (!empty($page['navigation'])): ?>
-              <?php print render($page['navigation']); ?>
-            <?php endif; ?>
-          </div>
-
+        <div class="col-sm-10">
+          <?php if (!empty($page['navigation'])): ?>
+            <?php print render($page['navigation']); ?>
+          <?php endif; ?>
+        </div>
       </nav>
     </div>
-    <?php endif; ?>
+      <?php endif; ?>
   </div>
-
 </header>
+
 <body>
   <section id="slogan">
     <?php if (!empty($site_slogan)): ?>
