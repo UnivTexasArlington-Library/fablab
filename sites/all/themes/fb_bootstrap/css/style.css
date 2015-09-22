@@ -7423,7 +7423,12 @@ footer ul {
 }
 @media (max-width: 767px) {
   footer ul {
-    margin-left: 25px;
+    margin-left: 15px;
+  }
+}
+@media (max-width: 767px) {
+  footer ul.noborder {
+    border-right: 0;
   }
 }
 footer a {
