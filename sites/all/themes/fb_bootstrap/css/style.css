@@ -7218,6 +7218,11 @@ body h4 {
 .region-content {
   margin: 87px 0;
 }
+@media (max-width: 767px) {
+  .region-content {
+    margin-top: 15px;
+  }
+}
 /* JUMBOTRON CAROUSEL */
 .carousel-control {
   top: 650px;
@@ -7374,6 +7379,11 @@ h2.block-title {
 	margin-left: 15px; */
   display: none;
 }
+@media (max-width: 767px) {
+  .page-header {
+    display: block;
+  }
+}
 /* CALENDAR */
 .calendar-calendar .month-view .full td.single-day div.monthview,
 .calendar-calendar .week-view .full td.single-day div.weekview,
@@ -7396,6 +7406,11 @@ h2.block-title {
 .view .date-nav-wrapper .date-prev {
   right: inherit;
   left: 0px;
+}
+@media (max-width: 767px) {
+  .view .date-nav-wrapper .date-heading h3 {
+    font-size: 1em;
+  }
 }
 /* THUMBNAILS */
 .thumbnail > img,

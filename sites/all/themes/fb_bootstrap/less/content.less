@@ -55,6 +55,9 @@ body {
 }
 .region-content {
 	margin: 87px 0;
+	@media (max-width:@screen-xs-max) {
+		margin-top: 15px;
+	}
 }
 /* JUMBOTRON CAROUSEL */
 .carousel-control {
@@ -207,6 +210,9 @@ h2.block-title {
 	padding-top: 10px;
 	margin-left: 15px; */
 	display: none;
+	@media (max-width:@screen-xs-max) {
+		display:block;
+	}
 }
 
 /* CALENDAR */
@@ -231,6 +237,11 @@ h2.block-title {
 .view .date-nav-wrapper .date-prev {
 	right:inherit;
 	left:0px;
+}
+.view .date-nav-wrapper .date-heading h3 {
+	@media (max-width:@screen-xs-max) {
+		font-size:1em;
+	}
 }
 
 /* THUMBNAILS */
