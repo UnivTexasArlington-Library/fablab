@@ -2257,9 +2257,9 @@ fieldset[disabled] .btn-success.active {
   background-color: #ffffff;
 }
 .btn-info {
-  color: #ffffff;
-  background-color: #5bc0de;
-  border-color: #46b8da;
+  color: #000000;
+  background-color: #d4effc;
+  border-color: #bce6fa;
 }
 .btn-info:hover,
 .btn-info:focus,
@@ -2267,9 +2267,9 @@ fieldset[disabled] .btn-success.active {
 .btn-info:active,
 .btn-info.active,
 .open > .dropdown-toggle.btn-info {
-  color: #ffffff;
-  background-color: #31b0d5;
-  border-color: #269abc;
+  color: #000000;
+  background-color: #a4ddf9;
+  border-color: #83d1f6;
 }
 .btn-info:active,
 .btn-info.active,
@@ -2294,12 +2294,12 @@ fieldset[disabled] .btn-info:active,
 .btn-info.disabled.active,
 .btn-info[disabled].active,
 fieldset[disabled] .btn-info.active {
-  background-color: #5bc0de;
-  border-color: #46b8da;
+  background-color: #d4effc;
+  border-color: #bce6fa;
 }
 .btn-info .badge {
-  color: #5bc0de;
-  background-color: #ffffff;
+  color: #d4effc;
+  background-color: #000000;
 }
 .btn-warning {
   color: #ffffff;
@@ -4665,11 +4665,11 @@ a.label:focus {
   background-color: #449d44;
 }
 .label-info {
-  background-color: #5bc0de;
+  background-color: #d4effc;
 }
 .label-info[href]:hover,
 .label-info[href]:focus {
-  background-color: #31b0d5;
+  background-color: #a4ddf9;
 }
 .label-warning {
   background-color: #f0ad4e;
@@ -4934,7 +4934,7 @@ a.thumbnail.active {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 .progress-bar-info {
-  background-color: #5bc0de;
+  background-color: #d4effc;
 }
 .progress-striped .progress-bar-info {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -7175,6 +7175,9 @@ body h1 {
   font-size: 1.875em;
   /* 30px/16px */
 }
+body h1 a {
+  color: #0064b1;
+}
 body h2 {
   font-size: 1.6875em;
   /* 27px/16px */
@@ -7402,6 +7405,15 @@ h2.block-title {
 .calendar-calendar .month-view .full tr.odd td.today,
 .calendar-calendar .month-view .full tr.even td.today {
   border-color: #0064b1;
+}
+.view .date-nav-wrapper .date-prev,
+.view .date-nav-wrapper .date-next {
+  border-radius: 5px;
+  padding: 5px;
+}
+.view .date-nav-wrapper .date-prev a,
+.view .date-nav-wrapper .date-next a {
+  margin: 0 10px;
 }
 .view .date-nav-wrapper .date-prev {
   right: inherit;
