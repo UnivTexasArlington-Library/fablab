@@ -322,8 +322,7 @@ class WebformConditionals {
       $this->setMap = $this->requiredMap;
       $this->markupMap = $this->requiredMap;
 
-    } 
-    else {
+    } else {
       array_walk($this->visibilityMap[$page_num], function (&$status) {
         $status = WebformConditionals::componentShown;
       });
@@ -415,8 +414,7 @@ class WebformConditionals {
               if ($action_result && empty($targetLocked[$target])) {
                 if ($components[$target]['type'] == 'markup') {
                   $this->markupMap[$page_num][$target] = $action['argument'];
-                } 
-                else {
+                } else {
                   $input_values[$target] = isset($input_values[$target]) && is_array($input_values[$target])
                                               ? array($action['argument'])
                                               : $action['argument'];
@@ -432,13 +430,6 @@ class WebformConditionals {
     } // End page loop
 
     return $input_values;
-  }
-
-  /**
-   * Returns whether the conditionals have been executed yet.
-   */
-  function isExecuted() {
-    return (boolean)($this->visibilityMap);
   }
 
   /**
@@ -458,7 +449,7 @@ class WebformConditionals {
     if (!$this->visibilityMap) {
       // The conditionals have not yet been executed on a submission.
       $this->executeConditionals(array(), 0);
-      watchdog('webform', 'WebformConditionals::componentVisibility called prior to evaluating a submission.', array(), WATCHDOG_ERROR);
+      watchdog('webform', 'WebformConditionals::componentVisibility called prior to evaluating a submission.', 'error');
     }
     return isset($this->visibilityMap[$page_num][$cid]) ? $this->visibilityMap[$page_num][$cid] : self::componentShown;
   }
@@ -478,8 +469,7 @@ class WebformConditionals {
     $result = self::componentHidden;
     if ($page_num == 1 || empty($this->visibilityMap[$page_num])) {
       $result = self::componentShown;
-    } 
-    elseif (($page_map = $this->pageMap[$page_num]) && $this->componentVisibility(reset($page_map), $page_num)) {
+    } elseif (($page_map = $this->pageMap[$page_num]) && $this->componentVisibility(reset($page_map), $page_num)) {
       while ($cid = next($page_map)) {
         if ($this->componentVisibility($cid, $page_num) != self::componentHidden) {
           $result = self::componentShown;
@@ -507,7 +497,7 @@ class WebformConditionals {
     if (!$this->requiredMap) {
       // The conditionals have not yet been executed on a submission.
       $this->executeConditionals(array(), 0);
-      watchdog('webform', 'WebformConditionals::componentRequired called prior to evaluating a submission.', array(), WATCHDOG_ERROR);
+      watchdog('webform', 'WebformConditionals::componentRequired called prior to evaluating a submission.', 'error');
     }
     return isset($this->requiredMap[$page_num][$cid]) ? $this->requiredMap[$page_num][$cid] : NULL;
   }
@@ -528,7 +518,7 @@ class WebformConditionals {
     if (!$this->setMap) {
       // The conditionals have not yet been executed on a submission.
       $this->executeConditionals(array(), 0);
-      watchdog('webform', 'WebformConditionals::componentSet called prior to evaluating a submission.', array(), WATCHDOG_ERROR);
+      watchdog('webform', 'WebformConditionals::componentSet called prior to evaluating a submission.', 'error');
     }
     return isset($this->setMap[$page_num][$cid]) ? $this->setMap[$page_num][$cid] : NULL;
   }
@@ -549,7 +539,7 @@ class WebformConditionals {
     if (!$this->markupMap) {
       // The conditionals have not yet been executed on a submission.
       $this->executeConditionals(array(), 0);
-      watchdog('webform', 'WebformConditionals::componentMarkup called prior to evaluating a submission.', array(), WATCHDOG_ERROR);
+      watchdog('webform', 'WebformConditionals::componentMarkup called prior to evaluating a submission.', 'error');
     }
     return isset($this->markupMap[$page_num][$cid]) ? $this->markupMap[$page_num][$cid] : NULL;
   }

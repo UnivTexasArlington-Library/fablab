@@ -24,7 +24,6 @@ function _webform_defaults_number() {
       'unique' => 0,
       'title_display' => 0,
       'description' => '',
-      'description_above' => FALSE,
       'attributes' => array(),
       'private' => FALSE,
       'analysis' => FALSE,

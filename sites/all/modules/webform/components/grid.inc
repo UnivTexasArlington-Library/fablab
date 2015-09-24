@@ -30,7 +30,6 @@ function _webform_defaults_grid() {
       'custom_question_keys' => 0,
       'sticky' => TRUE,
       'description' => '',
-      'description_above' => FALSE,
       'private' => FALSE,
       'analysis' => TRUE,
     ),
