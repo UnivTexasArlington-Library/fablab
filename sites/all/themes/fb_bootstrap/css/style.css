@@ -7424,6 +7424,9 @@ h2.block-title {
     font-size: 1em;
   }
 }
+.date-display-range {
+  display: inline;
+}
 /* THUMBNAILS */
 .thumbnail > img,
 .thumbnail a > img {
