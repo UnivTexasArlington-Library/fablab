@@ -7105,35 +7105,40 @@ nav ul li:hover > ul {
 #block-menu-menu-the-lab > h2,
 #block-menu-menu-connect > h2,
 #block-menu-menu-learn > h2,
-#block-menu-menu-create > h2 {
+#block-menu-menu-create > h2,
+#block-menu-menu-support > h2 {
   font-size: 20px;
 }
 #block-menu-menu-the-lab > .nav > li,
 #block-menu-menu-connect > .nav > li,
 #block-menu-menu-learn > .nav > li,
-#block-menu-menu-create > .nav > li {
-  display: inline-block;
+#block-menu-menu-create > .nav > li,
+#block-menu-menu-support > .nav > li {
+  display: inline;
   border-bottom: 1px solid #dedcdc;
   width: 100%;
 }
 #block-menu-menu-the-lab > .nav > li a,
 #block-menu-menu-connect > .nav > li a,
 #block-menu-menu-learn > .nav > li a,
-#block-menu-menu-create > .nav > li a {
+#block-menu-menu-create > .nav > li a,
+#block-menu-menu-support > .nav > li a {
   color: #000000;
   font-size: 18px;
 }
 #block-menu-menu-the-lab > .nav > li a.active-trail,
 #block-menu-menu-connect > .nav > li a.active-trail,
 #block-menu-menu-learn > .nav > li a.active-trail,
-#block-menu-menu-create > .nav > li a.active-trail {
+#block-menu-menu-create > .nav > li a.active-trail,
+#block-menu-menu-support > .nav > li a.active-trail {
   color: #0064b1;
   background-color: transparent;
 }
 #block-menu-menu-the-lab > .nav > li > li,
 #block-menu-menu-connect > .nav > li > li,
 #block-menu-menu-learn > .nav > li > li,
-#block-menu-menu-create > .nav > li > li {
+#block-menu-menu-create > .nav > li > li,
+#block-menu-menu-support > .nav > li > li {
   font-size: 15px;
 }
 #block-menu-menu-connect > .dropdown-menu > .active > a,
@@ -7341,7 +7346,7 @@ body h4 {
 }
 /*Changes to Secondary region menu*/
 .region.region-sidebar-second {
-  margin: 30px 0;
+  margin: 30px 0 0 -30px;
 }
 .region.region-sidebar-second .dropdown-menu {
   background-color: #fff !important;
@@ -7386,6 +7391,13 @@ h2.block-title {
   .page-header {
     display: block;
   }
+}
+/* HOURS */
+.oh-display-label {
+  margin-bottom: 15px;
+}
+.oh-display-hours {
+  margin-left: 20px;
 }
 /* CALENDAR */
 .calendar-calendar .month-view .full td.single-day div.monthview,

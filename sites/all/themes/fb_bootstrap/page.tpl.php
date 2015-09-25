@@ -132,7 +132,7 @@
     <?php endif; ?>
   </section>
 
-  <section class="main-container container-fluid">
+  <section class="main-container container">
     <div class="col-sm-offset-2 col-sm-10 col-xs-offset-1">
       <header role="banner" id="page-header">
         <?php print render($title_prefix); ?>
