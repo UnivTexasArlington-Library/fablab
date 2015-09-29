@@ -83,30 +83,31 @@
         <?php endif; ?>
     </div>
       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-      
-    <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
-    <div class="navbar-collapse collapse">
-      <nav role="navigation">
-        <?php if (!empty($primary_nav)): ?>
-          <?php print render($primary_nav); ?>
-        <?php endif; ?>
-        <?php if (!empty($secondary_nav)): ?>
-          <?php print render($secondary_nav); ?>
-        <?php endif; ?> 
-        <div class="col-sm-10">
-          <?php if (!empty($page['navigation'])): ?>
-            <?php print render($page['navigation']); ?>
+    <div class="col-xs-8">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        
+      <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
+      <div class="navbar-collapse collapse">
+        <nav role="navigation">
+          <?php if (!empty($primary_nav)): ?>
+            <?php print render($primary_nav); ?>
           <?php endif; ?>
-        </div>
-      </nav>
+          <?php if (!empty($secondary_nav)): ?>
+            <?php print render($secondary_nav); ?>
+          <?php endif; ?> 
+          <div class="col-sm-10">
+            <?php if (!empty($page['navigation'])): ?>
+              <?php print render($page['navigation']); ?>
+            <?php endif; ?>
+          </div>
+        </nav>
+      </div>
+        <?php endif; ?>
     </div>
-      <?php endif; ?>
   </div>
 </header>
 
