@@ -7453,7 +7453,8 @@ h2.block-title {
 .calendar-calendar .month-view .full tr td.today,
 .calendar-calendar .month-view .full tr.odd td.today,
 .calendar-calendar .month-view .full tr.even td.today {
-  border-color: #0064b1;
+  border-color: #ccc;
+  color: #0064b1;
 }
 .view .date-nav-wrapper .date-prev,
 .view .date-nav-wrapper .date-next {
@@ -7468,13 +7469,16 @@ h2.block-title {
   right: inherit;
   left: 0px;
 }
-@media (max-width: 767px) {
-  .view .date-nav-wrapper .date-heading h3 {
-    font-size: 1em;
-  }
-}
+/*.view .date-nav-wrapper .date-heading h3 {
+	@media (max-width:@screen-xs-max) {
+		font-size:1em;
+	}
+} */
 .date-display-range {
   display: inline;
+}
+.date-heading h3 {
+  font-size: 20px;
 }
 /* THUMBNAILS */
 .thumbnail {
