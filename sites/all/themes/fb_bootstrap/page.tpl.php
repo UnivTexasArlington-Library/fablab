@@ -99,11 +99,11 @@
           <?php if (!empty($secondary_nav)): ?>
             <?php print render($secondary_nav); ?>
           <?php endif; ?> 
-          <div class="col-sm-10">
+          
             <?php if (!empty($page['navigation'])): ?>
               <?php print render($page['navigation']); ?>
             <?php endif; ?>
-          </div>
+          
         </nav>
       </div>
         <?php endif; ?>
