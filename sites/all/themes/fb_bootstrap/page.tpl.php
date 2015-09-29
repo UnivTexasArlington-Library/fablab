@@ -75,7 +75,7 @@
 ?>
 <header id="navbar" role="banner" class="navbar container-fluid navbar-default">
   <div class="container-fluid">
-    <div class="navbar-header col-sm-2 col-xs-4">
+    <div class="navbar-header">
         <?php if ($logo): ?>
         <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
           <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
@@ -83,7 +83,7 @@
         <?php endif; ?>
     </div>
       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-    <div class="col-xs-8">
+    
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -107,7 +107,7 @@
         </nav>
       </div>
         <?php endif; ?>
-    </div>
+   
   </div>
 </header>
 
