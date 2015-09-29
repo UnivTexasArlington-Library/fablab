@@ -14,13 +14,14 @@ body {
 	h1 {
 		color:@brand-primary;
 		text-transform: uppercase;
-		font-size: 1.875em; /* 30px/16px */
+		font-size: 30px;
+		margin-top: 0;
 		a {
 			color:@brand-primary;
 		}
 	}
 	h2 {
-		font-size: 1.6875em; /* 27px/16px */
+		font-size: 20px;
 		text-transform: uppercase;
 	}
 	h3 {
@@ -30,6 +31,11 @@ body {
 	h4 {
 		font-size: @font-size-base; /* 15px */
 		font-weight: bold;
+	}
+	p {
+		@media (max-width:@screen-xs-max) {
+			font-size:	15px;
+		}
 	}
 
 }
@@ -71,14 +77,16 @@ body {
 .carousel-caption {
 	bottom: 430px;
 	background: none repeat scroll 0% 0% rgba(35, 35, 35, 0.5);
-	right: 35%;
-	left: 35%;
+	width: 530px;
 	p {
 		font-size: 20px;
 	}
 	@media (max-width:@screen-sm-max) {
 		bottom: 100px;
 	}
+	@media (max-width:@screen-xs-max) {
+			display: none;
+		}
 }
 .carousel-control.left,
 .carousel-control.right {
@@ -111,6 +119,9 @@ body {
 		text-align: center;
 		font-weight: normal;
 		font-size: 20px;
+		@media (max-width:@screen-xs-max) {
+			font-size:	18px;
+		}
 	}
 }
 /* #grey-scale {
@@ -146,6 +157,9 @@ body {
 		text-transform: uppercase;
 		text-align: center;
 		font-size: 20px;
+		@media (max-width:@screen-xs-max) {
+			font-size:	18px;
+		}
 	}
 }
 
@@ -179,7 +193,7 @@ body {
 /*Changes to Secondary region menu*/
 
 .region.region-sidebar-second{
-	margin: 30px 0 0 -30px;
+	margin: 30px 0 87px -30px;
 	.dropdown-menu {
 		background-color: #fff !important;
 		position: inherit;
@@ -274,6 +288,9 @@ h2.block-title {
 }
 
 /* THUMBNAILS */
+.thumbnail {
+	min-height: 223px;
+}
 .thumbnail > img, .thumbnail a > img {
 	max-width: 100%;
 	height: auto;

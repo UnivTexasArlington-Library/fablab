@@ -7109,6 +7109,15 @@ nav ul li:hover > ul {
 #block-menu-menu-support > h2 {
   font-size: 20px;
 }
+@media (max-width: 767px) {
+  #block-menu-menu-the-lab > h2,
+  #block-menu-menu-connect > h2,
+  #block-menu-menu-learn > h2,
+  #block-menu-menu-create > h2,
+  #block-menu-menu-support > h2 {
+    font-size: 18px;
+  }
+}
 #block-menu-menu-the-lab > .nav > li,
 #block-menu-menu-connect > .nav > li,
 #block-menu-menu-learn > .nav > li,
@@ -7177,15 +7186,14 @@ body a:hover {
 body h1 {
   color: #0064b1;
   text-transform: uppercase;
-  font-size: 1.875em;
-  /* 30px/16px */
+  font-size: 30px;
+  margin-top: 0;
 }
 body h1 a {
   color: #0064b1;
 }
 body h2 {
-  font-size: 1.6875em;
-  /* 27px/16px */
+  font-size: 20px;
   text-transform: uppercase;
 }
 body h3 {
@@ -7197,6 +7205,11 @@ body h4 {
   font-size: 15px;
   /* 15px */
   font-weight: bold;
+}
+@media (max-width: 767px) {
+  body p {
+    font-size: 15px;
+  }
 }
 .contextual-links-wrapper {
   top: 50px;
@@ -7240,8 +7253,7 @@ body h4 {
 .carousel-caption {
   bottom: 430px;
   background: none repeat scroll 0% 0% rgba(35, 35, 35, 0.5);
-  right: 35%;
-  left: 35%;
+  width: 530px;
 }
 .carousel-caption p {
   font-size: 20px;
@@ -7249,6 +7261,11 @@ body h4 {
 @media (max-width: 991px) {
   .carousel-caption {
     bottom: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .carousel-caption {
+    display: none;
   }
 }
 .carousel-control.left,
@@ -7284,6 +7301,12 @@ body h4 {
   text-align: center;
   font-weight: normal;
   font-size: 20px;
+}
+@media (max-width: 767px) {
+  #block-block-3 h3,
+  #slogan h3 {
+    font-size: 18px;
+  }
 }
 /* #grey-scale {
 	padding: 20px 0px 20px 0px;
@@ -7324,6 +7347,13 @@ body h4 {
   text-align: center;
   font-size: 20px;
 }
+@media (max-width: 767px) {
+  .region-left h2,
+  .region-middle h2,
+  .region-right h2 {
+    font-size: 18px;
+  }
+}
 .region-left {
   margin-left: 20px;
 }
@@ -7353,7 +7383,7 @@ body h4 {
 }
 /*Changes to Secondary region menu*/
 .region.region-sidebar-second {
-  margin: 30px 0 0 -30px;
+  margin: 30px 0 87px -30px;
 }
 .region.region-sidebar-second .dropdown-menu {
   background-color: #fff !important;
@@ -7447,6 +7477,9 @@ h2.block-title {
   display: inline;
 }
 /* THUMBNAILS */
+.thumbnail {
+  min-height: 223px;
+}
 .thumbnail > img,
 .thumbnail a > img {
   max-width: 100%;
