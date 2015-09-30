@@ -1,4 +1,6 @@
 // Insert your styling here.
+@margin-xs:		15px;
+
 html {
 	background-color: #fff;
 }
@@ -27,6 +29,9 @@ body {
 	h3 {
 		font-size: @font-size-h3; /* ~20px */
 		font-weight: bold;
+		@media (max-width:@screen-sm-max) {
+			font-size: 18px;
+		}
 	}
 	h4 {
 		font-size: @font-size-base; /* 15px */
@@ -71,7 +76,7 @@ body {
 .region-content {
 	margin: 87px 0;
 	@media (max-width:@screen-xs-max) {
-		margin-top: 15px;
+		margin-top: @margin-xs;
 		margin-bottom: 0px;
 	}
 }
@@ -248,9 +253,12 @@ h2.block-title {
 .inline {
 	display: inline;
 }
+.taxonomy-term-description {
+	margin-bottom: @margin-xs;
+}
 /* HOURS */
 .oh-display-label {
-	margin-bottom: 15px;
+	margin-bottom: @margin-xs;
 }
 .oh-display-hours {
 	margin-left: 20px;

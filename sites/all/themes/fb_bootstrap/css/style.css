@@ -7123,7 +7123,7 @@ nav ul li:hover > ul {
 #block-menu-menu-learn > .nav > li,
 #block-menu-menu-create > .nav > li,
 #block-menu-menu-support > .nav > li {
-  display: inline;
+  display: inline-block;
   border-bottom: 1px solid #dedcdc;
   width: 100%;
 }
@@ -7143,12 +7143,30 @@ nav ul li:hover > ul {
   color: #0064b1;
   background-color: transparent;
 }
+@media (max-width: 767px) {
+  #block-menu-menu-the-lab > .nav > li,
+  #block-menu-menu-connect > .nav > li,
+  #block-menu-menu-learn > .nav > li,
+  #block-menu-menu-create > .nav > li,
+  #block-menu-menu-support > .nav > li {
+    font-size: 16px;
+  }
+}
 #block-menu-menu-the-lab > .nav > li > li,
 #block-menu-menu-connect > .nav > li > li,
 #block-menu-menu-learn > .nav > li > li,
 #block-menu-menu-create > .nav > li > li,
 #block-menu-menu-support > .nav > li > li {
   font-size: 15px;
+}
+@media (max-width: 767px) {
+  #block-menu-menu-the-lab > .nav > li > li,
+  #block-menu-menu-connect > .nav > li > li,
+  #block-menu-menu-learn > .nav > li > li,
+  #block-menu-menu-create > .nav > li > li,
+  #block-menu-menu-support > .nav > li > li {
+    font-size: 15px;
+  }
 }
 #block-menu-menu-connect > .dropdown-menu > .active > a,
 .dropdown-menu > .active > a,
@@ -7200,6 +7218,11 @@ body h3 {
   font-size: 20px;
   /* ~20px */
   font-weight: bold;
+}
+@media (max-width: 991px) {
+  body h3 {
+    font-size: 18px;
+  }
 }
 body h4 {
   font-size: 15px;
@@ -7437,6 +7460,9 @@ h2.block-title {
 }
 .inline {
   display: inline;
+}
+.taxonomy-term-description {
+  margin-bottom: 15px;
 }
 /* HOURS */
 .oh-display-label {
