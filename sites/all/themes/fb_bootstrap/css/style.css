@@ -7474,11 +7474,19 @@ h2.block-title {
 .view .date-nav-wrapper .date-next a {
   margin: 0 10px;
 }
-@media (max-width: 767px) {
+@media (min-width: 506px) and (max-width: 991px) {
   .view .date-nav-wrapper .date-prev,
   .view .date-nav-wrapper .date-next {
     background: none;
     padding: 0;
+  }
+}
+@media (max-width: 505px) {
+  .view .date-nav-wrapper .date-prev,
+  .view .date-nav-wrapper .date-next {
+    background: none;
+    padding: 0;
+    top: 50px;
   }
 }
 .view .date-nav-wrapper .date-prev {

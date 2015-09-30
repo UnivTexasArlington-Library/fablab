@@ -283,10 +283,14 @@ h2.block-title {
 	a {
 		margin: 0 10px;
 	}
-	@media (max-width: @screen-xs-max) {
+	@media (min-width: 506px) and (max-width: @screen-sm-max) {
 		background: none;
 		padding: 0;
-
+	}
+	@media (max-width: 505px) {
+		background: none;
+		padding: 0;
+		top:50px;
 	}
 }
 
