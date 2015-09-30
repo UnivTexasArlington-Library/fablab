@@ -7524,7 +7524,8 @@ footer ul {
 }
 @media (max-width: 767px) {
   footer ul {
-    padding-left: 0;
+    margin-left: 0;
+    padding-left: 20px;
   }
 }
 @media (max-width: 767px) {
