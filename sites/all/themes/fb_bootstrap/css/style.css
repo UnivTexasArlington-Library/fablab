@@ -7385,6 +7385,7 @@ body h4 {
 }
 .region-left {
   margin-left: 20px;
+  margin-right: 20px;
 }
 @media (max-width: 767px) {
   .region-left {
