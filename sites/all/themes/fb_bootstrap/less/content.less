@@ -42,6 +42,7 @@ body {
 .contextual-links-wrapper {
 	top:50px;
 }
+
 .jumbotron {
 	background-color: #000;
 	color: #fff;
@@ -62,10 +63,16 @@ body {
 		}
 	}
 }
+.main-container {
+	@media (min-width: @screen-lg-min) {
+		min-height:660px;
+	}
+}
 .region-content {
 	margin: 87px 0;
 	@media (max-width:@screen-xs-max) {
 		margin-top: 15px;
+		margin-bottom: 0px;
 	}
 }
 /* JUMBOTRON CAROUSEL */
@@ -238,6 +245,9 @@ h2.block-title {
 		display:block;
 	}
 }
+.inline {
+	display: inline;
+}
 /* HOURS */
 .oh-display-label {
 	margin-bottom: 15px;
@@ -272,6 +282,11 @@ h2.block-title {
 	padding: 5px;
 	a {
 		margin: 0 10px;
+	}
+	@media (max-width: @screen-xs-max) {
+		background: none;
+		padding: 0;
+
 	}
 }
 

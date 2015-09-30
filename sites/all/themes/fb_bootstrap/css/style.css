@@ -7236,12 +7236,18 @@ body h4 {
     height: auto;
   }
 }
+@media (min-width: 1200px) {
+  .main-container {
+    min-height: 660px;
+  }
+}
 .region-content {
   margin: 87px 0;
 }
 @media (max-width: 767px) {
   .region-content {
     margin-top: 15px;
+    margin-bottom: 0px;
   }
 }
 /* JUMBOTRON CAROUSEL */
@@ -7429,6 +7435,9 @@ h2.block-title {
     display: block;
   }
 }
+.inline {
+  display: inline;
+}
 /* HOURS */
 .oh-display-label {
   margin-bottom: 15px;
@@ -7464,6 +7473,13 @@ h2.block-title {
 .view .date-nav-wrapper .date-prev a,
 .view .date-nav-wrapper .date-next a {
   margin: 0 10px;
+}
+@media (max-width: 767px) {
+  .view .date-nav-wrapper .date-prev,
+  .view .date-nav-wrapper .date-next {
+    background: none;
+    padding: 0;
+  }
 }
 .view .date-nav-wrapper .date-prev {
   right: inherit;
