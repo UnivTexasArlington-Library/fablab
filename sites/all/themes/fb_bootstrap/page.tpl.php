@@ -111,57 +111,57 @@
   </div>
 </header>
 
-<body>
-  <section id="slogan">
-    <?php if (!empty($site_slogan)): ?>
-    <h3><?php print $site_slogan; ?></h3>
-    <?php endif; ?>
-  </section>
-  
-  <section id="messages">
-   <?php if (!empty($page['highlighted'])): ?>
-      <div class="highlighted"><?php print render($page['highlighted']); ?></div>
-    <?php endif; ?>
-    <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
-    <a id="main-content"></a>
-    <?php print $messages; ?>
-    <?php if (!empty($page['help'])): ?>
-      <?php print render($page['help']); ?>
-    <?php endif; ?>
-    <?php if (!empty($action_links)): ?>
-      <ul class="action-links"><?php print render($action_links); ?></ul>
-    <?php endif; ?>
-  </section>
 
-  <section class="main-container container-fluid">
-    <div class="col-sm-offset-2 col-sm-10 col-xs-offset-1">
-      <header role="banner" id="page-header">
-        <?php print render($title_prefix); ?>
-        <?php if (!empty($title)): ?>
-        <h1 class="page-header"><?php print $title; ?></h1>
-        <?php endif; ?>
-        <?php print render($title_suffix); ?>
-      </header>
-      <?php if (!empty($tabs)): ?>
-      <?php print render($tabs); ?>
-    <?php endif; ?>
+<section id="slogan">
+  <?php if (!empty($site_slogan)): ?>
+  <h3><?php print $site_slogan; ?></h3>
+  <?php endif; ?>
+</section>
+
+<section id="messages">
+ <?php if (!empty($page['highlighted'])): ?>
+    <div class="highlighted"><?php print render($page['highlighted']); ?></div>
+  <?php endif; ?>
+  <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
+  <a id="main-content"></a>
+  <?php print $messages; ?>
+  <?php if (!empty($page['help'])): ?>
+    <?php print render($page['help']); ?>
+  <?php endif; ?>
+  <?php if (!empty($action_links)): ?>
+    <ul class="action-links"><?php print render($action_links); ?></ul>
+  <?php endif; ?>
+</section>
+
+<section class="main-container container-fluid">
+  <div class="col-sm-offset-2 col-sm-10 col-xs-offset-1">
+    <header role="banner" id="page-header">
+      <?php print render($title_prefix); ?>
+      <?php if (!empty($title)): ?>
+      <h1 class="page-header"><?php print $title; ?></h1>
+      <?php endif; ?>
+      <?php print render($title_suffix); ?>
+    </header>
+    <?php if (!empty($tabs)): ?>
+    <?php print render($tabs); ?>
+  <?php endif; ?>
+  </div>
+
+  <div class="row">
+
+    <div class="col-sm-offset-2 col-sm-7 col-xs-10 col-xs-offset-1">
+      <?php print render($page['content']); ?>
     </div>
 
-    <div class="row">
+    <?php if (!empty($page['sidebar_second'])): ?>
+      <aside class="col-lg-2 col-sm-offset-1 col-sm-2 col-xs-10 col-xs-offset-1" role="complementary">
+        <?php print render($page['sidebar_second']); ?>
+      </aside>  <!-- /#sidebar-second -->
+    <?php endif; ?>
 
-      <div class="col-sm-offset-2 col-sm-7 col-xs-10 col-xs-offset-1">
-        <?php print render($page['content']); ?>
-      </div>
+  </section>
+</div>
 
-      <?php if (!empty($page['sidebar_second'])): ?>
-        <aside class="col-lg-2 col-sm-offset-1 col-sm-2 col-xs-10 col-xs-offset-1" role="complementary">
-          <?php print render($page['sidebar_second']); ?>
-        </aside>  <!-- /#sidebar-second -->
-      <?php endif; ?>
-
-    </section>
-  </div>
-</body>
 <footer class="footer container-fluid">
   <?php print render($page['footer']); ?>
 </footer>
