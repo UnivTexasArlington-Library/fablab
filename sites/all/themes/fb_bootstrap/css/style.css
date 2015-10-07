@@ -7127,6 +7127,15 @@ nav ul li:hover > ul {
   border-bottom: 1px solid #dedcdc;
   width: 100%;
 }
+@media (max-width: 767px) {
+  #block-menu-menu-the-lab > .nav > li,
+  #block-menu-menu-connect > .nav > li,
+  #block-menu-menu-learn > .nav > li,
+  #block-menu-menu-create > .nav > li,
+  #block-menu-menu-support > .nav > li {
+    font-size: 16px;
+  }
+}
 #block-menu-menu-the-lab > .nav > li a,
 #block-menu-menu-connect > .nav > li a,
 #block-menu-menu-learn > .nav > li a,
@@ -7143,14 +7152,17 @@ nav ul li:hover > ul {
   color: #0064b1;
   background-color: transparent;
 }
-@media (max-width: 767px) {
-  #block-menu-menu-the-lab > .nav > li,
-  #block-menu-menu-connect > .nav > li,
-  #block-menu-menu-learn > .nav > li,
-  #block-menu-menu-create > .nav > li,
-  #block-menu-menu-support > .nav > li {
-    font-size: 16px;
-  }
+#block-menu-menu-the-lab > .nav > li:hover,
+#block-menu-menu-connect > .nav > li:hover,
+#block-menu-menu-learn > .nav > li:hover,
+#block-menu-menu-create > .nav > li:hover,
+#block-menu-menu-support > .nav > li:hover,
+#block-menu-menu-the-lab > .nav > li:focus,
+#block-menu-menu-connect > .nav > li:focus,
+#block-menu-menu-learn > .nav > li:focus,
+#block-menu-menu-create > .nav > li:focus,
+#block-menu-menu-support > .nav > li:focus {
+  display: block;
 }
 #block-menu-menu-the-lab > .nav > li > li,
 #block-menu-menu-connect > .nav > li > li,
@@ -7167,6 +7179,13 @@ nav ul li:hover > ul {
   #block-menu-menu-support > .nav > li > li {
     font-size: 15px;
   }
+}
+#block-menu-menu-the-lab > .nav > li > li a.active-trail,
+#block-menu-menu-connect > .nav > li > li a.active-trail,
+#block-menu-menu-learn > .nav > li > li a.active-trail,
+#block-menu-menu-create > .nav > li > li a.active-trail,
+#block-menu-menu-support > .nav > li > li a.active-trail {
+  display: block;
 }
 #block-menu-menu-connect > .dropdown-menu > .active > a,
 .dropdown-menu > .active > a,
@@ -7188,6 +7207,12 @@ nav ul li:hover > ul {
 }
 #messages {
   margin-top: 50px;
+}
+ul.nav li.dropdown:hover ul.dropdown-menu {
+  display: block;
+}
+ul.nav li.dropdown ul.dropdown-menu {
+  margin-top: 0;
 }
 html {
   background-color: #fff;
@@ -7274,6 +7299,22 @@ body h4 {
   }
 }
 /* JUMBOTRON CAROUSEL */
+.crop-height {
+  /* max-width: 1200px; /* img src width (if known) */
+  max-height: 600px;
+  overflow: hidden;
+}
+.carousel-inner > img {
+  /* corrects inline gap in enclosing div */
+  display: block;
+  max-width: 100%;
+  /* just in case, to force correct aspect ratio */
+  height: auto !important;
+  width: auto\9;
+  /* ie8+9 */
+  /* lt ie8 */
+  -ms-interpolation-mode: bicubic;
+}
 .carousel-control {
   top: 650px;
   text-shadow: none;
@@ -7531,14 +7572,25 @@ h2.block-title {
 .date-heading h3 {
   font-size: 20px;
 }
+/* PAGE MARGIN-TOP: for Hours, Videos, ;
+
+.field-type-office-hours, 
+.thumbnail-video {
+	margin-top:21px;
+}
+
 /* THUMBNAILS */
-.thumbnail {
+.thumbnail-video > .thumbnail {
   min-height: 223px;
+}
+.thumbnail-tech > .thumbnail {
+  min-height: 434px;
 }
 .thumbnail > img,
 .thumbnail a > img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 .node-readmore {
   float: right;

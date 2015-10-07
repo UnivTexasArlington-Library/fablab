@@ -115,6 +115,9 @@ nav ul li:hover > ul {
 	display: inline-block;
 	border-bottom: 1px solid #dedcdc;
 	width: 100%;
+	@media (max-width: @screen-xs-max) {
+		font-size: 16px;
+	}
 	a {
 		color: @text-color;
 		font-size: 18px;
@@ -123,8 +126,8 @@ nav ul li:hover > ul {
 		color: @link-color;
 		background-color: transparent;
 	}
-	@media (max-width: @screen-xs-max) {
-		font-size: 16px;
+	&:hover, &:focus {
+		display: block;
 	}
 }
 
@@ -136,6 +139,9 @@ nav ul li:hover > ul {
 	font-size: @font-size-base;
 		@media (max-width: @screen-xs-max) {
 		font-size: 15px;
+	}
+	a.active-trail {
+		display: block;
 	}
 }
 #block-menu-menu-connect > .dropdown-menu > .active > a, 
@@ -158,4 +164,10 @@ nav ul li:hover > ul {
 }
 #messages {
 	margin-top: 50px
+}
+ul.nav li.dropdown:hover ul.dropdown-menu {
+  display: block;
+}
+ul.nav li.dropdown ul.dropdown-menu {
+  margin-top: 0;
 }

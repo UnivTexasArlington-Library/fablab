@@ -54,6 +54,7 @@ body {
 	margin-bottom: 0;
 	padding: 0px 0px;
 }
+
 .region-highlighted {
 	margin-top: -130px;		
 	img {
@@ -81,6 +82,21 @@ body {
 	}
 }
 /* JUMBOTRON CAROUSEL */
+.crop-height {
+  /* max-width: 1200px; /* img src width (if known) */
+  max-height: 600px;
+  overflow: hidden; 
+}
+.carousel-inner > img {
+	/* corrects inline gap in enclosing div */
+  display: block;
+  max-width: 100%;
+  /* just in case, to force correct aspect ratio */
+  height: auto !important;
+  width: auto\9; /* ie8+9 */
+  /* lt ie8 */
+  -ms-interpolation-mode: bicubic; 
+}
 .carousel-control {
 	top:650px;
 	text-shadow: none;
@@ -320,13 +336,24 @@ h2.block-title {
 	}
 }
 
+/* PAGE MARGIN-TOP: for Hours, Videos, ;
+
+.field-type-office-hours, 
+.thumbnail-video {
+	margin-top:21px;
+}
+
 /* THUMBNAILS */
-.thumbnail {
+.thumbnail-video > .thumbnail{
 	min-height: 223px;
+}
+.thumbnail-tech > .thumbnail{
+	min-height: 434px;
 }
 .thumbnail > img, .thumbnail a > img {
 	max-width: 100%;
 	height: auto;
+	display: block;
 }
 
 .node-readmore {
@@ -343,3 +370,4 @@ h2.block-title {
 .radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
 	margin-left: 0;
 }
+
