@@ -7007,6 +7007,8 @@ table .checkbox input[type="checkbox"] {
 #navbar {
   z-index: 50;
   top: 50px;
+  position: absolute;
+  width: 100%;
 }
 @media (max-width: 991px) {
   #navbar {
