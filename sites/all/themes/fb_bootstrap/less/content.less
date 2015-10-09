@@ -75,50 +75,15 @@ body {
 	}
 }
 .region-content {
-	margin: 87px 0;
+	margin: 153px 0px 87px;
 	@media (max-width:@screen-xs-max) {
 		margin-top: @margin-xs;
 		margin-bottom: 0px;
 	}
 }
-/* JUMBOTRON CAROUSEL */
-/*
-.carousel-control {
-	top:650px;
-	text-shadow: none;
-	background-image: none;
-}*/
-.carousel-caption {
-	bottom: 430px;
-	/* background: none repeat scroll 0% 0% rgba(35, 35, 35, 0.5);
-	width: 530px; */
-	p {
-		font-size: 20px;
-	}
-	@media (max-width:@screen-sm-max) {
-		bottom: 100px;
-	}
-	@media (max-width:@screen-xs-max) {
-			display: none;
-		}
-}
-.carousel-control.left,
-.carousel-control.right {
-	background-image: none;
-}
-.carousel-control .icon-next {
-	margin-right: -9999px;
-	&:hover,
-  	&:focus {
-		margin-right: -75px;
-	}
-}
-.carousel-control .icon-prev {
-	margin-left: -9999px;
-	&:hover,
-  	&:focus {
-		margin-left: -75px;
-	}
+/* FLEXSLIDER */
+.flexslider {
+	border-width: 0px;
 }
 
 #block-block-3, #slogan {
@@ -138,13 +103,9 @@ body {
 		}
 	}
 }
-/* #grey-scale {
-	padding: 20px 0px 20px 0px;
-	background: -webkit-linear-gradient(white 35%, #5e5e5f); /* For Safari 5.1 to 6.0 
-    background: -o-linear-gradient(white 35%, #5e5e5f); /* For Opera 11.1 to 12.0 
-    background: -moz-linear-gradient(white 35%, #5e5e5f); /* For Firefox 3.6 to 15 
-    background: linear-gradient(white 35%, #5e5e5f); /* Standard syntax (must be last) 
-} */
+ #grey-scale {
+ 	background-color: #F3F3F3;
+} 
 
 .well {
 	border: 1px solid #dedcdc;
@@ -207,7 +168,7 @@ body {
 /*Changes to Secondary region menu*/
 
 .region.region-sidebar-second{
-	margin: 30px 0 87px -30px;
+	margin: 80px 0 87px -30px;
 	.dropdown-menu {
 		background-color: #fff !important;
 		position: inherit;
