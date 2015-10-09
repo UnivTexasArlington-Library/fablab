@@ -7279,6 +7279,10 @@ body h4 {
 		} */
   }
 }
+/* Push internal pages down to see editing tabs & content */
+#internal-page-push {
+  margin-top: 150px;
+}
 @media (min-width: 1200px) {
   .main-container {
     min-height: 660px;

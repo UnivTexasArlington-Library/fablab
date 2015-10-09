@@ -134,7 +134,7 @@
 </section>
 
 <section class="main-container container-fluid">
-  <div class="col-sm-offset-2 col-sm-10 col-xs-offset-1">
+  <div class="col-sm-offset-2 col-sm-10 col-xs-offset-1" id="internal-page-push">
     <header role="banner" id="page-header">
       <?php print render($title_prefix); ?>
       <?php if (!empty($title)): ?>
