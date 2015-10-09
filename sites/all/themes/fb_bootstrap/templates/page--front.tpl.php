@@ -78,7 +78,27 @@
 <div class="jumbotron">  
   <!-- JUMBOTRON/HIGHLIGHTED -->
   <div class="container-fluid">   
-    <header id="navbar" role="banner" class="navbar container-fluid navbar-default">
+   
+    <?php if (!empty($page['highlighted'])): ?>
+  
+    <?php print render($page['highlighted']); ?>
+    <?php print render($title_prefix); ?>
+        <?php if (!empty($title)): ?>
+        <!--  <h1 class="page-header"><?php print $title; ?></h1> -->
+        <?php endif; ?>
+        <?php print render($title_suffix); ?>
+        <?php print $messages; ?>
+        <?php if (!empty($tabs)): ?>
+        <?php print render($tabs); ?>
+        <?php endif; ?>
+        <?php if (!empty($page['help'])): ?>
+        <?php print render($page['help']); ?>
+        <?php endif; ?>
+        <?php if (!empty($action_links)): ?>
+        <ul class="action-links"><?php print render($action_links); ?></ul>
+        <?php endif; ?>
+
+ <header id="navbar" role="banner" class="navbar container-fluid navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
             <?php if ($logo): ?>
@@ -115,24 +135,6 @@
       </div>
     </header>
 
-    <?php if (!empty($page['highlighted'])): ?>
-  
-    <?php print render($page['highlighted']); ?>
-    <?php print render($title_prefix); ?>
-        <?php if (!empty($title)): ?>
-        <!--  <h1 class="page-header"><?php print $title; ?></h1> -->
-        <?php endif; ?>
-        <?php print render($title_suffix); ?>
-        <?php print $messages; ?>
-        <?php if (!empty($tabs)): ?>
-        <?php print render($tabs); ?>
-        <?php endif; ?>
-        <?php if (!empty($page['help'])): ?>
-        <?php print render($page['help']); ?>
-        <?php endif; ?>
-        <?php if (!empty($action_links)): ?>
-        <ul class="action-links"><?php print render($action_links); ?></ul>
-        <?php endif; ?>
 
   </div> <!-- /. container-fluid -->
 </div> <!-- /.jumbotron -->
