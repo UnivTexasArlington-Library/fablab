@@ -7047,7 +7047,7 @@ table .checkbox input[type="checkbox"] {
   float: right;
 }
 .nav {
-  margin-top: 40px;
+  margin-top: 34px;
 }
 .nav > li {
   display: inline-block;
@@ -7183,12 +7183,6 @@ nav ul li:hover > ul {
   #block-menu-menu-support > .nav > li > li {
     font-size: 15px;
   }
-}
-#block-menu-menu-connect > .dropdown-menu > .active > a,
-.dropdown-menu > .active > a,
-.dropdown-menu > .active > a:hover,
-.dropdown-menu > .active > a:focus {
-  color: #fff;
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
