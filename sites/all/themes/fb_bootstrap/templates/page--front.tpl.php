@@ -97,8 +97,11 @@
         <?php if (!empty($action_links)): ?>
         <ul class="action-links"><?php print render($action_links); ?></ul>
         <?php endif; ?>
-
- <header id="navbar" role="banner" class="navbar container-fluid navbar-default">
+ 
+  <div id="uta-logo">
+    <img src="http://fablab-test.uta.edu/sites/default/files/UTAlogo_0.png" />
+  </div>
+  <header id="navbar" role="banner" class="navbar container-fluid navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
             <?php if ($logo): ?>

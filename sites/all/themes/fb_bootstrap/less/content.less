@@ -22,11 +22,11 @@ body {
 			color:@brand-primary;
 		}
 	}
-	h2 {
+	/*h2 {
 		font-size: 20px;
-		text-transform: uppercase;
+		text-transform: uppercase; */
 	}
-	h3 {
+	h2,h3 {
 		font-size: @font-size-h3; /* ~20px */
 		font-weight: bold;
 		@media (max-width:@screen-sm-max) {
@@ -142,6 +142,17 @@ body {
 		}
 	}
 }
+#uta-logo {
+  background-color: #111111;
+  max-width: 700px;
+  opacity: 0.55;
+  padding: 15px;
+  position: absolute;
+  right: 0;
+  top: -37px;
+  z-index: 50;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
 
 .region-left {
 	margin-left: 20px;
@@ -178,10 +189,10 @@ h2.block-title {
 } 
 
 .page-header {
-	/*padding-bottom: 0;
+	padding-bottom: 0;
 	border-bottom: none;
 	padding-top: 10px;
-	margin-left: 15px; */
+	margin-left: 15px;
 	display: none;
 	@media (max-width:@screen-xs-max) {
 		display:block;

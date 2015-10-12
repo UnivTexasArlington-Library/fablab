@@ -86,9 +86,13 @@
     <?php print render($tabs); ?>
   <?php endif; ?>
   </div>
-<header id="navbar" role="banner" class="navbar container-fluid navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
+
+  <div id="uta-logo">
+    <img src="http://fablab-test.uta.edu/sites/default/files/UTAlogo_0.png" />
+  </div>
+  <header id="navbar" role="banner" class="navbar container-fluid navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
         <?php if ($logo): ?>
         <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
           <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
