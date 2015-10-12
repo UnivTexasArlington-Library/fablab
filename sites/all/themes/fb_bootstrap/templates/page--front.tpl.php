@@ -99,7 +99,13 @@
         <?php endif; ?>
  
   <div id="uta-logo">
-    <img src="http://fablab-test.uta.edu/sites/default/files/UTAlogo350.png" />
+
+    <div id="uta-logo-img">
+
+    <a href="http://www.uta.edu/"><img src="http://fablab-test.uta.edu/sites/default/files/UTAlogo350.png" alt="The University of Texas at Arlington" /></a>
+
+    </div>
+
   </div>
   <header id="navbar" role="banner" class="navbar container-fluid navbar-default">
       <div class="container-fluid">
