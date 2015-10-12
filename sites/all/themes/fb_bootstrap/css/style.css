@@ -7563,6 +7563,10 @@ a.accordion-toggle {
   color: #0064b1;
   text-decoration: initial;
 }
+a.accordion-toggle.collapsed {
+  color: inherit;
+  text-decoration: underline;
+}
 footer {
   font-family: verdana;
   background-color: #232323;
