@@ -7558,6 +7558,11 @@ h2.block-title {
 .checkbox-inline input[type="checkbox"] {
   margin-left: 0;
 }
+/* ACCORDION */
+a.accordion-toggle {
+  color: #0064b1;
+  text-decoration: initial;
+}
 footer {
   font-family: verdana;
   background-color: #232323;
