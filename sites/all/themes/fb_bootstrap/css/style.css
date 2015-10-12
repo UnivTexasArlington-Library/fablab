@@ -7559,13 +7559,13 @@ h2.block-title {
   margin-left: 0;
 }
 /* ACCORDION */
-a.accordion-toggle {
-  color: #0064b1;
-  text-decoration: initial;
-}
 a.accordion-toggle.collapsed {
   color: inherit;
   text-decoration: underline;
+}
+a.accordion-toggle {
+  color: #0064b1;
+  text-decoration: initial;
 }
 footer {
   font-family: verdana;
