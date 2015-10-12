@@ -73,6 +73,19 @@
  * @ingroup themeable
  */
 ?>
+<section class="main-container container-fluid">
+  <div class="col-sm-offset-2 col-sm-10 col-xs-offset-1" id="internal-page-push">
+    <header role="banner" id="page-header">
+      <?php print render($title_prefix); ?>
+      <?php if (!empty($title)): ?>
+      <h1 class="page-header"><?php print $title; ?></h1>
+      <?php endif; ?>
+      <?php print render($title_suffix); ?>
+    </header>
+    <?php if (!empty($tabs)): ?>
+    <?php print render($tabs); ?>
+  <?php endif; ?>
+  </div>
 <header id="navbar" role="banner" class="navbar container-fluid navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -133,19 +146,7 @@
   <?php endif; ?>
 </section>
 
-<section class="main-container container-fluid">
-  <div class="col-sm-offset-2 col-sm-10 col-xs-offset-1" id="internal-page-push">
-    <header role="banner" id="page-header">
-      <?php print render($title_prefix); ?>
-      <?php if (!empty($title)): ?>
-      <h1 class="page-header"><?php print $title; ?></h1>
-      <?php endif; ?>
-      <?php print render($title_suffix); ?>
-    </header>
-    <?php if (!empty($tabs)): ?>
-    <?php print render($tabs); ?>
-  <?php endif; ?>
-  </div>
+
 
   <div class="row">
 
