@@ -7242,6 +7242,10 @@ html {
 }
 body {
   font-family: verdana;
+  /*h2 {
+		font-size: 20px;
+		text-transform: uppercase; 
+	}*/
 }
 body a {
   color: #000;
@@ -7258,16 +7262,14 @@ body h1 {
 body h1 a {
   color: #0064b1;
 }
-body h2 {
-  font-size: 20px;
-  text-transform: uppercase;
-}
+body h2,
 body h3 {
   font-size: 20px;
   /* ~20px */
   font-weight: bold;
 }
 @media (max-width: 991px) {
+  body h2,
   body h3 {
     font-size: 18px;
   }
@@ -7282,6 +7284,17 @@ body h4 {
     font-size: 15px;
   }
 }
+#uta-logo {
+  background-color: #111111;
+  max-width: 700px;
+  opacity: 0.55;
+  padding: 15px;
+  position: absolute;
+  right: 0;
+  top: -37px;
+  z-index: 50;
+  /* filter: alpha(opacity=50);  For IE8 and earlier */
+}
 .contextual-links-wrapper {
   top: 50px;
 }
@@ -7292,7 +7305,6 @@ body h4 {
   padding: 0px 0px;
 }
 .region-highlighted {
-  margin-top: -130px;
   /*img {
 		width: 100%;
 		height:1000px;
@@ -7428,10 +7440,10 @@ h2.block-title {
   margin-bottom: 24px;
 }
 .page-header {
-  /*padding-bottom: 0;
-	border-bottom: none;
-	padding-top: 10px;
-	margin-left: 15px; */
+  padding-bottom: 0;
+  border-bottom: none;
+  padding-top: 10px;
+  margin-left: 15px;
   display: none;
 }
 @media (max-width: 767px) {
