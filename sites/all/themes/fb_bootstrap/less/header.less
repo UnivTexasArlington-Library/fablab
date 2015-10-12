@@ -165,3 +165,36 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
 ul.nav li.dropdown ul.dropdown-menu {
   margin-top: 0;
 }
+/*Changes to Secondary region menu*/
+
+.region.region-sidebar-second{
+	margin: 20px 0 87px -30px;
+	.dropdown-menu {
+		background-color: @body-bg;
+		position: inherit;
+		/*z-index: auto !important;*/
+		border: none;
+		border-radius: none;
+		box-shadow: none;
+		font-size: 1.25em;
+	}
+	.dropdown-menu a{
+		padding-left: 1.5em;
+	}
+	.caret{
+		display: inline-block;
+	}
+	.nav .dropdown.open .caret{
+	    border-top: none;
+	    border-bottom: 4px solid;
+	}
+	.dropdown-menu .last.leaf{
+		border-bottom: 1px solid #DEDCDC;
+	}
+	.nav .dropdown.open{
+		border-bottom: 0px !important;
+		a{
+			padding-bottom: 0px !important;
+		}
+    }
+}
