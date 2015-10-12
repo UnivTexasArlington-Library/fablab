@@ -6565,9 +6565,11 @@ ul.secondary {
 .page-header {
   margin-top: 0;
 }
-.block:first-child h2.block-title {
-  margin-top: 0;
-}
+/*.block {
+  &:first-child h2.block-title {
+    margin-top: 0;
+  }
+} */
 p:last-child {
   margin-bottom: 0;
 }
@@ -7289,7 +7291,7 @@ body h4 {
   }
 }
 .region-content {
-  margin: 153px 0px 87px;
+  margin: 90px 0px 87px;
 }
 @media (max-width: 767px) {
   .region-content {
@@ -7397,7 +7399,7 @@ body h4 {
 }
 /*Changes to Secondary region menu*/
 .region.region-sidebar-second {
-  margin: 80px 0 87px -30px;
+  margin: 20px 0 87px -30px;
 }
 .region.region-sidebar-second .dropdown-menu {
   background-color: #fff !important;
