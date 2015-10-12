@@ -3313,7 +3313,7 @@ tbody.collapse.in {
   list-style: none;
   font-size: 15px;
   text-align: left;
-  background-color: #ffffff;
+  background-color: #f3f3f3;
   border: 1px solid #cccccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -7523,7 +7523,11 @@ h2.block-title {
 }
 
 /* THUMBNAILS */
-.thumbnail-video > .thumbnail {
+.thumbnail {
+  margin-left: 20px;
+  background-color: #fff;
+}
+.thumbnail-video.thumbnail {
   min-height: 223px;
 }
 .thumbnail-tech > .thumbnail {
