@@ -7075,7 +7075,6 @@ table .checkbox input[type="checkbox"] {
 }
 .navbar-default .navbar-nav > li > a {
   color: #dedcdc;
-  cursor: default;
 }
 .navbar-default .navbar-nav > .active-trail > a {
   color: #dedcdc;
