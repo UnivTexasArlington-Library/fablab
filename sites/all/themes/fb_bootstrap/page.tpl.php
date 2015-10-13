@@ -91,7 +91,7 @@
 
     <div id="uta-logo-img">
 
-    <a href="http://www.uta.edu/"><img src="http://fablab-test.uta.edu/sites/default/files/UTAlogo350.png" alt="The University of Texas at Arlington" /></a>
+    <a href="http://www.uta.edu/"><img src="http://fablab-test.uta.edu/sites/default/files/UTAlogo.png" alt="The University of Texas at Arlington" /></a>
 
     </div>
 
