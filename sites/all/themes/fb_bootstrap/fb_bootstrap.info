@@ -2,7 +2,6 @@ name = FabLab Bootstrap Sub-theme
 description = A Bootstrap Sub-theme customized for fablab.uta.edu.
 core = 7.x
 base theme = bootstrap
-scripts[] = js/jquery.matchHeight-min.js
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Regions
@@ -57,6 +56,7 @@ scripts[] = 'bootstrap/js/popover.js'
 scripts[] = 'bootstrap/js/scrollspy.js'
 scripts[] = 'bootstrap/js/tab.js'
 scripts[] = 'bootstrap/js/transition.js'
+scripts[] = 'js/jquery.matchHeight-min.js'
 ;
 ; ; Disable BootstrapCDN if using Bootstrap source files in your sub-theme.
 settings[bootstrap_cdn] = ''

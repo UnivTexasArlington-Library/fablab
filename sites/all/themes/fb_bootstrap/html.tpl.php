@@ -57,18 +57,18 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
   <?php print $scripts; ?>
-      <script type="text/javascript">
-        (function() {
-            $(function() {
-                $('.thumbnail').matchHeight({
-                    byRow: true,
-                    property: 'height',
-                    target: null,
-                    remove: false
-                });
+  <script type="text/javascript">
+    (function() {
+        $(function() {
+            $('.thumbnail').matchHeight({
+                byRow: true,
+                property: 'height',
+                target: null,
+                remove: false
             });
-        })();
-    </script>
+        });
+    })();
+</script>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <div id="skip-link">
