@@ -7081,11 +7081,11 @@ table .checkbox input[type="checkbox"] {
 	color: #dedcdc;
 	background-color: @brand-primary;
 } */
+.navbar-default .navbar-nav > .active-trail > a,
 .navbar-default .navbar-nav > .active > a:hover {
   color: #0064b1;
   background-color: transparent;
 }
-.navbar-default .navbar-nav > .active-trail > a,
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: #0064b1;
