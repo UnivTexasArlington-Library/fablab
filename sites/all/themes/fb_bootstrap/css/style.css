@@ -7286,17 +7286,17 @@ body h4 {
 #uta-logo {
   background-color: #111111;
   opacity: 0.55;
-  padding: 15px 0 15 px 15px;
   position: absolute;
-  top: -5px;
+  top: 0;
   width: 100%;
   z-index: 50;
+  min-height: 50px;
 }
 .contextual-links-wrapper {
   top: 50px;
 }
 #uta-logo-img {
-  margin: auto 15px;
+  margin: 10px 15px auto auto;
   position: relative;
   text-align: right;
 }
