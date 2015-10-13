@@ -7571,6 +7571,9 @@ h2.block-title {
 .panel-title a {
   text-decoration: none;
 }
+a.accordion-toggle[aria-expanded="true"] {
+  color: #0064b1;
+}
 footer {
   font-family: verdana;
   background-color: #232323;
