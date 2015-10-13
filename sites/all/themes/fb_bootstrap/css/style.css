@@ -7295,7 +7295,7 @@ body h4 {
   top: 50px;
 }
 #uta-logo-img {
-  margin: auto;
+  margin: auto 30px;
   position: relative;
   text-align: right;
 }

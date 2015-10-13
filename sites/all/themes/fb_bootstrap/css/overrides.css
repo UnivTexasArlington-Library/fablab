@@ -140,14 +140,16 @@ ul.secondary {
 .page-header {
   margin-top: 0;
 }
-.block:first-child h2.block-title {
-  margin-top: 0;
-}
+/*.block {
+  &:first-child h2.block-title {
+    margin-top: 0;
+  }
+} */
 p:last-child {
   margin-bottom: 0;
 }
 .region-help > .glyphicon {
-  font-size: 23px;
+  font-size: 19px;
   float: left;
   margin: -0.05em 0.5em 0 0;
 }
@@ -432,7 +434,7 @@ a .glyphicon-spin {
 .tabs-left > .nav-tabs .summary,
 .tabs-right > .nav-tabs .summary {
   color: #777777;
-  font-size: 16px;
+  font-size: 13px;
 }
 .tab-pane > .panel-heading {
   display: none;
