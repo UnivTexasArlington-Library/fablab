@@ -5409,14 +5409,14 @@ a.list-group-item-danger.active:focus {
 }
 .panel-default > .panel-heading {
   color: #333333;
-  background-color: #f5f5f5;
+  background-color: transparent;
   border-color: #dddddd;
 }
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
   border-top-color: #dddddd;
 }
 .panel-default > .panel-heading .badge {
-  color: #f5f5f5;
+  color: transparent;
   background-color: #333333;
 }
 .panel-default > .panel-footer + .panel-collapse > .panel-body {
@@ -7558,15 +7558,6 @@ h2.block-title {
 .checkbox input[type="checkbox"],
 .checkbox-inline input[type="checkbox"] {
   margin-left: 0;
-}
-/* ACCORDION */
-a.accordion-toggle.collapsed {
-  color: inherit;
-  text-decoration: underline;
-}
-a.accordion-toggle {
-  color: #0064b1;
-  text-decoration: initial;
 }
 footer {
   font-family: verdana;
