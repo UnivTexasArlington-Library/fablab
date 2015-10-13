@@ -2,7 +2,7 @@ name = FabLab Bootstrap Sub-theme
 description = A Bootstrap Sub-theme customized for fablab.uta.edu.
 core = 7.x
 base theme = bootstrap
-
+scripts[] = js/jquery.matchHeight-min.js
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Regions
