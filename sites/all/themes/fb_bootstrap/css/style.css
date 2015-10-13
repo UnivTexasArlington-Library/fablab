@@ -7009,6 +7009,7 @@ table .checkbox input[type="checkbox"] {
 #navbar {
   z-index: 50;
   top: 50px;
+  right: 0;
   position: absolute;
   width: 100%;
 }
@@ -7285,7 +7286,7 @@ body h4 {
 #uta-logo {
   background-color: #111111;
   opacity: 0.55;
-  padding: 15px;
+  padding: 15px 0 15 px 15px;
   position: absolute;
   top: -5px;
   width: 100%;
@@ -7295,7 +7296,7 @@ body h4 {
   top: 50px;
 }
 #uta-logo-img {
-  margin: auto 30px;
+  margin: auto 15px;
   position: relative;
   text-align: right;
 }
