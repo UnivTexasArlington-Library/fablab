@@ -7021,6 +7021,9 @@ table .checkbox input[type="checkbox"] {
 .navbar {
   margin-bottom: 0px;
 }
+.navbar-collapse.in {
+  overflow-y: visible;
+}
 .navbar-header {
   margin-top: -8px;
   margin-bottom: -10px;
