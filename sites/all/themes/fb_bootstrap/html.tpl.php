@@ -57,6 +57,14 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
   <?php print $scripts; ?>
+  <script>
+    jQuery(document).ready(function($){
+               $(function() {
+        $('.thumbnail').matchHeight();
+    });
+    });
+  </script>
+
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <div id="skip-link">
