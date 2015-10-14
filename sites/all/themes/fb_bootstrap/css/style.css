@@ -7448,7 +7448,7 @@ h2.block-title {
 .page-header {
   padding-bottom: 0;
   border-bottom: none;
-  padding-top: 10px;
+  margin-top: 40px;
   margin-left: 15px;
   /*display: none;
 	@media (max-width:@screen-xs-max) {
