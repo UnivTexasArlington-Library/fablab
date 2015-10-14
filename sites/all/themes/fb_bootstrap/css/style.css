@@ -7416,6 +7416,7 @@ h2.block-title {
 }
 .well-sm {
   padding: 20px;
+  border: 1px solid #dedcdc;
   box-shadow: none;
 }
 .region-left,
