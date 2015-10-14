@@ -7320,6 +7320,18 @@ body h4 {
 		} */
   }
 }
+h2.block-title {
+  margin-top: 35.5px;
+  color: #3B3A3A;
+  font-size: 20px;
+  /* ~20px */
+  font-weight: bold;
+}
+@media (max-width: 991px) {
+  h2.block-title {
+    font-size: 18px;
+  }
+}
 .region.region-sidebar-second {
   margin: 0px 0 87px -30px;
 }
