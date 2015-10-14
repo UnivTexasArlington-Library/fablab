@@ -149,20 +149,15 @@
     <ul class="action-links"><?php print render($action_links); ?></ul>
   <?php endif; ?>
 </section>
-
-<div class="row">
-  <div class="col-sm-offset-2 col-sm-7 col-xs-10 col-xs-offset-1">
-    <header role="banner" id="page-header">
-      <?php print render($title_prefix); ?>
-      <?php if (!empty($title)): ?>
-      <h1 class="page-header"><?php print $title; ?></h1>
-      <?php endif; ?>
-      <?php print render($title_suffix); ?>
-    </header>
-  </div>
-</div>
+<section>
+  <header role="banner" id="page-header">
+    <?php print render($title_prefix); ?>
+    <?php if (!empty($title)): ?>
+    <h1 class="page-header"><?php print $title; ?></h1>
+    <?php endif; ?>
+    <?php print render($title_suffix); ?>
+  </header>
   <div class="row">
-
     <div class="col-sm-offset-2 col-sm-7 col-xs-10 col-xs-offset-1">
       <?php print render($page['content']); ?>
     </div>
@@ -172,7 +167,6 @@
         <?php print render($page['sidebar_second']); ?>
       </aside>  <!-- /#sidebar-second -->
     <?php endif; ?>
-
   </section>
 </div>
 
