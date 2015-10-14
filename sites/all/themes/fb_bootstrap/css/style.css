@@ -7602,6 +7602,9 @@ h2.block-title {
 .panel-title a {
   text-decoration: none;
 }
+.pane-node-title > .pane-title {
+  display: none;
+}
 a.accordion-toggle[aria-expanded="true"] {
   color: #0064b1;
 }
