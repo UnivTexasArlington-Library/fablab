@@ -7370,10 +7370,11 @@ body h4 {
   background-color: #eae8e7;
 }
 .well {
-  border: 1px solid #dedcdc;
+  border: 0px solid #dedcdc;
   background-color: #fff;
   border-radius: 0;
   margin-left: 15px;
+  box-shadow: 10px 10px 5px #888888;
 }
 .well-lg {
   margin: 20px;
