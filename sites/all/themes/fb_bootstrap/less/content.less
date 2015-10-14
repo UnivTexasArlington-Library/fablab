@@ -63,7 +63,6 @@ body {
   margin: 10px 15px auto auto;
   position: relative;
   text-align: right;
-  opacity: none;
 }
 .jumbotron {
 	background-color: #000;
@@ -95,6 +94,9 @@ body {
 		font-size: 20px;
 		text-transform: uppercase; 
 		font-weight: normal;
+		@media (max-width: @screen-xs-max) {
+			margin-top:35.5px;
+		}
 	}
 }
 /* Push internal pages down to see editing tabs & content */
