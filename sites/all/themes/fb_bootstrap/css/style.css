@@ -7365,6 +7365,7 @@ body h4 {
 }
 #block-block-3 h3,
 #slogan h3 {
+  color: #fff;
   margin-top: 45px;
   margin-bottom: 25px;
   text-transform: uppercase;
@@ -7382,12 +7383,25 @@ body h4 {
 #grey-scale {
   background-color: #eae8e7;
 }
+h2.block-title {
+  margin-top: 35.5px;
+  margin-bottom: 10.5px;
+  color: #3B3A3A;
+  font-size: 20px;
+  /* ~20px */
+  font-weight: bold;
+}
+@media (max-width: 991px) {
+  h2.block-title {
+    font-size: 18px;
+  }
+}
 .well {
   border: 0px solid #dedcdc;
   background-color: #fff;
   border-radius: 0;
   margin-left: 15px;
-  padding: 50px 50px 82px 80px;
+  padding: 50px 50px 82px 50px;
   box-shadow: 5px 5px 10px #888888, -5px 15px 10px #888888;
 }
 @media (max-width: 767px) {
@@ -7469,19 +7483,6 @@ body h4 {
 	@media (max-width:@screen-xs-max) {
 		display:block;
 	} */
-}
-h2.block-title {
-  margin-top: 35.5px;
-  margin-bottom: 10.5px;
-  color: #3B3A3A;
-  font-size: 20px;
-  /* ~20px */
-  font-weight: bold;
-}
-@media (max-width: 991px) {
-  h2.block-title {
-    font-size: 18px;
-  }
 }
 .inline {
   display: inline;

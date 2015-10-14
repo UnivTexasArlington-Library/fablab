@@ -123,6 +123,7 @@ body {
 	background: #232323 url('http://fablab-test.uta.edu/sites/default/files/Lightbulb.png') no-repeat center center;
 	background-size: 75px;
 	h3 {
+		color: #fff;
 		margin-top: 45px;
 		margin-bottom: 25px;
 		text-transform: uppercase;
@@ -138,13 +139,22 @@ body {
  #grey-scale {
  	background-color: @body-bg;
 } 
-
+h2.block-title {
+	margin-top: 35.5px;
+	margin-bottom: 10.5px;
+	color: #3B3A3A;
+	font-size: @font-size-h3; /* ~20px */
+	font-weight: bold;
+	@media (max-width:@screen-sm-max) {
+		font-size: 18px;
+	}
+}
 .well {
 	border: 0px solid #dedcdc;
 	background-color: #fff;
 	border-radius: 0;
 	margin-left: 15px;
-	padding: 50px 50px 82px 80px;
+	padding: 50px 50px 82px 50px;
 	box-shadow: 5px 5px 10px #888, -5px 15px 10px #888;
 	@media (max-width: @screen-xs-max) {
 		padding: 20px;
@@ -159,6 +169,7 @@ body {
 	padding: 20px;
 	box-shadow: 2.5px 5px 10px #888, -2.5px 5px 10px #888;
 }
+
 .region-left, 
 .region-middle,
 .region-right {
@@ -219,16 +230,7 @@ body {
 		display:block;
 	} */
 }
-h2.block-title {
-	margin-top: 35.5px;
-	margin-bottom: 10.5px;
-	color: #3B3A3A;
-	font-size: @font-size-h3; /* ~20px */
-	font-weight: bold;
-	@media (max-width:@screen-sm-max) {
-		font-size: 18px;
-	}
-}
+
 .inline {
 	display: inline;
 }
