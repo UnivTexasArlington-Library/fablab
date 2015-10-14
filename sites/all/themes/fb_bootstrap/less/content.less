@@ -23,6 +23,7 @@ body {
 		}
 	}
 	h2, h3 {
+		margin-top: 35.5px;
 		color: #3B3ABA;
 		font-size: @font-size-h3; /* ~20px */
 		font-weight: bold;
@@ -140,7 +141,10 @@ body {
 	border-radius: 0;
 	margin-left: 15px;
 	padding: 50px 50px 82px 80px;
-	box-shadow: 5px 5px 10px #888, -5px 15px 10px #888
+	box-shadow: 5px 5px 10px #888, -5px 15px 10px #888;
+	@media (max-width: @screen-xs-max) {
+		padding: 20px;
+	}
 }
 .well-lg {
 	margin: 20px;
