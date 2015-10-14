@@ -7264,6 +7264,10 @@ body h3 {
   /* ~20px */
   font-weight: bold;
 }
+body h2:first,
+body h3:first {
+  margin-top: 0;
+}
 @media (max-width: 991px) {
   body h2,
   body h3 {
