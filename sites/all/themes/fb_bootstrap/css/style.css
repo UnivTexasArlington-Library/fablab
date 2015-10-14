@@ -7378,7 +7378,7 @@ body h4 {
   border-radius: 0;
   margin-left: 15px;
   padding: 50px;
-  box-shadow: 10px 10px 3px #888888, -10px 10px 3px #888888;
+  box-shadow: 5px 5px 10px #888888, -5px 15px 10px #888888;
 }
 .well-lg {
   margin: 20px;
