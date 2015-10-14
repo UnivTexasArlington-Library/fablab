@@ -7323,6 +7323,8 @@ body h4 {
 }
 .region.region-sidebar-second h2.block-title {
   margin-top: 0;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 /* Push internal pages down to see editing tabs & content */
 #internal-page-push {
