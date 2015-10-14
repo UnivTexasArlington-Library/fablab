@@ -7207,9 +7207,6 @@ ul.nav li.dropdown ul.dropdown-menu {
   margin-top: 0;
 }
 /*Changes to Secondary region menu*/
-.region.region-sidebar-second {
-  margin: 0px 0 87px -30px;
-}
 .region.region-sidebar-second .dropdown-menu {
   background-color: #eae8e7;
   position: inherit;
@@ -7320,6 +7317,12 @@ body h4 {
 			height: auto;
 		} */
   }
+}
+.region.region-sidebar-second {
+  margin: 0px 0 87px -30px;
+}
+.region.region-sidebar-second h2.block-title {
+  margin-top: 0;
 }
 /* Push internal pages down to see editing tabs & content */
 #internal-page-push {
