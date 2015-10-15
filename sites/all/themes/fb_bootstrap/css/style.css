@@ -7589,8 +7589,9 @@ h2.block-title {
   max-width: 100%;
   height: auto;
   display: block;
-  margin-right: 9px;
-  margin-left: inherit;
+  margin-right: inherit;
+  margin-left: 9px;
+  margin-top: 9px;
 }
 .node-readmore {
   float: right;
