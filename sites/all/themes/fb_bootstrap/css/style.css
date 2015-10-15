@@ -7686,7 +7686,7 @@ footer p {
     text-align: center;
   }
 }
-footer form #search-block-form {
+footer form#search-block-form {
   padding: 0 20px;
 }
 footer .form-control {
