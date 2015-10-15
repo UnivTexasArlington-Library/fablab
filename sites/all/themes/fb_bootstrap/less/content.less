@@ -1,5 +1,5 @@
 // Insert your styling here.
-@margin-xs:		15px;
+@margin-xs:		10.5px;
 
 html {
 	background-color: @body-bg;
@@ -27,9 +27,6 @@ body {
 		color: #3B3A3A;
 		font-size: @font-size-h3; /* ~20px */
 		font-weight: bold;
-		&:nth-of-type(1) {
-			margin-top:0;
-		}
 		@media (max-width:@screen-sm-max) {
 			font-size: 18px;
 		}
@@ -161,6 +158,11 @@ h2.block-title {
 	@media (max-width: @screen-xs-max) {
 		padding: 20px;
 	}
+	h2, h3 {
+		&:nth-of-type(1) {
+			margin-top: 0;
+		}
+	}
 }
 .well-lg {
 	margin: 20px;
@@ -235,9 +237,14 @@ h2.block-title {
 		display:block;
 	} */
 }
-
+.add-top-margin {
+	margin-top: 35.5px;
+}
 .inline {
 	display: inline;
+}
+#block-bean-generic-fablab-contact {
+	margin-top: 35.5px;
 }
 .bean-contact-information {
 	margin-bottom: 10.5px;
@@ -245,14 +252,14 @@ h2.block-title {
 .taxonomy-term-description {
 	margin-bottom: @margin-xs;
 }
-#campus-map iframe {
+iframe#campus-map {
 	width: 100%;
 	max-width: 100%;
 	height: 300px;
 }
 /* HOURS */
 .oh-display-label {
-	margin-bottom: @margin-xs;
+	margin-top: @margin-xs;
 }
 .oh-display-hours {
 	margin-left: 20px;
@@ -331,8 +338,10 @@ h2.block-title {
 	max-width: 100%;
 	height: auto;
 	display: block;
+	margin-right: inherit;
+	margin-left: inherit;
+	padding-top: 9px;
 }
-
 .node-readmore {
 	float: right;
 }
@@ -361,4 +370,11 @@ h2.block-title {
 }
 a.accordion-toggle[aria-expanded="true"] {
 	color: @brand-primary;
+}
+.feed-icon {
+	float: right;
+	img {
+		height: 30px;
+		width: 30px;
+	}
 }

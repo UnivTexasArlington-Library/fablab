@@ -163,7 +163,7 @@
 </div>
   <div class="row">
 
-    <div class="col-sm-offset-2 col-sm-7 col-xs-10 col-xs-offset-1">
+    <div class="col-sm-offset-2 col-sm-7 col-xs-12 col-xs-offset-0">
       <?php print render($page['content']); ?>
     </div>
 
@@ -177,5 +177,19 @@
 </div>
 
 <footer class="footer container-fluid">
-  <?php print render($page['footer']); ?>
+<?php print render($page['footer']); ?>
+  <div class="row">
+    <div class="col-md-4 col-sm-4">
+      <?php print render($page['footer_left']); ?>
+    </div> <!-- /col-4 -->
+             
+    <div class="col-md-4 col-sm-4">
+      <?php print render($page['footer_middle']); ?>
+    </div> <!-- /col-4 -->
+          
+    <div class="col-md-4 col-sm-4">
+      <?php print render($page['footer_right']); ?>
+    </div> <!-- /col-4 -->
+  </div> <!-- /.row -->
 </footer>
+

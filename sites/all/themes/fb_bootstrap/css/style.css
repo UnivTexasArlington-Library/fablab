@@ -7266,10 +7266,6 @@ body h3 {
   /* ~20px */
   font-weight: bold;
 }
-body h2:nth-of-type(1),
-body h3:nth-of-type(1) {
-  margin-top: 0;
-}
 @media (max-width: 991px) {
   body h2,
   body h3 {
@@ -7354,7 +7350,7 @@ body h4 {
 }
 @media (max-width: 767px) {
   .region-content {
-    margin-top: 15px;
+    margin-top: 10.5px;
     margin-bottom: 0px;
   }
 }
@@ -7414,6 +7410,10 @@ h2.block-title {
   .well {
     padding: 20px;
   }
+}
+.well h2:nth-of-type(1),
+.well h3:nth-of-type(1) {
+  margin-top: 0;
 }
 .well-lg {
   margin: 20px;
@@ -7493,23 +7493,29 @@ h2.block-title {
 		display:block;
 	} */
 }
+.add-top-margin {
+  margin-top: 35.5px;
+}
 .inline {
   display: inline;
+}
+#block-bean-generic-fablab-contact {
+  margin-top: 35.5px;
 }
 .bean-contact-information {
   margin-bottom: 10.5px;
 }
 .taxonomy-term-description {
-  margin-bottom: 15px;
+  margin-bottom: 10.5px;
 }
-#campus-map iframe {
+iframe#campus-map {
   width: 100%;
   max-width: 100%;
   height: 300px;
 }
 /* HOURS */
 .oh-display-label {
-  margin-bottom: 15px;
+  margin-top: 10.5px;
 }
 .oh-display-hours {
   margin-left: 20px;
@@ -7591,6 +7597,9 @@ h2.block-title {
   max-width: 100%;
   height: auto;
   display: block;
+  margin-right: inherit;
+  margin-left: inherit;
+  padding-top: 9px;
 }
 .node-readmore {
   float: right;
@@ -7623,6 +7632,13 @@ h2.block-title {
 a.accordion-toggle[aria-expanded="true"] {
   color: #0064b1;
 }
+.feed-icon {
+  float: right;
+}
+.feed-icon img {
+  height: 30px;
+  width: 30px;
+}
 footer {
   font-family: verdana;
   background-color: #232323;
@@ -7631,7 +7647,6 @@ footer {
 }
 footer ul {
   list-style-type: none;
-  border-right: 1px dashed #0064b1;
   margin-left: 125px;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -7673,9 +7688,22 @@ footer p {
     text-align: center;
   }
 }
+footer form#search-block-form {
+  padding: 0 20px;
+}
+footer .form-control {
+  border-radius: 10px;
+}
+footer input {
+  max-width: 90%;
+}
 .footer {
   margin-top: 0;
   border-top: 0;
   padding-top: 20px;
   padding-bottom: 21px;
+}
+.region-footer-middle {
+  border-right: 1px dashed #0064b1;
+  border-left: 1px dashed #0064b1;
 }

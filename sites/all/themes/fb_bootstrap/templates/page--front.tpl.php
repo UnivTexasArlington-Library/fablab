@@ -61,7 +61,9 @@
  * - $page['sidebar_first']: Items for the first sidebar.
  * - $page['sidebar_second']: Items for the second sidebar.
  * - $page['header']: Items for the header region.
- * - $page['footer']: Items for the footer region.
+ * - $page['footer_left']: Items for the left footer region.
+ * - $page['footer_middle']: Items for the left footer region.
+ * - $page['footer_right']: Items for the left footer region.
  *
  * @see bootstrap_preprocess_page()
  * @see template_preprocess()
@@ -169,5 +171,18 @@
 
 
 <footer class="footer container-fluid">
-  <?php print render($page['footer']); ?>
+<?php print render($page['footer']); ?>
+  <div class="row">
+    <div class="col-md-4 col-sm-4">
+      <?php print render($page['footer_left']); ?>
+    </div> <!-- /col-4 -->
+             
+    <div class="col-md-4 col-sm-4">
+      <?php print render($page['footer_middle']); ?>
+    </div> <!-- /col-4 -->
+          
+    <div class="col-md-4 col-sm-4">
+      <?php print render($page['footer_right']); ?>
+    </div> <!-- /col-4 -->
+  </div> <!-- /.row -->
 </footer>
