@@ -7494,6 +7494,9 @@ h2.block-title {
 .inline {
   display: inline;
 }
+#block-bean-generic-fablab-contact {
+  margin-top: 35.5px;
+}
 .bean-contact-information {
   margin-bottom: 10.5px;
 }
@@ -7590,8 +7593,8 @@ h2.block-title {
   height: auto;
   display: block;
   margin-right: inherit;
-  margin-left: 9px;
-  margin-top: 9px;
+  margin-left: inherit;
+  padding-top: 9px;
 }
 .node-readmore {
   float: right;
