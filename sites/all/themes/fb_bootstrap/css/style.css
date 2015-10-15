@@ -6635,7 +6635,7 @@ fieldset .panel-heading a.panel-title {
 fieldset .panel-heading a.panel-title:hover {
   text-decoration: none;
 }
-fieldset .panel-heading a.panel-title fieldset a.panel-title {
+fieldset a.panel-title {
   padding: 10px 15px;
 }
 .form-actions {
