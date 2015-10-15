@@ -7430,7 +7430,6 @@ h2.block-title {
 .region-middle,
 .region-right {
   margin-top: 20px;
-  min-height: 350px;
 }
 @media (max-width: 767px) {
   .region-left,
@@ -7644,6 +7643,20 @@ a.accordion-toggle[aria-expanded="true"] {
 /* STAFF */
 h4.staff-title {
   margin-top: 2.5px;
+}
+.drop-support,
+.drop-press {
+  margin-top: 50px;
+}
+.btn-primary {
+  text-decoration: none;
+}
+.front-press-list {
+  margin-bottom: 10.5px;
+}
+.front-press-list a {
+  color: #0064b1;
+  text-decoration: none;
 }
 footer {
   font-family: verdana;
