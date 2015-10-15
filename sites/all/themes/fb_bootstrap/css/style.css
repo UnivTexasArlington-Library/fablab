@@ -7686,6 +7686,12 @@ footer p {
     text-align: center;
   }
 }
+footer form #search-block-form {
+  padding: 0 20px;
+}
+footer .form-control {
+  border-radius: 10px;
+}
 .footer {
   margin-top: 0;
   border-top: 0;
