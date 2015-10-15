@@ -155,15 +155,15 @@
 
 <div class="container-fluid">
   <div class="row" id="grey-scale">
-    <div class="col-md-4 col-sm-4">
+    <div class="col-md-4 col-sm-4 front-columns">
       <?php print render($page['left']); ?>
     </div> <!-- /col-4 -->
              
-    <div class="col-md-4 col-sm-4">
+    <div class="col-md-4 col-sm-4 front-columns">
       <?php print render($page['middle']); ?>
     </div> <!-- /col-4 -->
           
-    <div class="col-md-4 col-sm-4">
+    <div class="col-md-4 col-sm-4 front-columns">
       <?php print render($page['right']); ?>
     </div> <!-- /col-4 -->
   </div> <!-- /.row -->

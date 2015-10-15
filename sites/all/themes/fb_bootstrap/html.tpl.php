@@ -64,6 +64,13 @@
     });
     });
   </script>
+  <script>
+    jQuery(document).ready(function($){
+               $(function() {
+        $('.front-columns').matchHeight();
+    });
+    });
+  </script>
 
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
