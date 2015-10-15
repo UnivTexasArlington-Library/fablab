@@ -7729,7 +7729,8 @@ footer .form-item {
 }
 @media (max-width: 767px) {
   #block-custom-search-blocks-1 {
-    margin-right: 20%;
+    margin-left: 20px;
+    margin-right: 15%;
   }
 }
 .custom-search-button {
