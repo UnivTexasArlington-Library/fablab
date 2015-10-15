@@ -7695,6 +7695,10 @@ footer .form-control {
 #block-custom-search-blocks-1 {
   padding: 0 50px;
 }
+.custom-search-button {
+  float: right;
+  margin-top: -56px;
+}
 .footer {
   margin-top: 0;
   border-top: 0;
