@@ -7630,6 +7630,13 @@ h2.block-title {
 a.accordion-toggle[aria-expanded="true"] {
   color: #0064b1;
 }
+.feed-icon {
+  float: right;
+}
+.feed-icon img {
+  height: 30px;
+  width: 30px;
+}
 footer {
   font-family: verdana;
   background-color: #232323;
