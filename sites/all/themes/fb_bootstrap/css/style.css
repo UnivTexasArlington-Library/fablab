@@ -7703,13 +7703,13 @@ footer .form-item {
 }
 #block-custom-search-blocks-1 {
   /* padding: 0 180px; */
-  padding-left: 30%;
-  padding-right: 30%;
+  margin-left: 125px;
+  margin-right: 30%;
 }
-@media (max-width: 991px) {
+@media (min-width: 991px) {
   #block-custom-search-blocks-1 {
-    padding-left: 20%;
-    padding-right: 20%;
+    margin-left: 0;
+    margin-right: 20%;
   }
 }
 .custom-search-button {
