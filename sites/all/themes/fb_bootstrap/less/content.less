@@ -27,9 +27,6 @@ body {
 		color: #3B3A3A;
 		font-size: @font-size-h3; /* ~20px */
 		font-weight: bold;
-		&:nth-of-type(1) {
-			margin-top:0;
-		}
 		@media (max-width:@screen-sm-max) {
 			font-size: 18px;
 		}
@@ -160,6 +157,10 @@ h2.block-title {
 	box-shadow: 0px 6px 6px 1px rgba(136,136,136,0.5);
 	@media (max-width: @screen-xs-max) {
 		padding: 20px;
+	}
+	h2:first,
+	h3:first {
+		margin-top: 0;
 	}
 }
 .well-lg {

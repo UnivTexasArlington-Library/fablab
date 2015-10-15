@@ -7264,10 +7264,6 @@ body h3 {
   /* ~20px */
   font-weight: bold;
 }
-body h2:nth-of-type(1),
-body h3:nth-of-type(1) {
-  margin-top: 0;
-}
 @media (max-width: 991px) {
   body h2,
   body h3 {
@@ -7412,6 +7408,10 @@ h2.block-title {
   .well {
     padding: 20px;
   }
+}
+.well h2:first,
+.well h3:first {
+  margin-top: 0;
 }
 .well-lg {
   margin: 20px;
