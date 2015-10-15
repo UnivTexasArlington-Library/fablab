@@ -7692,6 +7692,9 @@ footer form#search-block-form {
 footer .form-control {
   border-radius: 10px;
 }
+footer input {
+  max-width: 90%;
+}
 .footer {
   margin-top: 0;
   border-top: 0;
