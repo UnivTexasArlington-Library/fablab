@@ -26,3 +26,4 @@ function fb_bootstrap_form_search_block_form_alter(&$form, &$form_state, $form_i
     // Alternative (HTML5) placeholder attribute instead of using the javascript
     $form['search_block_form']['#attributes']['placeholder'] = t('Search');
 } 
+?>
