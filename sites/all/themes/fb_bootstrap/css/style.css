@@ -6662,6 +6662,7 @@ fieldset .panel-heading a.panel-title:hover {
 }
 .panel-heading {
   display: block;
+  padding: 0;
 }
 a.tabledrag-handle .handle {
   height: auto;
