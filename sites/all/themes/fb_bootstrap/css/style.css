@@ -6631,10 +6631,12 @@ fieldset .panel-heading a.panel-title {
   color: inherit;
   display: block;
   margin: -10px -15px;
-  padding: 10px 15px;
 }
 fieldset .panel-heading a.panel-title:hover {
   text-decoration: none;
+}
+fieldset .panel-heading a.panel-title fieldset a.panel-title {
+  padding: 10px 15px;
 }
 .form-actions {
   clear: both;

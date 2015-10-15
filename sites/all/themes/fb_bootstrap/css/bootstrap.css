@@ -1366,7 +1366,7 @@ th {
   border-top: 2px solid #dddcdc;
 }
 .table .table {
-  background-color: #f3f3f3;
+  background-color: #eae8e7;
 }
 .table-condensed > thead > tr > th,
 .table-condensed > tbody > tr > th,
@@ -3798,7 +3798,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
   color: #555555;
-  background-color: #f3f3f3;
+  background-color: #eae8e7;
   border: 1px solid #dddddd;
   border-bottom-color: transparent;
   cursor: default;
@@ -3844,7 +3844,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-tabs.nav-justified > .active > a,
   .nav-tabs.nav-justified > .active > a:hover,
   .nav-tabs.nav-justified > .active > a:focus {
-    border-bottom-color: #f3f3f3;
+    border-bottom-color: #eae8e7;
   }
 }
 .nav-pills > li {
@@ -3912,7 +3912,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-tabs-justified > .active > a,
   .nav-tabs-justified > .active > a:hover,
   .nav-tabs-justified > .active > a:focus {
-    border-bottom-color: #f3f3f3;
+    border-bottom-color: #eae8e7;
   }
 }
 .tab-content > .tab-pane {
@@ -5390,14 +5390,14 @@ a.list-group-item-danger.active:focus {
 }
 .panel-default > .panel-heading {
   color: #333333;
-  background-color: #f5f5f5;
+  background-color: transparent;
   border-color: #dddddd;
 }
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
   border-top-color: #dddddd;
 }
 .panel-default > .panel-heading .badge {
-  color: #f5f5f5;
+  color: transparent;
   background-color: #333333;
 }
 .panel-default > .panel-footer + .panel-collapse > .panel-body {
