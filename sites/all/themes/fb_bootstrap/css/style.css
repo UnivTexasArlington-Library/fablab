@@ -7693,6 +7693,11 @@ footer p {
   padding-bottom: 21px;
 }
 .region-footer-left,
+.region-footer-middle,
+.region-footer-right {
+  min-height: 102px;
+}
+.region-footer-left,
 .region-footer-middle {
   border-right: 1px dashed #0064b1;
 }
