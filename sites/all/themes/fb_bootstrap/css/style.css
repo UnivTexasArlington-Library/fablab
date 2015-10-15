@@ -7697,7 +7697,9 @@ footer .form-item {
   margin-bottom: 0;
 }
 #block-custom-search-blocks-1 {
-  padding: 0 180px;
+  /* padding: 0 180px; */
+  padding-left: 30%;
+  padding-right: 30%;
 }
 @media (max-width: 991px) {
   #block-custom-search-blocks-1 {
