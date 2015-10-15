@@ -7409,8 +7409,8 @@ h2.block-title {
     padding: 20px;
   }
 }
-.well h2::nth-of-type(1),
-.well h3::nth-of-type(1) {
+.well h2:nth-of-type(1),
+.well h3:nth-of-type(1) {
   margin-top: 0;
 }
 .well-lg {
@@ -7589,6 +7589,8 @@ h2.block-title {
   max-width: 100%;
   height: auto;
   display: block;
+  margin-right: 9px;
+  margin-left: inherit;
 }
 .node-readmore {
   float: right;
