@@ -7348,7 +7348,7 @@ body h4 {
 }
 @media (max-width: 767px) {
   .region-content {
-    margin-top: 15px;
+    margin-top: 10.5px;
     margin-bottom: 0px;
   }
 }
@@ -7504,7 +7504,7 @@ h2.block-title {
   margin-bottom: 10.5px;
 }
 .taxonomy-term-description {
-  margin-bottom: 15px;
+  margin-bottom: 10.5px;
 }
 #campus-map iframe {
   width: 100%;
@@ -7513,7 +7513,7 @@ h2.block-title {
 }
 /* HOURS */
 .oh-display-label {
-  margin-bottom: 15px;
+  margin-top: 10.5px;
 }
 .oh-display-hours {
   margin-left: 20px;
