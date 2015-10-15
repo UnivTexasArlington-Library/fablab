@@ -31,7 +31,7 @@ drupal_add_js(drupal_get_path('themes', 'fb_bootstrap'));
 /**
  * Implements hook_form_alter().
  */
-function MYTHEME_form_alter(array &$form, array &$form_state = array(), $form_id = NULL) {
+function fb_bootstrap_form_alter(array &$form, array &$form_state = array(), $form_id = NULL) {
   if ($form_id) {
     switch ($form_id) {
       case 'search_form':
@@ -46,7 +46,7 @@ function MYTHEME_form_alter(array &$form, array &$form_state = array(), $form_id
 
         // Implement a theme wrapper to add a submit button containing a search
         // icon directly after the input element.
-        $form['basic']['keys']['#theme_wrappers'] = array('MYTHEME_search_form_wrapper');
+        $form['basic']['keys']['#theme_wrappers'] = array('fb_bootstrap_search_form_wrapper');
         $form['basic']['keys']['#title'] = '';
         //control the width of the input           
         $form['basic']['keys']['#attributes']['class'][] = 'wide input';
@@ -63,7 +63,7 @@ function MYTHEME_form_alter(array &$form, array &$form_state = array(), $form_id
         // to add a submit button containing a search icon directly after the
         // input element.
         $form['actions']['submit']['#attributes']['class'][] = 'element-invisible';
-        $form['search_block_form']['#theme_wrappers'] = array('MYTHEME_search_form_wrapper');
+        $form['search_block_form']['#theme_wrappers'] = array('fb_bootstrap_search_form_wrapper');
 
         // Apply a clearfix so the results don't overflow onto the form.
         $form['#attributes']['class'][] = 'content-search';
@@ -72,9 +72,9 @@ function MYTHEME_form_alter(array &$form, array &$form_state = array(), $form_id
   }
 }
 /**
- * Theme function implementation for MYTHEME_search_form_wrapper.
+ * Theme function implementation for fb_bootstrap_search_form_wrapper.
  */
-function MYTHEME_MYTHEME_search_form_wrapper($variables) {
+function fb_bootstrap_fb_bootstrap_search_form_wrapper($variables) {
   $output = '<div class="field append">';
   $output .= $variables['element']['#children'];
   $output .= '<button type="submit" class="medium primary btn">';
@@ -87,14 +87,14 @@ function MYTHEME_MYTHEME_search_form_wrapper($variables) {
 /**
  * Stub implementation for hook_theme().
  *
- * @see MYTHEME_theme()
+ * @see fb_bootstrap_theme()
  * @see hook_theme()
  */
-function MYTHEME_theme(&$existing, $type, $theme, $path) {
+function fb_bootstrap_theme(&$existing, $type, $theme, $path) {
   // Custom theme hooks:
   // Do not define the `path` or `template`.
   $hook_theme = array(
-    'MYTHEME_search_form_wrapper' => array(
+    'fb_bootstrap_search_form_wrapper' => array(
       'render element' => 'element',
     ),
   );
