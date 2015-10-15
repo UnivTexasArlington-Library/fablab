@@ -7687,14 +7687,11 @@ footer p {
     text-align: center;
   }
 }
-footer form#search-block-form {
-  padding: 0 20px;
-}
 footer .form-control {
   border-radius: 10px;
 }
-footer input {
-  max-width: 90%;
+#block-custom-search-blocks-1 {
+  padding: 0 50px;
 }
 .footer {
   margin-top: 0;
