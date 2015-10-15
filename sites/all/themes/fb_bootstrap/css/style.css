@@ -7691,13 +7691,14 @@ footer p {
 }
 footer .form-control {
   border-radius: 10px;
+  height: 19px;
 }
 #block-custom-search-blocks-1 {
-  padding: 0 50px;
+  padding: 0 180px;
 }
 .custom-search-button {
   float: right;
-  margin-top: -56px;
+  margin-top: -29px;
 }
 .footer {
   margin-top: 0;
