@@ -49,10 +49,12 @@ footer {
 }
 #block-custom-search-blocks-1{
 	/* padding: 0 180px; */
-	margin-left: 125px;
+	margin-left: 165px;
 	margin-right: 30%;
+	@media (min-width: @screen-sm-min) and (max-width:@screen-md-max) {
+			margin-left:40px;
+		}
 	@media (max-width:@screen-xs-max) {
-		margin-left:0;
 		margin-right: 20%;
 	}
 }
