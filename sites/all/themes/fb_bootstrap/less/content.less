@@ -158,9 +158,10 @@ h2.block-title {
 	@media (max-width: @screen-xs-max) {
 		padding: 20px;
 	}
-	h2:first,
-	h3:first {
-		margin-top: 0;
+	h2, h3 {
+		&::nth-of-type(1) {
+			margin-top: 0;
+		}
 	}
 }
 .well-lg {
