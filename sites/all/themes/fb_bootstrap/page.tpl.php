@@ -141,7 +141,9 @@
   <?php endif; ?>
   <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
   <a id="main-content"></a>
-  <?php print $messages; ?>
+  <?php if($is_admin): ?>
+<?php print $messages; ?>
+<?php endif; ?>
   <?php if (!empty($page['help'])): ?>
     <?php print render($page['help']); ?>
   <?php endif; ?>
