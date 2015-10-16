@@ -7606,6 +7606,7 @@ iframe#campus-map {
   margin-right: inherit;
   margin-left: inherit;
   padding-top: 9px;
+  padding-left: 9px;
 }
 .node-readmore {
   float: right;
