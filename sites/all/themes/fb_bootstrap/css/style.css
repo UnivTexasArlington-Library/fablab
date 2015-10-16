@@ -7239,6 +7239,11 @@ ul.nav li.dropdown ul.dropdown-menu {
 .region.region-sidebar-second .nav .dropdown.open a {
   padding-bottom: 0px !important;
 }
+@media (max-width: 991px) {
+  ul.secondary {
+    float: left;
+  }
+}
 html {
   background-color: #eae8e7;
 }
