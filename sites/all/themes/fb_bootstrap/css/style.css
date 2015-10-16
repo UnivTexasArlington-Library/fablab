@@ -7606,7 +7606,6 @@ iframe#campus-map {
   margin-right: inherit;
   margin-left: inherit;
   padding-top: 9px;
-  padding-left: 9px;
 }
 .node-readmore {
   float: right;
@@ -7666,6 +7665,13 @@ h4.staff-title {
 .front-press-list a:hover,
 .front-press-list a:focus {
   color: #0064b1;
+}
+#back-to-top {
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
 }
 footer {
   font-family: verdana;
