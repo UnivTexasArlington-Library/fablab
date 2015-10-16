@@ -7666,7 +7666,8 @@ h4.staff-title {
 .front-press-list a:focus {
   color: #0064b1;
 }
-#back-to-top {
+#back-to-top,
+.back-to-top {
   cursor: pointer;
   position: fixed;
   bottom: 20px;
