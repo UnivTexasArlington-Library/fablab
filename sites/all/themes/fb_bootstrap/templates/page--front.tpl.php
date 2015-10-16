@@ -155,16 +155,22 @@
 
 <div class="container-fluid">
   <div class="row" id="grey-scale">
-    <div class="col-md-4 col-sm-4 front-columns">
-      <?php print render($page['left']); ?>
+    <div class="col-md-4">
+      <div class="front-columns">
+        <?php print render($page['left']); ?>
+      </div>
     </div> <!-- /col-4 -->
              
-    <div class="col-md-4 col-sm-4 front-columns">
-      <?php print render($page['middle']); ?>
+    <div class="col-md-4">
+      <div class="front-columns">
+        <?php print render($page['middle']); ?>
+      </div>
     </div> <!-- /col-4 -->
           
-    <div class="col-md-4 col-sm-4 front-columns">
-      <?php print render($page['right']); ?>
+    <div class="col-md-4">
+      <div class="front-columns">
+        <?php print render($page['right']); ?>
+      </div>
     </div> <!-- /col-4 -->
   </div> <!-- /.row -->
 </div> <!-- /.container-fluid (END OF LEFT/MIDDLE/RIGHT) -->
