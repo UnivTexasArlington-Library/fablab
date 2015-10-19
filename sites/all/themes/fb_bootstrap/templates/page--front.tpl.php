@@ -105,7 +105,7 @@
 
     <div id="uta-logo-img">
 
-    <a href="http://www.uta.edu/"><img src="http://fablab-test.uta.edu/sites/default/files/UTAlogo.png" alt="The University of Texas at Arlington" /></a>
+    <a href="http://www.uta.edu/"><img src="/sites/default/files/UTAlogo.png" alt="The University of Texas at Arlington" /></a>
 
     </div>
 
@@ -173,6 +173,7 @@
       
     </div> <!-- /col-4 -->
   </div> <!-- /.row -->
+  <a id="back-to-top" href="#" class="btn btn-default btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
 </div> <!-- /.container-fluid (END OF LEFT/MIDDLE/RIGHT) -->
 
 
