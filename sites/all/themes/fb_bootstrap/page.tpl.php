@@ -98,14 +98,15 @@
           <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
         </a>
         <?php endif; ?>
-    </div>
-      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-    
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+    </div>
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+    
+      
         
       <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
       <div class="navbar-collapse collapse">
