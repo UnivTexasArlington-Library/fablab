@@ -7291,7 +7291,7 @@ body h4 {
   margin-top: 20.5px;
   margin-bottom: 2.5px;
 }
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   body p {
     font-size: 15px;
   }
@@ -7322,7 +7322,7 @@ body h4 {
 	@media (max-width:@screen-sm-max) & (min-width:@screen-sm-min) {
 		margin-top: 145px;
 	}
-	@media (max-width:@screen-xs-max) {
+	@media (max-width:@screen-xs) {
 		margin-top: 99px;
 	}
 }*/
@@ -7336,7 +7336,7 @@ body h4 {
   text-transform: uppercase;
   font-weight: normal;
 }
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   .region.region-sidebar-second h2.block-title {
     margin-top: 35.5px;
   }
@@ -7353,7 +7353,7 @@ body h4 {
 .region-content {
   margin: 0px 0px 87px;
 }
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   .region-content {
     margin-top: 10.5px;
     margin-bottom: 0px;
@@ -7370,7 +7370,7 @@ body h4 {
   background: #232323 url('http://fablab-test.uta.edu/sites/default/files/Lightbulb.png') no-repeat center center;
   background-size: 75px;
 }
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   #block-block-3,
   #slogan {
     background-size: 45px;
@@ -7387,7 +7387,7 @@ body h4 {
   font-weight: normal;
   font-size: 20px;
 }
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   #block-block-3 h3,
   #slogan h3 {
     font-size: 18px;
@@ -7417,7 +7417,7 @@ h2.block-title {
   padding: 50px 50px 82px 50px;
   box-shadow: 0px 6px 6px 1px rgba(136, 136, 136, 0.5);
 }
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   .well {
     padding: 20px;
   }
@@ -7441,7 +7441,7 @@ h2.block-title {
 .region-right {
   margin-top: 20px;
 }
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   .region-left,
   .region-middle,
   .region-right {
@@ -7459,7 +7459,7 @@ h2.block-title {
   font-weight: normal;
   margin-bottom: 20px;
 }
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   .region-left h2,
   .region-middle h2,
   .region-right h2 {
@@ -7483,7 +7483,7 @@ h2.block-title {
   margin-right: 20px;
   margin-left: 10px;
 }
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   .region-right {
     margin-right: 10px;
   }
@@ -7500,7 +7500,7 @@ h2.block-title {
   border-bottom: none;
   margin: 40px 0 10px 0;
   /*display: none;
-	@media (max-width:@screen-xs-max) {
+	@media (max-width:@screen-xs) {
 		display:block;
 	} */
 }
@@ -7580,7 +7580,7 @@ iframe#campus-map {
   left: 0px;
 }
 /*.view .date-nav-wrapper .date-heading h3 {
-	@media (max-width:@screen-xs-max) {
+	@media (max-width:@screen-xs) {
 		font-size:1em;
 	}
 } */
