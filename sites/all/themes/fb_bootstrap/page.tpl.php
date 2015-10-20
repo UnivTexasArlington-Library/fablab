@@ -125,9 +125,11 @@
         </nav>
       </div>
         <?php endif; ?>
-          <div id="emergency-note">
+      <div  id="emergency-note">
         <?php if (!empty($page['emergency_notification'])): ?>
-        <?php print render($page['emergency_notification']); ?>
+        <div class="container">
+          <?php print render($page['emergency_notification']); ?>
+        </div>
         <?php endif; ?>
       </div>
   </div>
