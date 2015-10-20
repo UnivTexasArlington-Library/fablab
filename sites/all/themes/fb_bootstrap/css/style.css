@@ -7038,7 +7038,7 @@ table .checkbox input[type="checkbox"] {
   height: auto;
   margin-left: 15px;
 }
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   .navbar-header img {
     width: 130px;
   }
@@ -7123,7 +7123,7 @@ nav ul li:hover > ul {
 #block-menu-menu-support > h2 {
   font-size: 20px;
 }
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   #block-menu-menu-the-lab > h2,
   #block-menu-menu-connect > h2,
   #block-menu-menu-learn > h2,
@@ -7141,7 +7141,7 @@ nav ul li:hover > ul {
   border-bottom: 1px solid #dedcdc;
   width: 100%;
 }
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   #block-menu-menu-the-lab > .nav > li,
   #block-menu-menu-connect > .nav > li,
   #block-menu-menu-learn > .nav > li,
@@ -7185,7 +7185,7 @@ nav ul li:hover > ul {
 #block-menu-menu-support > .nav > li > li {
   font-size: 15px;
 }
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   #block-menu-menu-the-lab > .nav > li > li,
   #block-menu-menu-connect > .nav > li > li,
   #block-menu-menu-learn > .nav > li > li,
