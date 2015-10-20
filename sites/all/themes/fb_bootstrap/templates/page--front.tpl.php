@@ -147,12 +147,12 @@
         </div>
           <?php endif; ?>
       </div>
+      <div id="emergency-note">
+        <?php if (!empty($emergency_notification)): ?>
+        <?php print $emergency_notification; ?>
+        <?php endif; ?>
+      </div>
     </header>
-<section id="emergency-note">
-  <?php if (!empty($emergency_notification)): ?>
-  <?php print $emergency_notification; ?>
-  <?php endif; ?>
-</section>
 
   </div> <!-- /. container-fluid -->
 </div> <!-- /.jumbotron -->
