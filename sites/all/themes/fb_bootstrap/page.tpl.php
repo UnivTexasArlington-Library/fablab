@@ -165,7 +165,7 @@
 </div>
   <div class="row">
 
-    <div class="col-sm-offset-2 col-sm-7 col-xs-12 col-xs-offset-0">
+    <div class="col-md-offset-2 col-md-7 col-sm-offset-2 col-sm-7 col-xs-10 col-xs-offset-1">
       <?php print render($page['content']); ?>
     </div>
 
