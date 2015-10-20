@@ -148,8 +148,8 @@
           <?php endif; ?>
       </div>
       <div id="emergency-note">
-        <?php if (!empty($emergency_notification)): ?>
-        <?php print $emergency_notification; ?>
+        <?php if (!empty($page['emergency_notification'])): ?>
+        <?php print render($page['emergency_notification']); ?>
         <?php endif; ?>
       </div>
     </header>
