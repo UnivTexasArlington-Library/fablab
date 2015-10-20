@@ -7040,7 +7040,7 @@ table .checkbox input[type="checkbox"] {
 }
 @media (max-width: 480px) {
   .navbar-header img {
-    width: 130px;
+    width: 160px;
   }
 }
 .navbar-default {
@@ -7250,7 +7250,7 @@ ul.nav li.dropdown ul.dropdown-menu {
 }
 @media (max-width: 480px) {
   .navbar-toggle {
-    margin-top: 8px;
+    margin-top: 15px;
   }
 }
 @media (max-width: 991px) {
@@ -7356,6 +7356,11 @@ body h4 {
 #internal-page-push {
   margin-top: 150px;
 }
+@media (max-width: 480px) {
+  #internal-page-push {
+    margin-top: 0px;
+  }
+}
 @media (min-width: 1200px) {
   .main-container {
     min-height: 660px;
@@ -7384,7 +7389,7 @@ body h4 {
 @media (max-width: 480px) {
   #block-block-3,
   #slogan {
-    background-size: 45px;
+    background-size: 35px;
   }
 }
 #block-block-3 h3,
@@ -7401,8 +7406,9 @@ body h4 {
 @media (max-width: 480px) {
   #block-block-3 h3,
   #slogan h3 {
-    font-size: 18px;
-    min-height: 45px;
+    font-size: 13px;
+    min-height: 20px;
+    margin-top: 16px;
   }
 }
 #grey-scale {
