@@ -165,13 +165,18 @@
 </div>
   <div class="row">
 
-    <div class="col-sm-offset-2 col-sm-7 col-xs-12 col-xs-offset-0">
+    <div <?php print $content_column_class; ?>>
       <?php print render($page['content']); ?>
     </div>
 
     <?php if (!empty($page['sidebar_second'])): ?>
       <aside class="col-lg-2 col-sm-offset-1 col-sm-2 col-xs-10 col-xs-offset-1" role="complementary">
         <?php print render($page['sidebar_second']); ?>
+      </aside>  <!-- /#sidebar-second -->
+    <?php endif; ?>
+    <?php if (empty($page['sidebar_second'])): ?>
+      <aside class="col-sm-2 col-xs-1" role="complementary">
+        
       </aside>  <!-- /#sidebar-second -->
     <?php endif; ?>
 

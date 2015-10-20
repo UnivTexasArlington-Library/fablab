@@ -121,6 +121,10 @@ body {
 	color: #fff;
 	background: #232323 url('http://fablab-test.uta.edu/sites/default/files/Lightbulb.png') no-repeat center center;
 	background-size: 75px;
+	@media (max-width:@screen-xs-max) {
+		background-position: center top;
+		background-size: 45px;
+	}
 	h3 {
 		color: #fff;
 		margin-top: 45px;
@@ -198,8 +202,8 @@ h2.block-title {
 .region-left {
 	margin-left: 20px;
 	margin-right: 10px;
-	@media (max-width:@screen-xs-max) {
-		margin-right: 20px;
+	@media (max-width:@screen-md-max) {
+		margin-left: 10px;
 	}
 }
 .region-middle {
@@ -210,7 +214,7 @@ h2.block-title {
 	margin-right: 20px;
 	margin-left: 10px;
 	@media (max-width:@screen-xs-max) {
-		margin-left: 20px
+		margin-right: 10px;
 	}
 }
 /* REGION-RIGHT EVENTS CAROUSEL */
