@@ -7348,6 +7348,9 @@ body h4 {
   font-size: 15px;
   color: #fff;
 }
+#emergency-note p:last {
+  margin-bottom: 35.5px;
+}
 .region.region-sidebar-second {
   margin: 0px 0 87px -30px;
 }
