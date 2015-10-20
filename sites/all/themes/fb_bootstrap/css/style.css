@@ -7318,14 +7318,16 @@ body h4 {
   margin-bottom: 0;
   padding: 0px 0px;
 }
-/*.region-highlighted {
-	@media (max-width:@screen-sm-max) & (min-width:@screen-sm-min) {
-		margin-top: 145px;
-	}
-	@media (max-width:@screen-xs) {
-		margin-top: 99px;
-	}
-}*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .region-highlighted {
+    margin-top: 145px;
+  }
+}
+@media (max-width: 480px) {
+  .region-highlighted {
+    margin-top: 99px;
+  }
+}
 .region.region-sidebar-second {
   margin: 0px 0 87px -30px;
 }
