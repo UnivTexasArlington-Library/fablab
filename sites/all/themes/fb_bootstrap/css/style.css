@@ -7339,6 +7339,13 @@ body h4 {
 }
 #emergency-note {
   background-color: #ff0404;
+}
+#emergency-note h2 {
+  color: #fff;
+  text-transform: uppercase;
+}
+#emergency-note p {
+  font-size: 15px;
   color: #fff;
 }
 .region.region-sidebar-second {
