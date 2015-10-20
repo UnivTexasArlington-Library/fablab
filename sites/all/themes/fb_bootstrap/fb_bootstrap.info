@@ -7,8 +7,6 @@ base theme = bootstrap
 ;; Regions
 ;;;;;;;;;;;;;;;;;;;;;
 
-regions[university_logo]= 'University Logo'
-regions[site_name]		= 'Site Name'
 regions[navigation]     = 'Navigation'
 regions[header]         = 'Top Bar'
 regions[highlighted]    = 'Highlighted'
@@ -25,6 +23,7 @@ regions[footer_middle] 	= 'Middle Footer'
 regions[footer_right] 	= 'Right Footer'
 regions[page_top]       = 'Page top'
 regions[page_bottom]    = 'Page bottom'
+regions[emergency_notification] = 'Emergency Notification'
 
 
 

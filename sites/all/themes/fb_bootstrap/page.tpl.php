@@ -128,7 +128,11 @@
    
   </div>
 </header>
-
+<section id="emergency-note">
+  <?php if (!empty($emergency_notification)): ?>
+  <?php print $emergency_notification; ?>
+  <?php endif; ?>
+</section>
 
 <section id="slogan">
   <?php if (!empty($site_slogan)): ?>
