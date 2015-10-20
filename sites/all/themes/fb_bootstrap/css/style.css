@@ -7244,6 +7244,15 @@ ul.nav li.dropdown ul.dropdown-menu {
 .region.region-sidebar-second .nav .dropdown.open a {
   padding-bottom: 0px !important;
 }
+.navbar-toggle {
+  margin-right: 20px;
+  margin-top: 20px;
+}
+@media (max-width: 480px) {
+  .navbar-toggle {
+    margin-top: 8px;
+  }
+}
 @media (max-width: 991px) {
   ul.secondary {
     float: left;
