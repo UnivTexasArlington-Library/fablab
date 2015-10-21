@@ -7339,7 +7339,6 @@ body h4 {
 }
 #emergency-note {
   background-color: #ff0404;
-  padding: 30px 0;
 }
 #emergency-note h2 {
   color: #fff;
@@ -7354,11 +7353,12 @@ body h4 {
   float: left;
   display: inline-block;
   height: 40px;
+  margin-top: 17.5px;
   margin-right: 20px;
   padding-left: 10px;
 }
 .region-emergency-notification {
-  padding-bottom: 35.5px;
+  margin: 30px 0;
 }
 .region.region-sidebar-second {
   margin: 0px 0 87px -30px;
