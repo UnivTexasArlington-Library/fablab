@@ -7348,11 +7348,14 @@ body h4 {
 #emergency-note p {
   font-size: 15px;
   color: #fff;
+  padding: 0 10px;
 }
 #emergency-note img {
   float: left;
   display: inline-block;
   height: 40px;
+  margin-right: 20px;
+  padding-left: 10px;
 }
 .region-emergency-notification {
   padding-bottom: 35.5px;
