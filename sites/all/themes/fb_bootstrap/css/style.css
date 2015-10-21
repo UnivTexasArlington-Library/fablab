@@ -7510,7 +7510,7 @@ h2.block-title {
   margin-left: 20px;
   margin-right: 10px;
 }
-@media (max-width: 1199px) {
+@media (max-width: 991px) {
   .region-left {
     margin-left: 10px;
   }
@@ -7523,7 +7523,7 @@ h2.block-title {
   margin-right: 20px;
   margin-left: 10px;
 }
-@media (max-width: 480px) {
+@media (max-width: 991px) {
   .region-right {
     margin-right: 10px;
   }
