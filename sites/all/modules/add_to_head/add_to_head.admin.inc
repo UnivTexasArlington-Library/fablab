@@ -10,22 +10,39 @@
  * Overview page - provides a list of existing add to head profiles
  */
 function add_to_head_overview() {
+  // Fetch the list of profiles saved to the DB.
   $settings = variable_get('add_to_head_profiles', array());
 
-  $rows = array();
+  // Allow other modules to alter them.
+  drupal_alter(basename(__FILE__, '.admin.inc') . '_profiles', $settings);
+
+  // Set the titles in the header.
   $header = array(t('Title'), t('Paths'), t('Visibility'), t('Scope'), t('Ops'));
 
-
+  // List each profile on the overview page.
+  $rows = array();
   foreach ($settings as $delta => $settings) {
+
+    // Show all possible operations on the profile.
+    if (in_array($settings, variable_get('add_to_head_profiles', array()))) {
+      // This profile is in the DB. It can be modified through the Web UI.
+      $ops = implode(' | ', array(
+          l(t('Edit'), 'admin/config/development/add-to-head/' . $delta),
+          l(t('Delete'), 'admin/config/development/add-to-head/' . $delta . '/delete'),
+      ));
+    }
+    else {
+      // The profile is in code only. It cannot be edited from here so show a message.
+      $ops = t('None (in code)');
+    }
+
+    // Fill the current row with profile data.
     $rows[] = array(
       check_plain($settings['name']),
       nl2br(check_plain($settings['paths'])),
       ($settings['path_visibility'] == 0 ? t('Exclude') : t('Include')),
       drupal_ucfirst($settings['scope']),
-      implode(' | ', array(
-        l(t('Edit'), 'admin/config/development/add-to-head/' . $delta),
-        l(t('Delete'), 'admin/config/development/add-to-head/' . $delta . '/delete'),
-      )),
+      $ops,
     );
   }
 
@@ -58,7 +75,13 @@ function add_to_head_edit_profile($form, &$form_state, $profile = array()) {
     'path_visibility' => '',
     'paths' => '',
     'scope' => '',
+    'roles' => array(
+      'visibility' => 0,
+      'list' => array(),
+    ),
   );
+  $profile['roles']['visibility'] = empty($profile['roles']['visibility']) ? 0 : $profile['roles']['visibility'];
+  $profile['roles']['list'] = is_array($profile['roles']['list']) ? $profile['roles']['list'] : array();
 
   $form['name_orig'] = array(
     '#type' => 'value',
@@ -97,9 +120,33 @@ function add_to_head_edit_profile($form, &$form_state, $profile = array()) {
     '#type' => 'textarea',
     '#title' => t('Paths'),
     '#description' => t("Enter one page per line as Drupal paths. The '*' character is a wildcard. Example paths are %blog for the blog page and %blog-wildcard for every personal blog. %front is the front page.", array('%blog' => 'blog', '%blog-wildcard' => 'blog/*', '%front' => '<front>')),
-    '#required' => TRUE,
     '#default_value' => $profile['paths'],
     '#wysiwyg' => FALSE,
+  );
+
+  // Render the Roles overview.
+  $form['roles'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Roles'),
+    '#tree' => TRUE,
+  );
+
+  $form['roles']['visibility'] = array(
+    '#type' => 'radios',
+    '#title' => t('Embed code for specific roles'),
+    '#options' => array(
+      0 => t('Add for the selected roles only'),
+      1 => t('Add for every role except the selected ones'),
+    ),
+    '#default_value' => $profile['roles']['visibility'],
+  );
+
+  $form['roles']['list'] = array(
+    '#type' => 'checkboxes',
+    '#title' => t('Selected roles'),
+    '#default_value' => $profile['roles']['list'],
+    '#options' => array_map('check_plain', user_roles()),
+    '#description' => t('If none of the roles are selected, all roles will have the code displayed. If a user has any of the roles checked, that user will be have the code displayed (or not, depending on the setting above).'),
   );
 
   $form['scope'] = array(
@@ -155,6 +202,10 @@ function add_to_head_edit_profile_submit($form, &$form_state) {
     'paths' => trim($form_state['values']['paths']),
     'scope' => $form_state['values']['scope'],
     'path_visibility' => $form_state['values']['path_visibility'],
+    'roles' => array(
+      'visibility' => $form_state['values']['roles']['visibility'],
+      'list' => $form_state['values']['roles']['list'],
+    ),
   );
 
   variable_set('add_to_head_profiles', $settings);
