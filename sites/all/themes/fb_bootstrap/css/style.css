@@ -7811,7 +7811,7 @@ footer .form-item {
     border-width: 0;
   }
 }
-@media (print) {
+@media print {
   #slogan,
   #messages,
   #internal-page-push,
