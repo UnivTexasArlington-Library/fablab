@@ -75,7 +75,6 @@
  * @ingroup themeable
  */
 ?>
-<div id="fb-root"></div>
 <div class="jumbotron">  
   <!-- JUMBOTRON/HIGHLIGHTED -->
   <div class="container-fluid">   
