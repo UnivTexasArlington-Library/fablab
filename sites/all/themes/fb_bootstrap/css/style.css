@@ -7642,14 +7642,15 @@ iframe#campus-map {
   margin-left: 10px;
   margin-right: 10px;
   background-color: #fff;
+  text-decoration: none;
 }
 .thumbnail > img,
 .thumbnail a > img {
   max-width: 100%;
   height: auto;
   display: block;
-  margin-right: inherit;
-  margin-left: inherit;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 9px;
 }
 .node-readmore {
