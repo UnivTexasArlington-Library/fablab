@@ -12,7 +12,7 @@ if (variable_get('facebook_wall_access_token') != '') {
   define('FB_ACCESS_TOKEN', variable_get('facebook_wall_access_token_temp'));
 }
 define('FB_PAGE_NAME', variable_get('facebook_wall_page_url', 'me'));
-define('FB_API_VER', variable_get('facebook_wall_api_version', 'v2.3'));
+define('FB_API_VER', variable_get('facebook_wall_api_version', 'v2.5'));
 define('MODULE_PATH', drupal_get_path('module', 'facebook_wall')); 
 /**
  * Admin configure form for Facebook login & token access.
@@ -44,7 +44,7 @@ function _facebook_wall_login() {
   $form['fbw']['facebook_api_ver'] = array(
       '#type' => 'textfield',
       '#title' => t('API Version'),
-      '#default_value' => variable_get('facebook_wall_api_version','v2.3'),
+      '#default_value' => variable_get('facebook_wall_api_version','v2.5'),
       '#description' => t('Facebook API version.'),
       '#required' => TRUE,
   );
