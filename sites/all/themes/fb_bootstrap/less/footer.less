@@ -1,0 +1,79 @@
+// Insert your styling here.
+footer {
+	font-family: verdana;
+	background-color: #232323;
+	color: #dedcdc;
+	letter-spacing: 2px;
+	ul {
+		list-style-type: none;
+		margin-left: 125px;
+		@media (min-width: @screen-sm-min) and (max-width:@screen-md-max) {
+			margin-left:0;
+		}
+		@media (max-width:@screen-xs-max) {
+			margin-left: 0;
+			padding-left: 20px;
+		}
+	}
+	ul.noborder {
+		@media (max-width:@screen-xs-max) {
+			border-right: 0;
+		}
+	}
+	a {
+		color: #dedcdc;
+		text-decoration: none;
+		font-size: 12px;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	p {
+		margin-left: 125px;
+		font-size: 12px;
+		@media (max-width:@screen-md-max) {
+			margin-left:40px;
+		}
+		@media (max-width:@screen-xs-max) {
+			margin-left: 25px;
+			text-align: center;
+		}
+	}
+	.form-control {
+		border-radius: 10px;
+		height: 19px;
+	}
+	.form-item {
+		margin-bottom: 0;
+	}
+}
+#block-custom-search-blocks-1{
+	/* padding: 0 180px; */
+	margin-left: 165px;
+	margin-right: 30%;
+	@media (min-width: @screen-sm-min) and (max-width:@screen-md-max) {
+			margin-left:40px;
+		}
+	@media (max-width:@screen-xs-max) {
+		margin-left: 20px;
+		margin-right: 15%;
+	}
+}
+.custom-search-button {
+	float: right;
+	margin-top: -30px;
+	margin-right: -20px;
+}
+.footer {
+	margin-top: 20px;
+	border-top: 0;
+	padding-top:20px;
+	padding-bottom: 21px;
+}
+.region-footer-middle {
+	border-right: 1px dashed @link-color;
+	border-left: 1px dashed @link-color;
+	@media (max-width: @screen-xs-max) {
+		border-width: 0;
+	}
+}
