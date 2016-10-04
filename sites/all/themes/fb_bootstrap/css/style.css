@@ -7010,6 +7010,21 @@ table .checkbox input[type="checkbox"] {
 .alert-danger a {
   color: #843534;
 }
+.nav > li > a {
+  color: #555555;
+}
+.nav-tabs > li > a {
+  border-color: #555555;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #0064b1;
+  border-color: #555555;
+}
+dl.node-type-list > dd {
+  margin-bottom: 10px;
+}
 #navbar {
   z-index: 50;
   top: 50px;
