@@ -7737,7 +7737,7 @@ h4.staff-title {
   clear: both;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .views-staff .views-field-title h4 {
+  .views-staff h4.field-content {
     margin-top: 0;
   }
   .views-staff .views-field-field-body,
