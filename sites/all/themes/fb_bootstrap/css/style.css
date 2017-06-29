@@ -7736,8 +7736,17 @@ h4.staff-title {
 .clearboth {
   clear: both;
 }
-@media (max-width: 991px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .views-staff .views-field-title h4 {
+    margin-top: 0;
+  }
+  .views-staff .views-field-field-body,
+  .views-staff .views-field-edit-node {
+    margin-right: 1em;
+  }
+}
+@media (max-width: 991px) {
+  .views-staff .views-field-title > h4 {
     margin-top: 0;
   }
 }
