@@ -7718,7 +7718,8 @@ h4.staff-title {
   margin-left: 0.5em;
 }
 .view-staff .views-field-title,
-.view-staff .views-field-field-contact-email .views-field-field-contact-phone {
+.view-staff .views-field-field-contact-email,
+.view-staff .views-field-field-contact-phone {
   margin-left: 0.5em;
 }
 .view-staff .views-field-field-body {
@@ -7736,7 +7737,7 @@ h4.staff-title {
   clear: both;
 }
 @media (max-width: 991px) {
-  .views-staff .views-field-title {
+  .views-staff .views-field-title h4 {
     margin-top: 0;
   }
 }
