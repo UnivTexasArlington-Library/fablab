@@ -7746,7 +7746,7 @@ h4.staff-title {
   }
 }
 @media (max-width: 991px) {
-  .views-staff .views-field-title > h4 {
+  .view-staff .views-field-title > h4 {
     margin-top: 0;
   }
 }
