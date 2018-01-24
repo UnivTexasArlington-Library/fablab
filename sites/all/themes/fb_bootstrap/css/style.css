@@ -7736,6 +7736,10 @@ h4.staff-title {
 .clearboth {
   clear: both;
 }
+#edit-field-software-type-und .form-type-checkbox .checkbox input[type="checkbox"],
+#edit-field-software-type-und .form-type-checkbox .checkbox-inline input[type="checkbox"] {
+  margin-left: -20px;
+}
 @media (min-width: 992px) and (max-width: 1199px) {
   .views-staff h4.field-content {
     margin-top: 0;
