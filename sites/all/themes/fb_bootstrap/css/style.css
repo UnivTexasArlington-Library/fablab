@@ -7736,8 +7736,8 @@ h4.staff-title {
 .clearboth {
   clear: both;
 }
-#edit-field-software-type-und .form-type-checkbox .checkbox input[type="checkbox"],
-#edit-field-software-type-und .form-type-checkbox .checkbox-inline input[type="checkbox"] {
+#edit-field-open-source-und,
+#edit-field-free-software-und {
   margin-left: -20px;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
