@@ -7572,6 +7572,7 @@ iframe#campus-map {
 .oh-display-hours,
 .oh-display-closed {
   margin-left: 20px;
+  margin-top: 10.5px;
 }
 /* CALENDAR */
 .calendar-calendar .month-view .full td.single-day div.monthview,
@@ -8034,3 +8035,4 @@ dl.node-type-list > dd {
     visibility: visible;
   }
 }
+/*# sourceMappingURL=style.css.map */
